@@ -5,14 +5,26 @@
   "titulo": "Personagem, figurino e ambiente: a ficha que segura a consistência",
   "titulo_curto": "Ficha do personagem",
   "minutos": 17,
-  "lead": "O erro que mais denuncia vídeo gerado é o personagem que muda de rosto, de roupa ou de cabelo entre um plano e outro. A defesa é uma ficha escrita e um pacote de imagens de referência, decididos antes da primeira geração e repetidos em todos os planos.",
+  "lead": "Um dos erros mais visíveis em vídeo gerado é o personagem que muda de rosto, de roupa ou de cabelo entre um plano e outro. A defesa é uma ficha escrita e um pacote de imagens de referência, decididos antes da primeira geração e repetidos em todos os planos.",
   "objetivo": "escrever a ficha do personagem e do ambiente que você vai reaproveitar como referência em todos os planos, sem imitar pessoa real.",
-  "competencias": ["descrever-personagem", "travar-continuidade", "montar-pacote-de-referencias"],
+  "competencias": [
+    "descrever-personagem",
+    "travar-continuidade",
+    "montar-pacote-de-referencias"
+  ],
   "aprende": [
-    {"t": "Descrever identidade, figurino e objeto de cena com detalhe que se repete"},
-    {"t": "Escrever a trava: o que nunca muda entre os planos"},
-    {"t": "Montar o pacote de imagens de referência"},
-    {"t": "Separar aparência de composição"}
+    {
+      "t": "Descrever identidade, figurino e objeto de cena com detalhe que se repete"
+    },
+    {
+      "t": "Escrever a trava: o que nunca muda entre os planos"
+    },
+    {
+      "t": "Montar o pacote de imagens de referência"
+    },
+    {
+      "t": "Separar aparência de composição"
+    }
   ],
   "hero_alt": "Departamento de figurino com arara de casacos neutros, mala de couro gasta, chapéu e amostras de tecido presas num quadro de cortiça.",
   "secoes": [
@@ -22,12 +34,43 @@
       "sub": "Seis partes. Clique em cada uma.",
       "estilo": "fluxo",
       "nos": [
-        {"titulo": "Identidade", "sub": "rosto e corpo", "icone": "usuario", "forte": true, "detalhe": "Idade, rosto, cabelo, corpo, postura. Detalhe concreto e repetível (\"cabelo grisalho preso num coque baixo\"), não adjetivo solto (\"bonita\"). Personagem fictício: nada de parecer pessoa real."},
-        {"titulo": "Figurino", "sub": "roupa fixa", "icone": "camadas", "detalhe": "A roupa da cena, com cor e material: \"avental de lona azul-marinho sobre camisa branca\". Ela não muda de um plano para outro."},
-        {"titulo": "Objeto", "sub": "objeto de cena", "icone": "alvo", "detalhe": "O objeto que carrega a história: a pá de madeira gasta, a chave da porta de ferro. Descrito uma vez, igual em todos os planos."},
-        {"titulo": "Ambiente", "sub": "o lugar", "icone": "pasta", "detalhe": "O lugar como estrutura dramática: o que tem, de que é feito, que hora é. Ambiente e personagem se descrevem separados e se juntam no plano."},
-        {"titulo": "Trava", "sub": "nunca muda", "icone": "cadeado", "detalhe": "A lista curta do que não pode mudar entre os planos: rosto, cabelo, roupa, objeto, hora do dia. Ela entra em todo prompt da cena."},
-        {"titulo": "Referências", "sub": "imagens", "icone": "copiar", "detalhe": "Imagens geradas uma vez, em estúdio neutro: o personagem de frente, de perfil e de corpo inteiro; o figurino e o objeto isolados; o ambiente vazio. São elas que os geradores usam como referência."}
+        {
+          "titulo": "Identidade",
+          "sub": "rosto e corpo",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "Idade, rosto, cabelo, corpo, postura. Detalhe concreto e repetível (\"cabelo grisalho preso num coque baixo\"), não adjetivo solto (\"bonita\"). Personagem fictício: nada de parecer pessoa real."
+        },
+        {
+          "titulo": "Figurino",
+          "sub": "roupa fixa",
+          "icone": "camadas",
+          "detalhe": "A roupa da cena, com cor e material: \"avental de lona azul-marinho sobre camisa branca\". Ela não muda de um plano para outro."
+        },
+        {
+          "titulo": "Objeto",
+          "sub": "objeto de cena",
+          "icone": "alvo",
+          "detalhe": "O objeto que carrega a história: a pá de madeira gasta, a chave da porta de ferro. Descrito uma vez, igual em todos os planos."
+        },
+        {
+          "titulo": "Ambiente",
+          "sub": "o lugar",
+          "icone": "pasta",
+          "detalhe": "O lugar como estrutura dramática: o que tem, de que é feito, que hora é. Ambiente e personagem se descrevem separados e se juntam no plano."
+        },
+        {
+          "titulo": "Trava",
+          "sub": "nunca muda",
+          "icone": "cadeado",
+          "detalhe": "A lista curta do que não pode mudar entre os planos: rosto, cabelo, roupa, objeto, hora do dia. Ela entra em todo prompt da cena."
+        },
+        {
+          "titulo": "Referências",
+          "sub": "imagens",
+          "icone": "copiar",
+          "detalhe": "Imagens geradas uma vez, em estúdio neutro: o personagem de frente, de perfil e de corpo inteiro; o figurino e o objeto isolados; o ambiente vazio. São elas que os geradores usam como referência."
+        }
       ],
       "legenda": "A ficha é texto seu e vale para qualquer gerador. Como cada ferramenta recebe as referências é assunto do curso 1, aula 5."
     },
@@ -43,7 +86,10 @@
             "O gerador não lembra do plano anterior. O que segura o personagem é você repetir as mesmas palavras em todos os prompts.",
             "Por isso a ficha usa detalhe concreto: cor, material, forma, marca no rosto. \"Simpática\" muda de plano para plano; \"sardas no nariz e óculos de aro fino\" não."
           ],
-          "exemplo": {"rot": "Figurino de Dona Lia", "texto": "Avental de lona azul-marinho sobre camisa branca de manga dobrada, lenço cinza no cabelo."}
+          "exemplo": {
+            "rot": "Figurino de Dona Lia",
+            "texto": "Avental de lona azul-marinho sobre camisa branca de manga dobrada, lenço cinza no cabelo."
+          }
         },
         {
           "titulo": "Referência por várias imagens",
@@ -57,7 +103,7 @@
           "titulo": "Aparência de um lado, composição do outro",
           "sub": "não misture funções",
           "texto": [
-            "A imagem de referência do personagem diz como ele é. O enquadramento, o ângulo e a pose vêm do seu plano. Misturar as duas coisas faz o gerador copiar a pose da referência em vez de seguir a direção.",
+            "A imagem de referência do personagem diz como ele é. O enquadramento, o ângulo e a pose vêm do seu plano. Misturar as duas coisas pode levar o gerador a copiar a pose da referência em vez de seguir a direção.",
             "Por isso as referências são feitas em estúdio neutro, pose neutra, luz natural e fundo liso: só a aparência, sem cena."
           ]
         },
@@ -91,12 +137,27 @@
     {
       "tipo": "conferidor",
       "titulo": "Confira a sua ficha",
-      "sub": "Dez campos, cada um com pelo menos seis letras de descrição.",
+      "sub": "Dez campos, cada um com pelo menos duas letras ou números de descrição.",
       "arquivo": "ficha.txt",
       "rot": "Cole aqui a sua ficha (um campo por linha):",
       "modelo": "Nome: ...\nIdade: ...\nRosto: ...",
       "regras": [
-        {"tipo": "campos", "min": 6, "campos": ["Nome", "Idade", "Rosto", "Cabelo", "Corpo", "Figurino", "Objeto", "Ambiente", "Luz", "Nunca muda"]}
+        {
+          "tipo": "campos",
+          "min": 2,
+          "campos": [
+            "Nome",
+            "Idade",
+            "Rosto",
+            "Cabelo",
+            "Corpo",
+            "Figurino",
+            "Objeto",
+            "Ambiente",
+            "Luz",
+            "Nunca muda"
+          ]
+        }
       ],
       "ok": "OK: ficha com {n} campos preenchidos",
       "exemplo": "Nome: Dona Lia (personagem fictícia)\nIdade: 58 anos\nRosto: redondo, sardas no nariz, rugas de riso, óculos de aro fino\nCabelo: grisalho, preso num coque baixo sob um lenço cinza\nCorpo: baixa, ombros largos, anda rápido e um pouco curvada\nFigurino: avental de lona azul-marinho sobre camisa branca de manga dobrada\nObjeto: pá de madeira gasta, com o cabo escurecido de uso\nAmbiente: padaria de bairro pequena, azulejo branco, forno de lastro, porta de ferro de enrolar\nLuz: forno à direita, lâmpadas da bancada, rua escura lá fora\nNunca muda: coque com lenço, óculos, avental azul-marinho, pá de madeira, madrugada",
@@ -111,7 +172,7 @@
           "id": "e1",
           "titulo": "Ficha · personagem e ambiente",
           "min": "20 min",
-          "texto": "Preencha os dez campos da ficha com detalhe concreto e repetível. Se a sua âncora é um produto, use Rosto e Cabelo para forma e acabamento do produto. Confira e baixe o ficha.txt para a pasta do projeto.",
+          "texto": "Preencha os dez campos da ficha com detalhe concreto e repetível. Se a sua âncora é um produto, a ficha é da pessoa que aparece com ele, e o produto vai detalhado em Objeto. Confira e baixe o ficha.txt para a pasta do projeto.",
           "pronto": "a página responde <code>OK: ficha com 10 campos preenchidos</code> para o seu texto e o ficha.txt está na pasta do projeto."
         },
         {
@@ -149,7 +210,7 @@
             "Para passar só a aparência, sem pose nem cena."
           ],
           "certa": 3,
-          "explica": "A referência diz como o personagem é; o plano diz onde ele está e como é enquadrado. Referência com cena e pose faz o gerador copiar a pose em vez de seguir a direção.",
+          "explica": "A referência diz como o personagem é; o plano diz onde ele está e como é enquadrado. Referência com cena e pose pode levar o gerador a copiar a pose em vez de seguir a direção.",
           "ref": "passos"
         },
         {
@@ -182,18 +243,36 @@
       "tipo": "resumo",
       "titulo": "Para guardar",
       "itens": [
-        {"t": "Concreto e repetido", "texto": "Cor, material e marca no rosto, com as mesmas palavras em todo prompt."},
-        {"t": "Trava", "texto": "A lista do que nunca muda entra em todos os planos da cena."},
-        {"t": "Referências neutras", "texto": "Aparência em estúdio neutro; composição vem do plano. Personagem fictício."}
+        {
+          "t": "Concreto e repetido",
+          "texto": "Cor, material e marca no rosto, com as mesmas palavras em todo prompt."
+        },
+        {
+          "t": "Trava",
+          "texto": "A lista do que nunca muda entra em todos os planos da cena."
+        },
+        {
+          "t": "Referências neutras",
+          "texto": "Aparência em estúdio neutro; composição vem do plano. Personagem fictício."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Google: Veo 3.1 e imagens de referência (\"Ingredients to video\")", "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"},
-        {"t": "Curso 1 · Geração: consistência por referência (aula 5)", "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"},
-        {"t": "Curso 2 · Produção: ética, rótulo e direito de imagem (aula 7)", "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"}
+        {
+          "t": "Google: Veo 3.1 e imagens de referência (\"Ingredients to video\")",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Curso 1 · Geração: consistência por referência (aula 5)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"
+        },
+        {
+          "t": "Curso 2 · Produção: ética, rótulo e direito de imagem (aula 7)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+        }
       ]
     }
   ]

@@ -1,0 +1,291 @@
+{
+  "slug": "composicao",
+  "num": 5,
+  "menu": "Frame",
+  "titulo": "Composition and depth in the frame",
+  "titulo_curto": "Composition and depth",
+  "minutos": 15,
+  "lead": "A beautiful frame where the eye doesn't know where to go communicates nothing. Composition is deciding what you see first, where empty space works in your favor, and how foreground, midground and background separate. It's what makes a generated image feel like real space instead of a flat backdrop.",
+  "objetivo": "compose each frame with a subject you understand in one second and three layers of depth separated by focus, light or color.",
+  "competencias": [
+    "hierarquia-visual",
+    "escolher-composicao",
+    "construir-profundidade"
+  ],
+  "aprende": [
+    {
+      "t": "Apply the one-second test to any frame"
+    },
+    {
+      "t": "Choose between thirds, center and diagonal by emotion"
+    },
+    {
+      "t": "Use empty space to isolate or squeeze"
+    },
+    {
+      "t": "Set up foreground, midground and background and separate the layers"
+    }
+  ],
+  "hero_alt": "View from behind a camera monitor showing a frame with a plant in the foreground, a table in the midground and a window in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From subject to layers",
+      "sub": "Five decisions for every frame. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Subject",
+          "sub": "one second",
+          "icone": "alvo",
+          "forte": true,
+          "detalhe": "What does the audience see first? They shouldn't have to search: they should understand the scene in one second. If two elements compete for attention, one goes or loses light."
+        },
+        {
+          "titulo": "Balance",
+          "sub": "thirds or center",
+          "icone": "camadas",
+          "detalhe": "Rule of thirds: the subject off-center creates a natural flow from the subject to the setting. Center and symmetry: balance, control, power, ritual."
+        },
+        {
+          "titulo": "Lines",
+          "sub": "diagonal, leading",
+          "icone": "seta",
+          "detalhe": "The diagonal breaks stability and suggests movement, even when still. Leading lines (road, hallway, counter, shadow) lead the eye to the subject."
+        },
+        {
+          "titulo": "Space",
+          "sub": "emptiness speaks",
+          "icone": "lupa",
+          "detalhe": "More empty space: freedom, scale, isolation. Less space: tension, tightness. Emptiness isn't a lack of content; it's the emotional content."
+        },
+        {
+          "titulo": "Layers",
+          "sub": "foreground, midground, background",
+          "icone": "camadas",
+          "detalhe": "Foreground: where the audience is. Midground: where the subject is. Background: where the context lives. Separate the three by focus, light, color or haze."
+        }
+      ],
+      "legenda": "The composition changes across the sequence: the scene evolves from shot to shot instead of repeating itself."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Composition in practice",
+      "sub": "The examples come from the bakery.",
+      "passos": [
+        {
+          "titulo": "The one-second test",
+          "sub": "the eye doesn't search",
+          "texto": [
+            "Look at the frame for one second and say out loud what the subject is. If you hesitate, the audience will hesitate too.",
+            "One dominant subject per frame. Product, person and a background detail fighting for attention make a beautiful image that says nothing."
+          ]
+        },
+        {
+          "titulo": "Thirds, center or diagonal",
+          "sub": "by the emotion of the shot",
+          "texto": [
+            "Thirds for natural flow; center and symmetry for control and monumentality; diagonal for energy and action. The choice follows the emotion of the shot, not taste.",
+            "Vary it across the scene: three frames in a row with the same composition feel repetitive."
+          ],
+          "exemplo": {
+            "rot": "In the batch",
+            "texto": "Oven door in the center, symmetrical: the ritual. The row of loaves on a diagonal: the energy of the first batch."
+          }
+        },
+        {
+          "titulo": "Negative space",
+          "sub": "room to breathe or a tight squeeze",
+          "texto": [
+            "Before you generate, decide: should the audience feel room to breathe or a tight squeeze? The amount of emptiness answers that before any other choice.",
+            "Dona Lia small in a corner of the frame, with the dark street filling the rest, tells the loneliness of someone who wakes up before the city."
+          ]
+        },
+        {
+          "titulo": "Three layers, kept apart",
+          "sub": "focus, light, color, haze",
+          "texto": [
+            "Having foreground, midground and background is not enough: they need to be distinct. Shallow depth of field blurs the foreground or the background; backlight cuts out the subject; color and haze push the background back.",
+            "With the layers separated, the sideways camera movement (lesson 3) makes each one move at its own pace, and the space feels real."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy",
+      "sub": "One line per frame: the composition, the three layers and where the eye goes.",
+      "blocos": [
+        {
+          "rot": "quadros.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <scene name>\n1 | <composition> | foreground: <what is close to the camera> | midground: <the subject> | background: <the context> | the eye goes to: <the subject>\n2 | <composition> | foreground: <...> | midground: <...> | background: <...> | the eye goes to: <...>\n# compositions: rule of thirds, center (symmetry), diagonal, leading lines, negative space, frame within a frame"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your frames",
+      "sub": "The page asks for 3 to 6 frames, each with the composition and the three layers, and at least 3 different compositions.",
+      "arquivo": "quadros.txt",
+      "rot": "Paste your frames here (one numbered line per frame):",
+      "modelo": "1 | rule of thirds | foreground: ... | midground: ... | background: ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "the composition",
+              "variar": 3,
+              "termos": [
+                "regra dos terços / terços / rule of thirds / thirds / regla de los tercios / tercios",
+                "centro / centralizado / simetria / simétrico / symmetry / centered / center / centre / symmetrical / centrado / simetría",
+                "diagonal",
+                "linhas de condução / linhas guia / leading lines / líneas guía / líneas de fuga",
+                "espaço negativo / negative space / espacio negativo",
+                "moldura / quadro dentro do quadro / frame within a frame / marco dentro del marco"
+              ]
+            },
+            {
+              "rot": "the foreground layer (foreground:)",
+              "min": 2,
+              "termos": [
+                "frente: / foreground:"
+              ]
+            },
+            {
+              "rot": "the midground layer (midground:)",
+              "min": 2,
+              "termos": [
+                "meio: / midground: / middle ground: / medio:"
+              ]
+            },
+            {
+              "rot": "the background layer (background:)",
+              "min": 2,
+              "termos": [
+                "fundo: / background: / fondo:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} frames with composition and three layers",
+      "exemplo": "Scene: The first batch\n1 | rule of thirds | foreground: the display case with yesterday's loaves | midground: Dona Lia at the counter, in the right third | background: the closed iron door | the eye goes to: Dona Lia\n2 | center | foreground: the edge of the counter, out of focus | midground: the oven door | background: tiles in the dark | the eye goes to: the oven\n3 | diagonal | foreground: the wooden peel entering the frame | midground: the row of loaves | background: steam against the light | the eye goes to: the loaf in front\n4 | negative space | foreground: the display glass with droplets | midground: the small, lit bakery | background: the empty, dark street | the eye goes to: the bakery's light",
+      "exemplo_errado": "Scene: The first batch\n1 | center | foreground: the display case | midground: Dona Lia\n2 | center | midground: the oven | background: tiles"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Pick the most important shots of your scene.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Frames · composition and layers",
+          "min": "15 min",
+          "texto": "Write 3 to 6 frames of your scene with the composition, the foreground, the midground, the background and where the eye goes. Use at least 3 different compositions. Check them and download quadros.txt to the project folder.",
+          "pronto": "the page replies <code>OK: [n] frames with composition and three layers</code> to your text and quadros.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "One second · the out-loud test",
+          "min": "5 min",
+          "texto": "For each frame, read only the \"the eye goes to\" line and check that there is just one subject. If the line names two things, take light or focus away from one of them and rewrite it.",
+          "pronto": "in every line of quadros.txt, after <code>o olho vai para:</code>, there is a single subject."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "What is the one-second test?",
+          "opcoes": [
+            "Generate a one-second clip before the long clip.",
+            "Cut each shot to last one second at most.",
+            "Glance at the frame and name the subject in one second.",
+            "Wait one second of silence before each cut."
+          ],
+          "certa": 2,
+          "explica": "The audience shouldn't have to hunt for the subject. If you hesitate when saying what the frame shows, the composition failed, however pretty it looks.",
+          "ref": "passos"
+        },
+        {
+          "p": "Dona Lia small in the corner, the empty street filling the rest of the frame. What does the empty space say?",
+          "opcoes": [
+            "Haste and urgency in the scene.",
+            "A framing mistake.",
+            "That an object is missing from the scene.",
+            "Isolation and scale."
+          ],
+          "certa": 3,
+          "explica": "A lot of negative space isolates the subject and shows how big the world around them is. Little space does the opposite: it squeezes and creates tension.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "How do you separate the subject from the background without changing the composition?",
+          "opcoes": [
+            "Blur the background, add backlight, or change the color.",
+            "Put the subject in the exact center of the frame, always.",
+            "Fill the background with objects to give context.",
+            "Swap the lens for a wide-open wide-angle."
+          ],
+          "certa": 0,
+          "explica": "Focus, light, color, and fog separate the layers. More objects in the background compete for attention; centering changes the composition; a wide-angle increases the space, but doesn't separate on its own.",
+          "ref": "passos"
+        },
+        {
+          "p": "What do symmetry and a centered subject convey?",
+          "opcoes": [
+            "Energy and speed.",
+            "Control, order, and power.",
+            "Discomfort and instability.",
+            "Intimacy and warmth."
+          ],
+          "certa": 1,
+          "explica": "Center and symmetry assert order, monumentality, and control. Energy comes from the diagonal; discomfort, from the Dutch angle; intimacy, from the close-up.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "One subject",
+          "texto": "The audience understands the frame in one second, without searching."
+        },
+        {
+          "t": "Composition by emotion",
+          "texto": "Thirds for flow, center for control, diagonal for energy, empty space to isolate."
+        },
+        {
+          "t": "Three layers",
+          "texto": "Foreground, midground, and background, separated by focus, light, color, or fog."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide: lenses and depth of field",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 1 · Generation: key image and lookbook (lesson 3)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

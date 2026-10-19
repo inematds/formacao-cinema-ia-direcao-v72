@@ -1,0 +1,286 @@
+{
+  "slug": "luz",
+  "num": 4,
+  "menu": "Light",
+  "titulo": "Light, color and atmosphere: the look decided before the prompt",
+  "titulo_curto": "Light, color and atmosphere",
+  "minutos": 16,
+  "lead": "\"Cinematic light\" in a prompt says nothing: the generator needs to know where the light comes from, which side it hits, whether it is hard or soft, and what color it is. In this lesson you decide the light for your scene and write the look card, the fixed block that goes into every prompt for it.",
+  "objetivo": "decide the source, direction, quality, temperature and atmosphere of your scene's light and write the look card that goes into every prompt.",
+  "competencias": [
+    "motivate-the-light",
+    "control-shadow-and-contrast",
+    "keep-the-scene-palette"
+  ],
+  "aprende": [
+    {
+      "t": "Give every light a source the audience believes"
+    },
+    {
+      "t": "Use the direction and quality of light to shape the character"
+    },
+    {
+      "t": "Take light away to gain depth"
+    },
+    {
+      "t": "Lock palette and atmosphere into a look card"
+    }
+  ],
+  "hero_alt": "Dark studio with light smoke; a side spotlight forms a beam of light and a black flag cuts the light on the other side of an empty chair.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The five light decisions",
+      "sub": "In this order. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Source",
+          "sub": "where it comes from",
+          "icone": "sol",
+          "forte": true,
+          "detalhe": "Every light comes from somewhere believable: sun, window, lamp, screen, fire. This is motivated light: if the audience believes the source, they believe the scene. In the prompt, name the source."
+        },
+        {
+          "titulo": "Direction",
+          "sub": "front, side, back",
+          "icone": "seta",
+          "detalhe": "From the front, the light flattens the face. From the side, it shapes volume and drama. From behind (backlight), it cuts out the silhouette. A thin edge of light, the rim light, separates the subject from the background without showing everything."
+        },
+        {
+          "titulo": "Quality",
+          "sub": "hard or soft",
+          "icone": "camadas",
+          "detalhe": "Hard: a sharp-edged shadow, tension. Soft: a shadow that spreads out, warmth. A large source close to the subject is softer; a small one far away is harder."
+        },
+        {
+          "titulo": "Temperature",
+          "sub": "warm or cool",
+          "icone": "grafico",
+          "detalhe": "Warm tones draw the viewer in and feel welcoming; cool tones push away and suggest distance or danger. The contrast between the two creates tension. A bright, cheerful image is high-key; a dark, mysterious one is low-key."
+        },
+        {
+          "titulo": "Atmosphere",
+          "sub": "fog and movement",
+          "icone": "nuvem",
+          "detalhe": "Fog, steam or dust make the beam visible (volumetric lighting) and push the background farther away. Light that moves, like a flame or a flickering screen, pulls the scene out of stillness."
+        }
+      ],
+      "legenda": "Terms like high-key, low-key, backlighting and volumetric lighting appear in Google's official video prompt guide."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to decide the look",
+      "sub": "During the batch, the lit-up bakery is the only light on the street.",
+      "passos": [
+        {
+          "titulo": "Take light away before you add it",
+          "sub": "shadow is depth",
+          "texto": [
+            "Lighting everything makes the image flat: everything visible, nothing felt. Good cinema is also deciding where the light doesn't reach.",
+            "On a set, the black flag that blocks light is called negative fill. In a prompt, ask for shadow with words: low-key, deep shadows, one side of the face in the dark."
+          ]
+        },
+        {
+          "titulo": "Name the source",
+          "sub": "motivated light",
+          "texto": [
+            "Replace \"cinematic lighting\" with a source and a side: \"oven light coming from the right\", \"cold glow of a screen\".",
+            "A named source adds credibility and also pins down direction and temperature at once."
+          ],
+          "exemplo": {
+            "rot": "In the batch",
+            "texto": "Side light from the oven on the right, soft on the counter; outside, only a cold streetlamp on the dark street."
+          }
+        },
+        {
+          "titulo": "One palette per scene",
+          "sub": "the shots of the same world",
+          "texto": [
+            "The same dominant tones in every shot tie the scene together. Each shot with a different temperature makes the scene fall apart into pieces.",
+            "Pick three or four colors and repeat them. If the story calls for a change, change it on purpose, at a turning point."
+          ]
+        },
+        {
+          "titulo": "The look card",
+          "sub": "the fixed part of the prompt",
+          "texto": [
+            "The look card gathers the five decisions and the palette. It goes into every prompt of the scene exactly the same, and that holds continuity.",
+            "In course 1 it becomes the light and style block of the prompt. Here you only decide."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The look card and the lighting phrase in the format of the English prompts.",
+      "blocos": [
+        {
+          "rot": "look.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Source: <where the main and secondary light come from>\nDirection: <front, side or backlight, and from which side>\nQuality: <hard or soft, and where>\nTemperature: <warm, cool or neutral, and where each one appears>\nContrast: <high or low; high-key or low-key>\nPalette: <3 or 4 dominant colors>\nAtmosphere: <fog, steam, dust, rain or clear air>"
+        },
+        {
+          "rot": "Lighting phrase for the prompt (English)",
+          "icone": "chat",
+          "conteudo": "Lighting: <fonte> from the <lado>, <soft ou hard> light, <warm ou cool> tones, <low-key ou high-key>, <atmosfera, ex.: steam visible in the light beam>. Color palette: <cores>."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your look card",
+      "sub": "The page asks for the seven fields and checks that you named the quality (hard or soft) and the temperature (warm, cool or neutral).",
+      "arquivo": "look.txt",
+      "rot": "Paste your look card here (one field per line):",
+      "modelo": "Source: ...\nDirection: ...\nQuality: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 4,
+          "campos": [
+            "Source",
+            "Direction",
+            "Quality",
+            "Temperature",
+            "Contrast",
+            "Palette",
+            "Atmosphere"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the quality of the light (hard or soft)",
+              "termos": [
+                "dura / duro / hard",
+                "suave / difusa / soft"
+              ]
+            },
+            {
+              "rot": "a temperatura (quente, fria ou neutra)",
+              "termos": [
+                "quente / warm",
+                "fria / frio / cool / cold",
+                "neutra / neutro / neutral"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: look card with {n} fields",
+      "exemplo": "Source: the oven light and two bench lamps; outside, just one streetlamp\nDirection: from the side, coming from the oven on the right; backlight from the shop window in the street shots\nQuality: soft at the bench, hard on the face when the oven opens\nTemperature: warm inside the bakery, cool on the dark street\nContrast: high, low-key; the street almost black\nPalette: dark blue of the street, copper of the oven, white of the flour\nAtmosphere: oven steam and flour in the air, visible in the beam of light",
+      "exemplo_errado": "Light: beautiful and cinematic\nPalette: vivid colors\nAtmosphere: magical"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "The light of your scene, decided before any prompt.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Look · your scene's card",
+          "min": "15 min",
+          "texto": "Fill in your scene's look card: a named source, direction, quality, temperature, contrast, a palette of 3 or 4 colors, and atmosphere. Check it and download the look.txt into your project folder.",
+          "pronto": "the page answers <code>OK: look card with 7 fields</code> for your text, and the look.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Line · the look in one prompt line",
+          "min": "5 min",
+          "texto": "With the \"Light line for the prompt\" template, write your scene's light line in English and paste it at the end of the look.txt.",
+          "pronto": "the look.txt ends with a line that starts with <code>Lighting:</code> and names the source, the side, and soft or hard."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Why does \"beautiful, cinematic lighting\" in a prompt usually come out flat?",
+          "opcoes": [
+            "Because the generator ignores the words about light in the prompt.",
+            "Because it doesn't say the source, the side, or where the shadow falls.",
+            "Because light can only be adjusted later, in the edit.",
+            "Because you forgot to ask for a higher resolution when generating."
+          ],
+          "certa": 1,
+          "explica": "An adjective isn't a direction. Without a source, a side, and a shadow, the generator lights everything evenly. Naming the source and asking for shadow (low-key) changes the result.",
+          "ref": "passos"
+        },
+        {
+          "p": "What makes a light source softer?",
+          "opcoes": [
+            "Being far away and small relative to the subject.",
+            "Being a warmer color than the rest of the scene.",
+            "Being close and large relative to the subject.",
+            "Coming from the front, at the subject's eye level."
+          ],
+          "certa": 2,
+          "explica": "A large, close source wraps around the subject and spreads the shadow. A small, distant one makes a shadow with a sharp edge. Color and direction change the mood, not the hardness.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "What is the oven steam in the beam of light for?",
+          "opcoes": [
+            "To hide flaws the generation leaves behind.",
+            "To make the whole image brighter.",
+            "To replace the rim light on the face.",
+            "To make the light visible and separate the background."
+          ],
+          "certa": 3,
+          "explica": "Fog, steam, and dust show the beam (volumetric light) and create layers that add depth. They don't brighten the scene or replace another light.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Why keep the same palette in all the shots of the scene?",
+          "opcoes": [
+            "So the shots look like they belong to the same world.",
+            "So the generator renders faster.",
+            "Because a different color delays the shot's sound.",
+            "So the edit can skip color correction."
+          ],
+          "certa": 0,
+          "explica": "A repeated palette ties the shots into a single scene. Changing color for no reason makes the scene look pieced together; changing it with a reason marks a turn.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Source and side",
+          "texto": "Every light has a believable source and comes from one side. Say both."
+        },
+        {
+          "t": "Shadow counts",
+          "texto": "Taking light away creates depth. Hard means tension; soft means warmth."
+        },
+        {
+          "t": "Fixed look",
+          "texto": "Palette and atmosphere on the look card, the same in every prompt of the scene."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide: light, mood and style",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 2 · Production: color, grading and film look (lesson 4)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

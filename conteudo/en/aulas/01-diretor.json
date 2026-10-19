@@ -1,0 +1,287 @@
+{
+  "slug": "diretor",
+  "num": 1,
+  "menu": "Director",
+  "titulo": "The director and the machine: what AI does and what stays yours",
+  "titulo_curto": "The director and the machine",
+  "minutos": 15,
+  "lead": "The 2026 video generator creates image, motion and sound. It doesn't know what the audience should feel or why the camera is there. This lesson separates what the machine carries out from what you decide, and ends with the director's card for your scene.",
+  "objetivo": "separate what you decide from what the AI carries out, and fill in the director's card for a scene before generating anything.",
+  "competencias": [
+    "separar-intencao-de-execucao",
+    "definir-ancora-da-cena",
+    "justificar-escolhas-de-direcao"
+  ],
+  "aprende": [
+    {
+      "t": "See the path of an AI video in 2026, from key image to label"
+    },
+    {
+      "t": "Choose the scene's anchor: character, product or rhythm"
+    },
+    {
+      "t": "Answer the four director questions before generating"
+    },
+    {
+      "t": "Keep the project outside any platform"
+    }
+  ],
+  "hero_alt": "Empty director's chair on a dark set, with a folded script on the seat and a reference monitor beside it.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The path of an AI video in 2026",
+      "sub": "Five steps. Click each one and see who decides there.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Intent",
+          "sub": "you",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "What the audience should feel, what holds the eye, where the camera sits and why. No model update decides this for you; it's the subject of this course."
+        },
+        {
+          "titulo": "Key image",
+          "sub": "the reference frame",
+          "icone": "camadas",
+          "detalhe": "A still frame that locks in character, place and light. Generators use images like this as a reference to keep the same look from one shot to the next (course 1)."
+        },
+        {
+          "titulo": "Video with audio",
+          "sub": "the generator",
+          "icone": "video",
+          "detalhe": "The generator animates the scene and returns the sound along with it. As of Oct 2026, native audio is standard in the main ones (Veo 3.1, Kling 3.0, Seedance 2.x, Runway Gen-4.5). It carries out what your shot list asks for."
+        },
+        {
+          "titulo": "Editing",
+          "sub": "cut and rhythm",
+          "icone": "lista",
+          "detalhe": "Arrange, cut, color-grade, add music and captions. AI tools help; the pacing is still your call (course 2)."
+        },
+        {
+          "titulo": "Label",
+          "sub": "say it's AI",
+          "icone": "escudo",
+          "detalhe": "Tell people the content was generated with AI. In the European Union, the AI Act (art. 50) requires a visible label on deepfakes published since 08/02/2026. Ethics and law are covered in course 2, lesson 7."
+        }
+      ],
+      "legenda": "Generator versions cited as a dated example (Oct/2026). The full, up-to-date table is in course 1."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "What is yours, in four ideas",
+      "sub": "The example is the course's scene: Dona Lia opens the neighborhood bakery at 4:50 a.m.",
+      "passos": [
+        {
+          "titulo": "AI carries out direction",
+          "sub": "it doesn't create intention",
+          "texto": [
+            "The tool generates pixels; you are the one who generates meaning. A scene with no internal logic comes out pretty and empty, and a new model won't fix that.",
+            "Intention has a practical definition: being able to justify every choice. If the answer to \"why this angle?\" is \"it just came out that way,\" the scene gets weaker."
+          ]
+        },
+        {
+          "titulo": "The scene's anchor",
+          "sub": "what holds the eye",
+          "texto": [
+            "Before any image, name the anchor in one sentence. It changes with the format and decides angle, light and composition.",
+            "In a film, the anchor is the character. In an ad, it's the product, the idea or the transformation. In a music video, it's the rhythm."
+          ],
+          "exemplo": {
+            "rot": "Anchor of the batch",
+            "texto": "Dona Lia. Everything in the scene serves the quiet pride of someone who wakes up before the city."
+          }
+        },
+        {
+          "titulo": "The four questions",
+          "sub": "before generating",
+          "texto": [
+            "Why this angle? Why this movement? Why this duration? Why this light? Angle gives power or fragility, movement gives emotion, duration gives weight and light gives mood.",
+            "A choice you can't justify weakens the scene. Lessons 2, 3 and 4 go deeper into each question."
+          ]
+        },
+        {
+          "titulo": "The tool changes, the direction stays",
+          "sub": "the Sora case",
+          "texto": [
+            "The Sora app was shut down on 04/26/2026 and the API on 09/24/2026. Video tools disappear, change names or change prices.",
+            "That's why your project lives in a folder of your own: director's card, character sheet, look and shot list in text. With them, any generator of the moment can carry out the same scene."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The director's card and a request for the AI assistant to test your choices.",
+      "blocos": [
+        {
+          "rot": "cartao.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <the scene in one sentence>\nFormat: <film, ad or clip, and where it will be shown>\nAnchor: <what holds the eye: character, product or rhythm>\nEmotion: <what the audience should feel>\nAngle: <which one and why>\nMovement: <which one and why>\nDuration: <how long each shot lasts and why>\nLight: <which one and why>"
+        },
+        {
+          "rot": "Request to the AI assistant (the director's questions)",
+          "icone": "chat",
+          "conteudo": "Read my director's card below. For each field Angle, Movement, Duration and Light, ask me a question that forces me to justify the choice based on what the audience should feel. Don't suggest answers and don't rewrite the card; just ask.\nCard:\n<paste your card here>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your card",
+      "sub": "Test first with the example that passes and the example with an error. Then paste yours.",
+      "arquivo": "cartao.txt",
+      "rot": "Paste your director's card here (one field per line):",
+      "modelo": "Scene: ...\nFormat: ...\nAnchor: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 8,
+          "campos": [
+            "Scene",
+            "Format",
+            "Anchor",
+            "Emotion",
+            "Angle",
+            "Movement",
+            "Duration",
+            "Light"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the format (film, ad, music video, lesson, corporate video, or short video)",
+              "termos": [
+                "filme / curta / film / cortometraje / short film / película / pelicula",
+                "anúncio / propaganda / comercial / publicidade / anuncio / ad / advertisement / commercial",
+                "clipe / videoclipe / clip / music video",
+                "aula / videoaula / tutorial / explicativo / lesson / video lesson / clase / videoclase",
+                "institucional / vídeo institucional / vídeo de empresa / corporate video / video institucional",
+                "reels / reel / short / shorts / vídeo curto / vídeo vertical / short video / video corto"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: card with {n} fields filled in",
+      "exemplo": "Scene: Dona Lia opens the neighborhood bakery before the city wakes up.\nFormat: 30 s short film for the bakery's page\nAnchor: Dona Lia; everything serves her quiet pride\nEmotion: pride and warmth of the one who arrives first\nAngle: mostly eye level, so the audience stays beside her, without judging\nMovement: little and slow, following the work; camera still on the oven\nDuration: shots of 3 to 4 s; the scene breathes, it doesn't rush\nLight: only the bakery lit on the dark street; the oven is the warmest source",
+      "exemplo_errado": "Scene: bakery in the morning\nFormat: video\nAnchor: the bakery\nAngle: low\nMovement: drone, orbit and zoom\nDuration: 30 s"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Pick a scene of your own, 20 to 30 seconds long: a product, a lesson, a moment from your business. It will carry through the whole course.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Card · your scene",
+          "min": "15 min",
+          "texto": "Fill in the director's card for your scene, with the why in Angle, Movement, Duration and Light. If you like, run it through the assistant request and fix the weak answers. Paste the card into the \"Check your card\" section.",
+          "pronto": "the page answers <code>OK: card with 8 fields filled in</code> for your text."
+        },
+        {
+          "id": "e2",
+          "titulo": "Folder · the project outside the platform",
+          "min": "5 min",
+          "texto": "Create a folder named after your scene (on your computer or in the cloud) and save the cartao.txt in it with the \"Download the file\" button. The next lessons add ladder, movements, look, frames, character sheet and shot list to this folder.",
+          "pronto": "the folder exists and the cartao.txt inside it opens in a plain text editor, with the 8 fields."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "What is still yours, even with the best generator of Oct 2026?",
+          "opcoes": [
+            "Rendering each frame in high resolution.",
+            "Syncing speech with mouth movement.",
+            "What the audience feels and why the camera is there.",
+            "Creating the ambient sound that goes with the shot."
+          ],
+          "certa": 2,
+          "explica": "The generator handles render, speech sync and ambient sound. Intent it doesn't: what the audience should feel and the why behind each camera choice stay with whoever directs.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "In a 15 s ad for a birthday cake, what is the anchor?",
+          "opcoes": [
+            "The cake and the party it promises.",
+            "The baker, because people hold the eye.",
+            "The rhythm of the music, because the ad is short.",
+            "The kitchen, because the place gives credibility."
+          ],
+          "certa": 0,
+          "explica": "In an ad, the anchor is the product, the idea or the transformation. Character is the anchor of the film; rhythm is the anchor of the music video. The baker can appear, but she serves the cake.",
+          "ref": "passos"
+        },
+        {
+          "p": "The Sora app shut down in April 2026 and the API in September. What does that teach anyone who directs with AI?",
+          "opcoes": [
+            "That only open-source generators are worth using.",
+            "That it's better to wait until the market stops changing.",
+            "That AI video isn't good for serious work.",
+            "That script, references and prompts live outside the platform."
+          ],
+          "certa": 3,
+          "explica": "Tools disappear. What survives is the written direction: with card, character sheet, look and shot list in a folder of your own, the same scene goes to whichever generator is available.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Shots of 3 to 4 s; the scene breathes, it doesn't rush.\" Which director's question does this sentence answer?",
+          "opcoes": [
+            "Why this angle?",
+            "Why this duration?",
+            "Why this movement?",
+            "Why this light?"
+          ],
+          "certa": 1,
+          "explica": "The length of each shot controls the rhythm and the weight of the moment. A short shot speeds things up; a long shot gives the audience time to feel.",
+          "ref": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "The machine executes",
+          "texto": "Image, movement and sound come from the generator. Intent and justification come from you."
+        },
+        {
+          "t": "Anchor first",
+          "texto": "Film: character. Ad: product or transformation. Music video: rhythm."
+        },
+        {
+          "t": "Portable project",
+          "texto": "A director's card and shot list in text, in a folder of your own, work with any generator."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Course 1 · Generation: the October 2026 generators and how to choose",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/"
+        },
+        {
+          "t": "Course 2 · Production: ethics, labeling and image rights (lesson 7)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        },
+        {
+          "t": "European Commission: code of practice for labeling AI-generated content",
+          "href": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+        }
+      ]
+    }
+  ]
+}

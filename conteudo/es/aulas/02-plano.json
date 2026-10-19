@@ -1,0 +1,296 @@
+{
+  "slug": "plano",
+  "num": 2,
+  "menu": "Plano",
+  "titulo": "Plano, ángulo y distancia: la gramática que todo generador entiende",
+  "titulo_curto": "Plano, ángulo y distancia",
+  "minutos": 16,
+  "lead": "El tamaño de plano y el ángulo no son estética: deciden lo que ve el público y cómo se siente respecto al personaje. Y es un vocabulario que la guía oficial de prompt de video de Google lista con nombre y ejemplo. Sales con la escalera de planos de tu escena escrita con los términos que usa el prompt.",
+  "objetivo": "elegir el tamaño de plano y el ángulo según la emoción del público y escribir la escalera de planos de la escena en los términos del generador.",
+  "competencias": [
+    "elegir-tamano-de-plano",
+    "elegir-angulo",
+    "traducir-a-termino-de-prompt"
+  ],
+  "aprende": [
+    {
+      "t": "Leer la escalera de planos, del plano general al detalle"
+    },
+    {
+      "t": "Usar el ángulo para dar poder, fragilidad o extrañeza"
+    },
+    {
+      "t": "Saber qué le hace la lente al espacio"
+    },
+    {
+      "t": "Escribir cada elección con el término que entiende el generador"
+    }
+  ],
+  "hero_alt": "Cámara de cine y cuatro lentes de distintos tamaños alineadas sobre un paño negro, con un set desenfocado al fondo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de planos",
+      "sub": "Del más abierto al más cerrado. Cada nivel responde a una pregunta.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "titulo": "General",
+          "sub": "dónde estamos",
+          "icone": "camadas",
+          "detalhe": "Plano general o de establecimiento: lugar, clima y escala. En inglés, establishing shot o extreme wide shot. Abre la escena y dice las reglas del mundo."
+        },
+        {
+          "titulo": "Abierto",
+          "sub": "cuerpo y espacio",
+          "icone": "camadas",
+          "detalhe": "Plano abierto: el cuerpo entero dentro del lugar. Muestra aislamiento, peligro o poder por la relación entre la persona y el espacio. En inglés, wide shot."
+        },
+        {
+          "titulo": "Americano",
+          "sub": "acción",
+          "icone": "usuario",
+          "detalhe": "Plano americano, de la rodilla hacia arriba: acción y lenguaje corporal. En inglés, medium wide shot o cowboy shot."
+        },
+        {
+          "titulo": "Medio",
+          "sub": "conversación",
+          "icone": "usuario",
+          "detalhe": "Plano medio, de la cintura hacia arriba: conversación y movimiento neutro, realista. En inglés, medium shot."
+        },
+        {
+          "titulo": "Close",
+          "sub": "emoción",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "Close o primer plano, el rostro: emoción fuerte, decisión, miedo, alegría. Cuanto más cerca, más siente el público. En inglés, close-up; el punto intermedio es el medium close-up."
+        },
+        {
+          "titulo": "Detalle",
+          "sub": "la pista",
+          "icone": "lupa",
+          "detalhe": "Plano detalle: una mano, un objeto, una textura. Revela la pista que cambia la historia. En inglés, extreme close-up o macro."
+        }
+      ],
+      "legenda": "Regla de decisión: si el lugar o la acción importan más, abre; si la emoción importa más, cierra; si un detalle cambia la historia, ve al detalle."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Tamaño, ángulo y lente",
+      "sub": "Tres decisiones por plano, siempre según lo que el público debe sentir.",
+      "passos": [
+        {
+          "titulo": "El tamaño es emoción",
+          "sub": "abierto pregunta dónde; cerrado, cómo",
+          "texto": [
+            "El plano abierto responde \"¿dónde estamos?\". El plano cerrado responde \"¿cómo se siente esto?\". El detalle muestra lo que cambia la historia.",
+            "Un camino que funciona: abrir para mostrar el mundo, acercarte para revelar la emoción y cerrar en un close o detalle para el impacto."
+          ],
+          "exemplo": {
+            "rot": "En la hornada",
+            "texto": "Plano general de la calle oscura con la panadería encendida; plano medio de Doña Lia en el mostrador; close del rostro iluminado por el horno."
+          }
+        },
+        {
+          "titulo": "El ángulo es una relación de poder",
+          "sub": "desde dónde mira la cámara",
+          "texto": [
+            "La altura de los ojos es neutra. Cámara alta, mirando hacia abajo, hace al personaje pequeño o vulnerable. Cámara baja, mirando hacia arriba, lo hace poderoso o imponente.",
+            "El cenital da una visión de mapa; a ras del suelo exagera la altura; el holandés (cámara inclinada) trae incomodidad. Usa el holandés pocas veces, o pierde su fuerza."
+          ]
+        },
+        {
+          "titulo": "El aviso de la guía oficial",
+          "sub": "no todos los ángulos salen igual",
+          "texto": [
+            "La guía de prompts de video de Google (Veo y Gemini Omni Flash, página actualizada el 15/10/2026) enumera estos ángulos y avisa: algunos ángulos y lentes avanzados no tienen soporte oficial, y el resultado varía.",
+            "En la práctica, un ángulo simple y bien justificado sale más estable que un ángulo raro. Si el raro no funciona, cámbialo por uno simple con la misma intención."
+          ]
+        },
+        {
+          "titulo": "La lente cambia el espacio",
+          "sub": "el gran angular expande, el tele comprime",
+          "texto": [
+            "El gran angular abre el campo y exagera la perspectiva: el lugar parece más grande. El teleobjetivo cierra el campo y comprime el espacio: el fondo parece pegado y el sujeto queda aislado.",
+            "La profundidad de campo reducida deja nítido solo al sujeto y desenfoca el resto. Es una forma silenciosa de decir hacia dónde mirar (clase 5)."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "El vocabulario en español con el término usado en los prompts, y el modelo de la escalera. Ángulos, movimientos y lentes verificados en la guía oficial de Google el 19/10/2026.",
+      "blocos": [
+        {
+          "rot": "Vocabulario: español → término del prompt",
+          "icone": "lista",
+          "conteudo": "# tamaño del plano\nplano general / de establecimiento → establishing shot, extreme wide shot\nplano abierto → wide shot\nplano americano → medium wide shot (cowboy shot)\nplano medio → medium shot\nplano medio corto → medium close-up\nclose (primer plano) → close-up\nplano detalle → extreme close-up, macro shot\n# ángulo\naltura de los ojos → eye-level shot\ncámara alta (picado) → high-angle shot\ncámara baja (contrapicado) → low-angle shot\ncenital → bird's-eye view, top-down shot\na ras del suelo → worm's-eye view\nholandés → dutch angle, canted angle\n# lente\ngran angular → wide-angle lens\nteleobjetivo → telephoto lens\nprofundidad de campo reducida → shallow depth of field"
+        },
+        {
+          "rot": "escada.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Escena: <nombre de la escena>\n1 | <tamaño> | <ángulo> | <qué muestra el plano y qué siente el público>\n2 | <tamaño> | <ángulo> | <qué muestra el plano y qué siente el público>\n3 | <tamaño> | <ángulo> | <qué muestra el plano y qué siente el público>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu escalera",
+      "sub": "La página verifica que cada plano tenga tamaño y ángulo y que la escalera varíe: al menos 4 tamaños y 3 ángulos diferentes.",
+      "arquivo": "escada.txt",
+      "rot": "Pega aquí tu escalera de planos (una línea numerada por plano):",
+      "modelo": "1 | plano general | cámara alta | ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "tamaño del plano",
+              "variar": 4,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / aberto / wide shot / plano abierto / abierto / wide",
+                "plano americano / americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / médio / medium shot / plano medio / medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / detalhe / extreme close-up / macro / plano detalle / detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "ángulo",
+              "variar": 3,
+              "termos": [
+                "altura do olho / altura dos olhos / nível dos olhos / ângulo normal / eye-level / eye level / normal angle / altura de los ojos / altura de ojos / ángulo normal",
+                "câmera alta / plongée / high angle / high-angle / cámara alta / picado / high camera",
+                "câmera baixa / contra-plongée / contraplongée / low angle / low-angle / low camera / cámara baja / contrapicado / contra-picado",
+                "zenital / plano zenital / top shot / top-down / bird's-eye / overhead / overhead shot / cenital / plano cenital",
+                "rente ao chão / worm's-eye / ground level / a ras del suelo",
+                "holandês / ângulo holandês / dutch angle / holandés / ángulo holandés",
+                "por cima do ombro / over-the-shoulder / over the shoulder / sobre el hombro / por encima del hombro",
+                "ponto de vista / câmera subjetiva / pov / point of view / punto de vista / cámara subjetiva"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} planos con tamaño y ángulo variados",
+      "exemplo": "Escena: La primera hornada\n1 | plano general | cámara alta | la calle oscura y la panadería encendida: dónde estamos\n2 | plano abierto | altura de los ojos | Doña Lia sola en el mesón: el tamaño del trabajo\n3 | plano medio | altura de los ojos | ella amasa la masa: la acción\n4 | close | cámara baja | el rostro iluminado por el horno: orgullo\n5 | plano detalle | cenital | la corteza del pan crujiendo en la pala: la pista\n6 | plano americano | por encima del hombro | ella abre la puerta de hierro para el cliente",
+      "exemplo_errado": "Escena: La primera hornada\n1 | plano medio | altura de los ojos | la panadería\n2 | plano medio | altura de los ojos | Doña Lia en el mesón\n3 | plano medio | altura de los ojos | ella amasa la masa\n4 | plano medio | el horno se abre\n5 | plano medio | altura de los ojos | ella abre la puerta"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Usa la escena de la tarjeta de la clase 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Escalera · tu escena en 5 a 8 planos",
+          "min": "15 min",
+          "texto": "Escribe la escalera de tu escena: en cada línea, el tamaño, el ángulo y lo que el público ve y siente. Varía: al menos 4 tamaños y 3 ángulos. Verifica en la sección de arriba y descarga el escada.txt a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: [n] planos con tamaño y ángulo variados</code> para tu texto y el escada.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Cambio · el plano más importante con otro ángulo",
+          "min": "5 min",
+          "texto": "Elige el plano que carga la emoción de la escena e imagínalo con otro ángulo. Al final del escada.txt, escribe una línea que empiece por Troca: con el ángulo nuevo y lo que cambia en el sentimiento del público.",
+          "pronto": "el escada.txt tiene, después de los planos, una línea que empieza por <code>Troca:</code> con un ángulo distinto del original y el efecto en una frase."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "La escena necesita mostrar que Doña Lia está sola en un barrio que aún duerme. ¿Qué tamaño de plano?",
+          "opcoes": [
+            "Plano general o abierto, con el lugar y la escala.",
+            "Close en el rostro, para que el público vea la emoción.",
+            "Plano detalle de las manos llenas de harina.",
+            "Primer plano medio, de frente a ella."
+          ],
+          "certa": 0,
+          "explica": "La soledad en el espacio se muestra por la relación entre la persona y el lugar: plano abierto o general. El close muestra emoción, pero esconde el barrio vacío que da sentido a la escena.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Según la guía oficial de Google, ¿qué hace la cámara baja (low-angle shot) con el personaje?",
+          "opcoes": [
+            "Deja al personaje pequeño y vulnerable.",
+            "Da una visión neutra, como desde la altura de una persona.",
+            "Crea una visión de mapa, vista desde arriba.",
+            "Hace que el personaje parezca poderoso o imponente."
+          ],
+          "certa": 3,
+          "explica": "Cámara debajo del sujeto, mirando hacia arriba, da poder. Pequeño y vulnerable es la cámara alta; neutro es la altura de los ojos; visión de mapa es el cenital.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué advierte la guía oficial sobre ángulos y lentes avanzados?",
+          "opcoes": [
+            "Que solo funcionan en video vertical, 9:16.",
+            "Que no están soportados oficialmente y el resultado varía.",
+            "Que siempre exigen una imagen de referencia.",
+            "Que solo valen para escenas sin diálogo."
+          ],
+          "certa": 1,
+          "explica": "La guía dice que algunos ángulos y lentes avanzados no están soportados oficialmente y que el resultado varía. Por eso, un ángulo simple y justificado es la apuesta más estable.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cuándo es el plano detalle (extreme close-up) la elección correcta?",
+          "opcoes": [
+            "Siempre en el primer plano de la escena, para atrapar.",
+            "Cuando la escena necesita mostrar dónde estamos.",
+            "Cuando un detalle cambia el rumbo de la historia.",
+            "Cuando el personaje conversa con otro."
+          ],
+          "certa": 2,
+          "explica": "El detalle revela la pista: la mano en la manija, la corteza del pan crujiendo. Para mostrar el lugar, abre; para una conversación, el plano medio o el por encima del hombro funcionan mejor.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Tamaño",
+          "texto": "Abierto muestra dónde; cerrado muestra cómo se siente; detalle muestra la pista."
+        },
+        {
+          "t": "Ángulo",
+          "texto": "Alto disminuye, bajo engrandece, altura de los ojos es neutra. Holandés, rara vez."
+        },
+        {
+          "t": "Término del prompt",
+          "texto": "Escribe la elección con el término que el generador entiende: wide shot, close-up, low-angle shot."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Guía oficial de prompt de video de Google: ángulos, movimientos y lentes",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 1 · Generación: anatomía del prompt de video (clase 2)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

@@ -7,12 +7,24 @@
   "minutos": 15,
   "lead": "O gerador de vídeo de 2026 cria imagem, movimento e som. Ele não sabe o que o público deve sentir nem por que a câmera está ali. Esta aula separa o que a máquina executa do que você decide e fecha com o cartão do diretor da sua cena.",
   "objetivo": "separar o que você decide do que a IA executa e preencher o cartão do diretor de uma cena antes de gerar qualquer coisa.",
-  "competencias": ["separar-intencao-de-execucao", "definir-ancora-da-cena", "justificar-escolhas-de-direcao"],
+  "competencias": [
+    "separar-intencao-de-execucao",
+    "definir-ancora-da-cena",
+    "justificar-escolhas-de-direcao"
+  ],
   "aprende": [
-    {"t": "Ver o caminho de um vídeo com IA em 2026, da imagem-chave ao rótulo"},
-    {"t": "Escolher a âncora da cena: personagem, produto ou ritmo"},
-    {"t": "Responder as quatro perguntas de diretor antes de gerar"},
-    {"t": "Guardar o projeto fora de qualquer plataforma"}
+    {
+      "t": "Ver o caminho de um vídeo com IA em 2026, da imagem-chave ao rótulo"
+    },
+    {
+      "t": "Escolher a âncora da cena: personagem, produto ou ritmo"
+    },
+    {
+      "t": "Responder as quatro perguntas de diretor antes de gerar"
+    },
+    {
+      "t": "Guardar o projeto fora de qualquer plataforma"
+    }
   ],
   "hero_alt": "Cadeira de diretor vazia num set escuro, com um roteiro dobrado no assento e um monitor de referência ao lado.",
   "secoes": [
@@ -22,11 +34,37 @@
       "sub": "Cinco etapas. Clique em cada uma e veja quem decide ali.",
       "estilo": "fluxo",
       "nos": [
-        {"titulo": "Intenção", "sub": "você", "icone": "usuario", "forte": true, "detalhe": "O que o público deve sentir, o que segura o olhar, onde a câmera fica e por quê. Nenhuma atualização de modelo decide isso por você; é o assunto deste curso."},
-        {"titulo": "Imagem-chave", "sub": "o quadro de referência", "icone": "camadas", "detalhe": "Um quadro parado que fixa personagem, lugar e luz. Os geradores usam imagens assim como referência para manter a mesma aparência de um plano para o outro (curso 1)."},
-        {"titulo": "Vídeo com áudio", "sub": "o gerador", "icone": "video", "detalhe": "O gerador anima a cena e devolve o som junto. Em out/2026 o áudio nativo é padrão nos principais (Veo 3.1, Kling 3.0, Seedance 2.x, Runway Gen-4.5). Ele executa o que a sua decupagem pede."},
-        {"titulo": "Montagem", "sub": "corte e ritmo", "icone": "lista", "detalhe": "Ordenar, cortar, acertar cor, trilha e legenda. Ferramentas de IA ajudam; o ritmo continua sendo uma decisão sua (curso 2)."},
-        {"titulo": "Rótulo", "sub": "dizer que é IA", "icone": "escudo", "detalhe": "Avisar que o conteúdo foi gerado com IA. Na União Europeia, o AI Act (art. 50) exige rótulo visível em deepfake publicado desde 02/08/2026. Ética e lei ficam com o curso 2, aula 7."}
+        {
+          "titulo": "Intenção",
+          "sub": "você",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "O que o público deve sentir, o que segura o olhar, onde a câmera fica e por quê. Nenhuma atualização de modelo decide isso por você; é o assunto deste curso."
+        },
+        {
+          "titulo": "Imagem-chave",
+          "sub": "o quadro de referência",
+          "icone": "camadas",
+          "detalhe": "Um quadro parado que fixa personagem, lugar e luz. Os geradores usam imagens assim como referência para manter a mesma aparência de um plano para o outro (curso 1)."
+        },
+        {
+          "titulo": "Vídeo com áudio",
+          "sub": "o gerador",
+          "icone": "video",
+          "detalhe": "O gerador anima a cena e devolve o som junto. Em out/2026 o áudio nativo é padrão nos principais (Veo 3.1, Kling 3.0, Seedance 2.x, Runway Gen-4.5). Ele executa o que a sua decupagem pede."
+        },
+        {
+          "titulo": "Montagem",
+          "sub": "corte e ritmo",
+          "icone": "lista",
+          "detalhe": "Ordenar, cortar, acertar cor, trilha e legenda. Ferramentas de IA ajudam; o ritmo continua sendo uma decisão sua (curso 2)."
+        },
+        {
+          "titulo": "Rótulo",
+          "sub": "dizer que é IA",
+          "icone": "escudo",
+          "detalhe": "Avisar que o conteúdo foi gerado com IA. Na União Europeia, o AI Act (art. 50) exige rótulo visível em deepfake publicado desde 02/08/2026. Ética e lei ficam com o curso 2, aula 7."
+        }
       ],
       "legenda": "Versões de gerador citadas como exemplo datado (out/2026). A tabela completa e atualizada é do curso 1."
     },
@@ -50,7 +88,10 @@
             "Antes de qualquer imagem, nomeie a âncora em uma frase. Ela muda com o formato e decide ângulo, luz e composição.",
             "No filme, a âncora é o personagem. No anúncio, é o produto, a ideia ou a transformação. No videoclipe, é o ritmo."
           ],
-          "exemplo": {"rot": "Âncora da fornada", "texto": "Dona Lia. Tudo na cena serve ao orgulho silencioso de quem acorda antes da cidade."}
+          "exemplo": {
+            "rot": "Âncora da fornada",
+            "texto": "Dona Lia. Tudo na cena serve ao orgulho silencioso de quem acorda antes da cidade."
+          }
         },
         {
           "titulo": "As quatro perguntas",
@@ -95,10 +136,36 @@
       "rot": "Cole aqui o seu cartão do diretor (um campo por linha):",
       "modelo": "Cena: ...\nFormato: ...\nÂncora: ...",
       "regras": [
-        {"tipo": "campos", "min": 8, "campos": ["Cena", "Formato", "Âncora", "Emoção", "Ângulo", "Movimento", "Duração", "Luz"]},
-        {"tipo": "termos", "grupos": [
-          {"rot": "o formato (filme, anúncio ou clipe)", "termos": ["filme / curta / film", "anúncio / propaganda / comercial", "clipe / videoclipe"]}
-        ]}
+        {
+          "tipo": "campos",
+          "min": 8,
+          "campos": [
+            "Cena",
+            "Formato",
+            "Âncora",
+            "Emoção",
+            "Ângulo",
+            "Movimento",
+            "Duração",
+            "Luz"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "o formato (filme, anúncio, clipe, aula, institucional ou vídeo curto)",
+              "termos": [
+                "filme / curta / film / cortometraje / short film / película / pelicula",
+                "anúncio / propaganda / comercial / publicidade / anuncio / ad / advertisement / commercial",
+                "clipe / videoclipe / clip / music video",
+                "aula / videoaula / tutorial / explicativo / lesson / video lesson / clase / videoclase",
+                "institucional / vídeo institucional / vídeo de empresa / corporate video / video institucional",
+                "reels / reel / short / shorts / vídeo curto / vídeo vertical / short video / video corto"
+              ]
+            }
+          ]
+        }
       ],
       "ok": "OK: cartão com {n} campos preenchidos",
       "exemplo": "Cena: Dona Lia abre a padaria do bairro antes de a cidade acordar.\nFormato: filme curto de 30 s para a página da padaria\nÂncora: Dona Lia; tudo serve ao orgulho silencioso dela\nEmoção: orgulho e aconchego de quem chega primeiro\nÂngulo: altura do olho quase sempre, para o público ficar ao lado dela, sem julgar\nMovimento: pouco e lento, acompanhando o trabalho; câmera parada no forno\nDuração: planos de 3 a 4 s; a cena respira, não corre\nLuz: só a padaria acesa na rua escura; o forno é a fonte mais quente",
@@ -184,18 +251,36 @@
       "tipo": "resumo",
       "titulo": "Para guardar",
       "itens": [
-        {"t": "A máquina executa", "texto": "Imagem, movimento e som saem do gerador. Intenção e justificativa saem de você."},
-        {"t": "Âncora primeiro", "texto": "Filme: personagem. Anúncio: produto ou transformação. Clipe: ritmo."},
-        {"t": "Projeto portátil", "texto": "Cartão e decupagem em texto, numa pasta sua, valem para qualquer gerador."}
+        {
+          "t": "A máquina executa",
+          "texto": "Imagem, movimento e som saem do gerador. Intenção e justificativa saem de você."
+        },
+        {
+          "t": "Âncora primeiro",
+          "texto": "Filme: personagem. Anúncio: produto ou transformação. Clipe: ritmo."
+        },
+        {
+          "t": "Projeto portátil",
+          "texto": "Cartão e decupagem em texto, numa pasta sua, valem para qualquer gerador."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Curso 1 · Geração: os geradores de out/2026 e como escolher", "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"},
-        {"t": "Curso 2 · Produção: ética, rótulo e direito de imagem (aula 7)", "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"},
-        {"t": "Comissão Europeia: código de prática para rotular conteúdo gerado por IA", "href": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"}
+        {
+          "t": "Curso 1 · Geração: os geradores de out/2026 e como escolher",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"
+        },
+        {
+          "t": "Curso 2 · Produção: ética, rótulo e direito de imagem (aula 7)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+        },
+        {
+          "t": "Comissão Europeia: código de prática para rotular conteúdo gerado por IA",
+          "href": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+        }
       ]
     }
   ]

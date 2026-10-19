@@ -1,0 +1,355 @@
+{
+  "slug": "decupagem",
+  "num": 7,
+  "menu": "Desglose de planos",
+  "titulo": "Del guion al desglose de planos: lista de planos con sonido y diálogo",
+  "titulo_curto": "Desglose de planos con sonido",
+  "minutos": 18,
+  "lead": "Desglosar es cortar la escena escrita en planos numerados, cada uno con cámara, tiempo y sonido. En 2026 el sonido entró en la lista: los generadores de video devuelven el audio junto con la imagen, así que lo que se oye en cada plano también es una decisión de dirección.",
+  "objetivo": "convertir una escena escrita en un desglose de planos numerado con tamaño, ángulo, movimiento, sonido y duración de cada plano.",
+  "competencias": [
+    "decupar-cena",
+    "planejar-som-por-plano",
+    "controlar-tempo-da-cena"
+  ],
+  "aprende": [
+    {
+      "t": "Escribir la escena en tres o cuatro frases, con inicio, giro y final"
+    },
+    {
+      "t": "Cortar la escena en planos numerados con cámara y duración"
+    },
+    {
+      "t": "Poner en la lista el sonido de cada plano: ambiente, efecto y diálogo"
+    },
+    {
+      "t": "Revisar el desglose en la propia página antes de generar"
+    }
+  ],
+  "hero_alt": "Mesa oscura vista desde arriba con hojas de lista de planos llenadas a mano, un lápiz, una claqueta cerrada y un cronómetro.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De la escena escrita a la lista de planos",
+      "sub": "Seis decisiones, en este orden. Haz clic en cada una.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Guion",
+          "sub": "3–4 frases",
+          "icone": "caneta",
+          "detalhe": "La escena en tres o cuatro frases: quién, dónde, qué pasa y cómo termina. Si no puedes escribir la escena en cuatro frases, todavía no está lista para convertirse en planos."
+        },
+        {
+          "titulo": "Arco",
+          "sub": "abre y cierra",
+          "icone": "camadas",
+          "detalhe": "Presentación, giro y cierre. En la escena corta, el arco cabe en segundos: el primer plano dice dónde estamos, el del medio trae el cambio, el último deja una imagen que funciona quieta."
+        },
+        {
+          "titulo": "Planos",
+          "sub": "numerados",
+          "icone": "lista",
+          "forte": true,
+          "detalhe": "Cada plano es una línea numerada. Una idea por plano: si un plano hace dos cosas, se convierte en dos."
+        },
+        {
+          "titulo": "Cámara",
+          "sub": "tamaño, ángulo, movimiento",
+          "icone": "video",
+          "detalhe": "Tamaño y ángulo (clase 2) y un solo movimiento (clase 3). La variación de tamaño entre planos vecinos es lo que da ritmo."
+        },
+        {
+          "titulo": "Sonido",
+          "sub": "ambiente, efecto, diálogo",
+          "icone": "megafone",
+          "detalhe": "Lo que se oye en el plano: el ambiente del lugar, el efecto de la acción y el diálogo, si lo hay. Escrito por plano, entra en el prompt en una frase separada."
+        },
+        {
+          "titulo": "Tiempo",
+          "sub": "segundos",
+          "icone": "relogio",
+          "detalhe": "La duración de cada plano. La suma debe dar la duración de la escena; el plano de contemplación dura más, el plano de acción dura menos."
+        }
+      ],
+      "legenda": "El orden importa: decidir el sonido antes del tiempo evita un plano demasiado corto para que quepa el diálogo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo desglosar, paso a paso",
+      "sub": "El ejemplo es la escena que atraviesa el curso: \"La primera hornada\".",
+      "passos": [
+        {
+          "titulo": "La escena en cuatro frases",
+          "sub": "quién, dónde, giro, final",
+          "texto": [
+            "Escribe la escena antes de pensar en la cámara. Cuatro frases bastan: dónde y cuándo, quién y qué hace, qué cambia, cómo termina.",
+            "Decide también qué debe sentir el público. En la hornada, es el orgullo silencioso de quien se despierta antes que la ciudad."
+          ],
+          "exemplo": {
+            "rot": "Escena (20 s)",
+            "texto": "4:50 de la mañana, panadería de barrio todavía cerrada. Doña Lia prepara la masa sola. La primera hornada sale del horno. Alguien golpea la puerta de hierro y ella abre para el primer cliente."
+          }
+        },
+        {
+          "titulo": "El arco en tres tiempos",
+          "sub": "presentación, giro, cierre",
+          "texto": [
+            "La convención de los tres actos da una proporción de guía: un cuarto de la escena para presentar, la mitad para la tensión y el giro, un cuarto para cerrar.",
+            "Abrir abierto y cerrar con una imagen fuerte da principio y final. Pausado en el último segundo, el cuadro final tiene que funcionar solo."
+          ]
+        },
+        {
+          "titulo": "Sonido en cada plano",
+          "sub": "el audio ahora viene incluido",
+          "texto": [
+            "En oct/2026 los principales generadores de video devuelven el audio en la misma pasada, con ambiente, efectos y habla. Por eso el desglose de planos ganó una columna de sonido.",
+            "La guía oficial de prompt de video de Google recomienda describir el audio en frases separadas de la imagen. La columna de sonido del desglose de planos se convierte en esas frases en el curso 1."
+          ],
+          "exemplo": {
+            "rot": "Columna de sonido",
+            "texto": "sonido: crujido del horno, siseo del vapor. En la parte hablada, una frase corta: \"¡Ya voy!\""
+          }
+        },
+        {
+          "titulo": "Diálogo corto, con subtexto",
+          "sub": "lo que no se dice pesa más",
+          "texto": [
+            "El diálogo de un video corto es una frase. El personaje no explica lo que siente: \"¡Ya voy!\" dice rutina y orgullo sin nombrar ninguno de los dos.",
+            "El silencio también es sonido. Un plano solo con el ambiente antes de la línea hablada le da peso. Banda sonora, voz y mezcla son tema del curso 2."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "El formato que la página verifica y un pedido para que el asistente de IA haga el borrador.",
+      "blocos": [
+        {
+          "rot": "decupagem.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Escena: <nombre de la escena> (<duración> s)\nGuion: <la escena en 3 o 4 frases>\n# n | tamaño | ángulo | movimiento | duración | qué pasa | sonido: ambiente, efecto, habla\n1 | <tamaño> | <ángulo> | <un movimiento> | <n> s | <acción del plano> | sonido: <lo que se oye>\n2 | <tamaño> | <ángulo> | <un movimiento> | <n> s | <acción del plano> | sonido: <lo que se oye>"
+        },
+        {
+          "rot": "Pedido al asistente de IA (borrador del desglose de planos)",
+          "icone": "chat",
+          "conteudo": "Eres asistente de dirección de cine. Lee la escena de abajo y propón un desglose de planos de 5 a 8 planos, una línea por plano, en este formato:\nn | tamaño | ángulo | movimiento | duración | qué pasa | sonido: ambiente, efecto, habla\nReglas:\n- un movimiento de cámara por plano (o cámara quieta);\n- el tamaño del plano cambia entre planos vecinos;\n- la suma de las duraciones da <duración de la escena> segundos;\n- la columna sonido trae el ambiente, el efecto de la acción y, si hay, una frase corta hablada;\n- no inventes personaje, lugar ni objeto que no esté en la escena.\nEscena: <pega aquí la escena en 3 o 4 frases>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Verifica tu desglose de planos",
+      "sub": "Pega el archivo (o carga el .txt). Primero prueba con el ejemplo que pasa y con el ejemplo con error: es el ensayo, sin gastar nada.",
+      "arquivo": "decupagem.txt",
+      "rot": "Pega aquí tu desglose de planos (una línea numerada por plano):",
+      "modelo": "1 | plano general | cámara alta | cámara quieta | 3 s | ... | sonido: ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "tamaño del plano",
+              "variar": 3,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / aberto / wide shot / plano abierto / abierto / wide",
+                "plano americano / americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / médio / medium shot / plano medio / medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / detalhe / extreme close-up / macro / plano detalle / detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "ángulo",
+              "termos": [
+                "altura do olho / altura dos olhos / nível dos olhos / ângulo normal / eye-level / eye level / normal angle / altura de los ojos / altura de ojos / ángulo normal",
+                "câmera alta / plongée / high angle / high-angle / cámara alta / picado / high camera",
+                "câmera baixa / contra-plongée / contraplongée / low angle / low-angle / low camera / cámara baja / contrapicado / contra-picado",
+                "zenital / plano zenital / top shot / top-down / bird's-eye / overhead / overhead shot / cenital / plano cenital",
+                "rente ao chão / worm's-eye / ground level / a ras del suelo",
+                "holandês / ângulo holandês / dutch angle / holandés / ángulo holandés",
+                "por cima do ombro / over-the-shoulder / over the shoulder / sobre el hombro / por encima del hombro",
+                "ponto de vista / câmera subjetiva / pov / point of view / punto de vista / cámara subjetiva"
+              ]
+            },
+            {
+              "rot": "movimiento",
+              "um_so": true,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / zoom / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "la columna sonido",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 16,
+          "max": 24
+        }
+      ],
+      "ok": "OK: {n} planos con tamaño, ángulo, movimiento y sonido · {s} s",
+      "exemplo": "Escena: La primera hornada (20 s)\nGuion: 4:50 de la mañana, panadería de barrio todavía cerrada. Doña Lia prepara la masa sola. La primera hornada sale del horno. Alguien golpea la puerta de hierro y ella abre para el primer cliente.\n# n | tamaño | ángulo | movimiento | duración | qué pasa | sonido\n1 | plano general | cámara alta | cámara quieta | 3 s | Calle oscura; solo la vitrina de la panadería encendida. | sonido: viento, un perro a lo lejos\n2 | plano medio | altura de los ojos | travelling lateral | 4 s | Doña Lia amasa en el mesón. | sonido: radio baja, masa golpeando la mesa\n3 | primer plano | cámara baja | dolly in | 3 s | La puerta del horno se abre y el vapor sube. | sonido: crujido del horno, siseo\n4 | plano detalle | cenital | cámara quieta | 3 s | La pala saca la primera hornada. | sonido: corteza crujiendo\n5 | primer plano | altura de los ojos | cámara en mano | 3 s | Golpes en la puerta de hierro; ella mira el reloj y sonríe. | sonido: tres golpes; habla: \"¡Ya voy!\"\n6 | plano abierto | altura de los ojos | dolly out | 4 s | Ella sube la puerta y el primer cliente entra. | sonido: puerta de hierro subiendo, campanilla de la puerta",
+      "exemplo_errado": "Escena: La primera hornada (20 s)\n1 | plano general | cámara alta | cámara quieta | 3 s | Calle oscura; solo la vitrina encendida. | sonido: viento\n2 | plano medio | altura de los ojos | travelling lateral | 4 s | Doña Lia amasa. | sonido: radio baja\n3 | primer plano | cámara baja | dolly in con zoom in | 3 s | La puerta del horno se abre. | sonido: crujido del horno\n4 | plano detalle | cenital | cámara quieta | 3 s | La pala saca la hornada.\n5 | primer plano | altura de los ojos | cámara en mano | Golpes en la puerta de hierro. | sonido: tres golpes"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Opcional: verificar en la terminal",
+      "sub": "Solo para quien ya usa terminal. Descarga el curso desde GitHub y ejecútalo en su carpeta: las reglas son las mismas de la página. Para tu archivo, cambia <code>--exemplo</code> por su nombre (<code>decupagem.txt</code>); sale 0 cuando pasa.",
+      "blocos": [
+        {
+          "rot": "Terminal (en la carpeta del curso)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py decupagem --exemplo; echo \"saída: $?\"\npython3 conferir.py decupagem --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Salida capturada (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py decupagem --exemplo; echo \"saída: $?\"\nOK: 6 planos com tamanho, ângulo, movimento e som · 20 s\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Ejemplo con error (19/10/2026)",
+            "html": "<pre>$ python3 conferir.py decupagem --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Plano 5: falta a duração em segundos (ex.: 4 s).\n - Os planos somam 13 s; o pedido é de 16 a 24 s.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Una escena tuya, de unos 20 segundos. Puedes partir del borrador del asistente, pero la decisión final es tuya.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Desglose de planos · tu escena de 20 s",
+          "min": "25 min",
+          "texto": "Escribe la escena en cuatro frases y desglósala en 5 a 8 planos en el formato del modelo: tamaño, ángulo, un movimiento, duración y la columna sonido. Pega en la sección \"Verifica tu desglose de planos\" y usa \"Baixar o arquivo\" para guardar el decupagem.txt en la carpeta de tu proyecto.",
+          "pronto": "la página responde <code>OK: [n] planos con tamaño, ángulo, movimiento y sonido · [s] s</code> para tu texto, con la suma entre 16 y 24 s, y el decupagem.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Sonido · un plano solo de ambiente",
+          "min": "10 min",
+          "texto": "En tu desglose de planos, deja un plano sin diálogo, solo con el ambiente, justo antes del plano que tiene la línea hablada. Revisa de nuevo.",
+          "pronto": "la página sigue respondiendo <code>OK: …</code> y, en tu lista, el plano anterior al diálogo trae en la columna de sonido solo ambiente o efecto, sin la palabra diálogo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué el desglose de planos de 2026 tiene una columna de sonido en cada plano?",
+          "opcoes": [
+            "Porque la banda sonora hay que elegirla antes de escribir la escena.",
+            "Porque los generadores de video empezaron a devolver el audio junto con la imagen.",
+            "Porque el generador solo acepta prompts que empiezan con la descripción del sonido.",
+            "Porque sin la columna de sonido la duración de los planos no cuadra."
+          ],
+          "certa": 1,
+          "explica": "El audio nativo se volvió estándar en 2026: ambiente, efecto y diálogo salen en la misma pasada. Si el sonido sale junto con la imagen, hay que decidirlo junto, plano por plano. La música es una decisión de montaje (curso 2), no un requisito previo de la escena.",
+          "ref": "passos"
+        },
+        {
+          "p": "Un plano de tu lista dice \"dolly in con zoom in\". ¿Qué responde la página y por qué?",
+          "opcoes": [
+            "Lo acepta, porque dos movimientos juntos hacen el plano más dinámico.",
+            "Lo acepta, siempre que la duración del plano pase de cinco segundos.",
+            "Lo rechaza: cada plano pide un solo movimiento, en una dirección clara.",
+            "Lo rechaza, porque el zoom no es un movimiento de cámara y no puede aparecer."
+          ],
+          "certa": 2,
+          "explica": "Un movimiento por plano: apilar movimientos hace que la cámara pelee consigo misma y el resultado sale inestable. El zoom es un movimiento de lente y es válido por sí solo; el problema es la suma de los dos.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "¿Cuál de estas líneas tiene subtexto?",
+          "opcoes": [
+            "\"¡Ya voy!\", dicho sonriendo mientras ella mira el reloj.",
+            "\"Estoy orgullosa de abrir la panadería antes que todos.\"",
+            "\"Siento que este trabajo le da sentido a mi vida.\"",
+            "\"Me encanta cuando el primer cliente llega temprano.\""
+          ],
+          "certa": 0,
+          "explica": "El subtexto es el sentimiento que hay debajo de una línea común. Las otras tres nombran lo que siente el personaje, y la escena pierde tensión. La línea corta además cabe en el tiempo del plano.",
+          "ref": "passos"
+        },
+        {
+          "p": "Tu escena dura 20 s y los planos suman 31 s. ¿Qué haces primero?",
+          "opcoes": [
+            "Cambiar la duración de la escena a 31 s, sin tocar los planos.",
+            "Borrar la columna de sonido para ahorrar tiempo en la generación.",
+            "Cambiar todos los tamaños de plano por planos abiertos.",
+            "Acortar los planos de acción y cortar lo que repite a otro."
+          ],
+          "certa": 3,
+          "explica": "La duración de la escena es una decisión de dirección; la lista es la que se ajusta a ella. Un plano de acción aguanta menos tiempo, y el plano que repite la idea del vecino es el primero en salir.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Escena antes que cámara",
+          "texto": "Cuatro frases y la emoción del público. Sin eso, la lista de planos no tiene a dónde ir."
+        },
+        {
+          "t": "Una línea por plano",
+          "texto": "Tamaño, ángulo, un movimiento, duración, acción y sonido. La suma da la duración de la escena."
+        },
+        {
+          "t": "El sonido es una decisión",
+          "texto": "Ambiente, efecto y diálogo por plano, porque el audio sale junto con la imagen."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Guía oficial de prompts de video de Google (Veo y Gemini Omni Flash): sección de audio",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 2 · Producción: sonido, voz, música y montaje",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

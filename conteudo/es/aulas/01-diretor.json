@@ -1,0 +1,287 @@
+{
+  "slug": "diretor",
+  "num": 1,
+  "menu": "Director",
+  "titulo": "El director y la máquina: qué hace la IA y qué sigue siendo tuyo",
+  "titulo_curto": "El director y la máquina",
+  "minutos": 15,
+  "lead": "El generador de video de 2026 crea imagen, movimiento y sonido. No sabe qué debe sentir el público ni por qué la cámara está ahí. Esta clase separa lo que la máquina ejecuta de lo que tú decides y cierra con la tarjeta del director de tu escena.",
+  "objetivo": "separar lo que tú decides de lo que ejecuta la IA y completar la tarjeta del director de una escena antes de generar cualquier cosa.",
+  "competencias": [
+    "separar-intencao-de-execucao",
+    "definir-ancora-da-cena",
+    "justificar-escolhas-de-direcao"
+  ],
+  "aprende": [
+    {
+      "t": "Ver el camino de un video con IA en 2026, de la imagen clave a la etiqueta"
+    },
+    {
+      "t": "Elegir el ancla de la escena: personaje, producto o ritmo"
+    },
+    {
+      "t": "Responder las cuatro preguntas de director antes de generar"
+    },
+    {
+      "t": "Guardar el proyecto fuera de cualquier plataforma"
+    }
+  ],
+  "hero_alt": "Silla de director vacía en un set oscuro, con un guion doblado en el asiento y un monitor de referencia al lado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El camino de un video con IA en 2026",
+      "sub": "Cinco etapas. Haz clic en cada una y mira quién decide ahí.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Intención",
+          "sub": "tú",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "Lo que el público debe sentir, lo que sostiene la mirada, dónde se ubica la cámara y por qué. Ninguna actualización de modelo decide eso por ti; es el tema de este curso."
+        },
+        {
+          "titulo": "Imagen clave",
+          "sub": "el cuadro de referencia",
+          "icone": "camadas",
+          "detalhe": "Un cuadro fijo que fija personaje, lugar y luz. Los generadores usan imágenes así como referencia para mantener la misma apariencia de un plano a otro (curso 1)."
+        },
+        {
+          "titulo": "Video con audio",
+          "sub": "el generador",
+          "icone": "video",
+          "detalhe": "El generador anima la escena y devuelve el sonido junto. En oct/2026 el audio nativo es estándar en los principales (Veo 3.1, Kling 3.0, Seedance 2.x, Runway Gen-4.5). Ejecuta lo que pide tu desglose de planos."
+        },
+        {
+          "titulo": "Montaje",
+          "sub": "corte y ritmo",
+          "icone": "lista",
+          "detalhe": "Ordenar, cortar, ajustar el color, la música y los subtítulos. Las herramientas de IA ayudan; el ritmo sigue siendo una decisión tuya (curso 2)."
+        },
+        {
+          "titulo": "Etiqueta",
+          "sub": "decir que es IA",
+          "icone": "escudo",
+          "detalhe": "Avisar que el contenido fue generado con IA. En la Unión Europea, el AI Act (art. 50) exige una etiqueta visible en los deepfakes publicados desde el 02/08/2026. La ética y la ley quedan para el curso 2, clase 7."
+        }
+      ],
+      "legenda": "Versiones de generador citadas como ejemplo con fecha (oct/2026). La tabla completa y actualizada está en el curso 1."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Lo que es tuyo, en cuatro ideas",
+      "sub": "El ejemplo es la escena del curso: Doña Lia abre la panadería del barrio a las 4:50.",
+      "passos": [
+        {
+          "titulo": "La IA ejecuta la dirección",
+          "sub": "no crea la intención",
+          "texto": [
+            "La herramienta genera píxeles; quien genera sentido eres tú. Una escena sin lógica interna sale bonita y vacía, y un modelo nuevo no arregla eso.",
+            "La intención tiene una definición práctica: poder justificar cada elección. Si la respuesta a \"¿por qué este ángulo?\" es \"salió así\", la escena se debilita."
+          ]
+        },
+        {
+          "titulo": "El ancla de la escena",
+          "sub": "lo que sostiene la mirada",
+          "texto": [
+            "Antes de cualquier imagen, nombra el ancla en una frase. Cambia según el formato y decide el ángulo, la luz y la composición.",
+            "En la película, el ancla es el personaje. En el anuncio, es el producto, la idea o la transformación. En el videoclip, es el ritmo."
+          ],
+          "exemplo": {
+            "rot": "Ancla de la hornada",
+            "texto": "Doña Lia. Todo en la escena sirve al orgullo silencioso de quien se levanta antes que la ciudad."
+          }
+        },
+        {
+          "titulo": "Las cuatro preguntas",
+          "sub": "antes de generar",
+          "texto": [
+            "¿Por qué este ángulo? ¿Por qué este movimiento? ¿Por qué esta duración? ¿Por qué esta luz? El ángulo da poder o fragilidad, el movimiento da emoción, la duración da peso y la luz da clima.",
+            "Una elección que no se justifica debilita la escena. Las clases 2, 3 y 4 profundizan cada pregunta."
+          ]
+        },
+        {
+          "titulo": "La herramienta cambia, la dirección se queda",
+          "sub": "el caso Sora",
+          "texto": [
+            "La app de Sora fue cerrada el 26/04/2026 y la API el 24/09/2026. Una herramienta de video desaparece, cambia de nombre o cambia de precio.",
+            "Por eso tu proyecto vive en una carpeta tuya: tarjeta, ficha, look y desglose de planos en texto. Con ellos, cualquier generador del momento ejecuta la misma escena."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La tarjeta del director y un pedido para que el asistente de IA ponga a prueba tus elecciones.",
+      "blocos": [
+        {
+          "rot": "cartao.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Escena: <la escena en una frase>\nFormato: <película, anuncio o clip, y dónde se va a ver>\nAncla: <lo que sostiene la mirada: personaje, producto o ritmo>\nEmoción: <lo que el público debe sentir>\nÁngulo: <cuál y por qué>\nMovimiento: <cuál y por qué>\nDuración: <cuánto dura cada plano y por qué>\nLuz: <cuál y por qué>"
+        },
+        {
+          "rot": "Pedido al asistente de IA (las preguntas de director)",
+          "icone": "chat",
+          "conteudo": "Lee mi tarjeta del director de abajo. Para cada campo Ángulo, Movimiento, Duración y Luz, hazme una pregunta que me obligue a justificar la elección según lo que el público debe sentir. No sugieras respuestas ni reescribas la tarjeta; solo pregunta.\nTarjeta:\n<pega aquí tu tarjeta>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tu tarjeta",
+      "sub": "Pruébalo antes con el ejemplo que pasa y con el ejemplo con error. Después pega el tuyo.",
+      "arquivo": "cartao.txt",
+      "rot": "Pega aquí tu tarjeta del director (un campo por línea):",
+      "modelo": "Escena: ...\nFormato: ...\nAncla: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 8,
+          "campos": [
+            "Escena",
+            "Formato",
+            "Ancla",
+            "Emoción",
+            "Ángulo",
+            "Movimiento",
+            "Duración",
+            "Luz"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "el formato (película, anuncio, clip, clase, institucional o video corto)",
+              "termos": [
+                "filme / curta / film / cortometraje / short film / película / pelicula",
+                "anúncio / propaganda / comercial / publicidade / anuncio / ad / advertisement / commercial",
+                "clipe / videoclipe / clip / music video",
+                "aula / videoaula / tutorial / explicativo / lesson / video lesson / clase / videoclase",
+                "institucional / vídeo institucional / vídeo de empresa / corporate video / video institucional",
+                "reels / reel / short / shorts / vídeo curto / vídeo vertical / short video / video corto"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: tarjeta con {n} campos completados",
+      "exemplo": "Escena: Doña Lia abre la panadería del barrio antes de que la ciudad despierte.\nFormato: cortometraje de 30 s para la página de la panadería\nAncla: Doña Lia; todo sirve a su orgullo silencioso\nEmoción: orgullo y calidez de quien llega primero\nÁngulo: a la altura de los ojos casi siempre, para que el público esté a su lado, sin juzgar\nMovimiento: poco y lento, siguiendo el trabajo; cámara quieta en el horno\nDuración: planos de 3 a 4 s; la escena respira, no corre\nLuz: solo la panadería encendida en la calle oscura; el horno es la fuente más cálida",
+      "exemplo_errado": "Escena: panadería por la mañana\nFormato: video\nAncla: la panadería\nÁngulo: bajo\nMovimiento: dron, órbita y zoom\nDuración: 30 s"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Elige una escena tuya de 20 a 30 segundos: un producto, una clase, un momento de tu negocio. Va a acompañarte a lo largo del curso.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Tarjeta · tu escena",
+          "min": "15 min",
+          "texto": "Completa la tarjeta del director de tu escena, con el porqué en Ángulo, Movimiento, Duración y Luz. Si quieres, pásala por el pedido al asistente y ajusta las respuestas débiles. Pega la tarjeta en la sección \"Revisa tu tarjeta\".",
+          "pronto": "la página responde <code>OK: tarjeta con 8 campos completados</code> para tu texto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Carpeta · el proyecto fuera de la plataforma",
+          "min": "5 min",
+          "texto": "Crea una carpeta con el nombre de tu escena (en la computadora o en la nube) y guarda en ella el cartao.txt con el botón \"Descargar el archivo\". Las próximas clases agregan escalera, movimientos, look, cuadros, ficha y desglose de planos a esta carpeta.",
+          "pronto": "la carpeta existe y el cartao.txt que está dentro se abre en un editor de texto común, con los 8 campos."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué sigue siendo tuyo, incluso con el mejor generador de oct/2026?",
+          "opcoes": [
+            "El renderizado de cada cuadro en alta resolución.",
+            "La sincronía del habla con el movimiento de la boca.",
+            "Lo que siente el público y por qué la cámara está ahí.",
+            "La creación del sonido ambiente que acompaña el plano."
+          ],
+          "certa": 2,
+          "explica": "El generador hace el render, la sincronía del habla y el sonido ambiente. La intención no: lo que el público debe sentir y el porqué de cada elección de cámara siguen en manos de quien dirige.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "En un anuncio de 15 s de un pastel de cumpleaños, ¿cuál es el ancla?",
+          "opcoes": [
+            "El pastel y la fiesta que promete.",
+            "La pastelera, porque la gente atrae la mirada.",
+            "El ritmo de la música, porque el anuncio es corto.",
+            "La cocina, porque el lugar da credibilidad."
+          ],
+          "certa": 0,
+          "explica": "En el anuncio, el ancla es el producto, la idea o la transformación. El personaje es el ancla de la película; el ritmo es la del videoclip. La pastelera puede aparecer, pero sirve al pastel.",
+          "ref": "passos"
+        },
+        {
+          "p": "La app de Sora cerró en abril de 2026 y la API en septiembre. ¿Qué le enseña esto a quien dirige con IA?",
+          "opcoes": [
+            "Que solo vale la pena usar generadores de código abierto.",
+            "Que es mejor esperar a que el mercado deje de cambiar.",
+            "Que el video con IA no sirve para trabajo serio.",
+            "Que el guion, las referencias y los prompts viven fuera de la plataforma."
+          ],
+          "certa": 3,
+          "explica": "Las herramientas desaparecen. Lo que sobrevive es la dirección escrita: con tarjeta, ficha, look y desglose de planos en una carpeta tuya, la misma escena pasa al generador que esté disponible.",
+          "ref": "passos"
+        },
+        {
+          "p": "\"Planos de 3 a 4 s; la escena respira, no corre.\" ¿Qué pregunta de director responde esta frase?",
+          "opcoes": [
+            "¿Por qué este ángulo?",
+            "¿Por qué esta duración?",
+            "¿Por qué este movimiento?",
+            "¿Por qué esta luz?"
+          ],
+          "certa": 1,
+          "explica": "El tiempo de cada plano controla el ritmo y el peso del momento. Un plano corto acelera; un plano largo le da tiempo al público para sentir.",
+          "ref": "conferidor"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "La máquina ejecuta",
+          "texto": "La imagen, el movimiento y el sonido salen del generador. La intención y la justificación salen de ti."
+        },
+        {
+          "t": "Primero el ancla",
+          "texto": "Película: personaje. Anuncio: producto o transformación. Clip: ritmo."
+        },
+        {
+          "t": "Proyecto portátil",
+          "texto": "La tarjeta y el desglose de planos en texto, en una carpeta tuya, sirven para cualquier generador."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Curso 1 · Generación: los generadores de oct/2026 y cómo elegir",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/es/"
+        },
+        {
+          "t": "Curso 2 · Producción: ética, etiqueta y derecho de imagen (clase 7)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        },
+        {
+          "t": "Comisión Europea: código de prácticas para etiquetar contenido generado por IA",
+          "href": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "slug": "ficha",
+  "num": 6,
+  "menu": "Sheet",
+  "titulo": "Character, wardrobe, and setting: the sheet that holds consistency",
+  "titulo_curto": "Character sheet",
+  "minutos": 17,
+  "lead": "One of the most visible mistakes in generated video is the character who changes face, clothes, or hair from one shot to the next. The defense is a written character sheet and a pack of reference images, decided before the first generation and repeated in every shot.",
+  "objetivo": "write the sheet for the character and setting you'll reuse as a reference in every shot, without imitating a real person.",
+  "competencias": [
+    "descrever-personagem",
+    "travar-continuidade",
+    "montar-pacote-de-referencias"
+  ],
+  "aprende": [
+    {
+      "t": "Describe identity, wardrobe, and prop in detail that repeats"
+    },
+    {
+      "t": "Write the lock: what never changes between shots"
+    },
+    {
+      "t": "Build the reference image pack"
+    },
+    {
+      "t": "Separate look from composition"
+    }
+  ],
+  "hero_alt": "Wardrobe department with a rack of neutral coats, a worn leather suitcase, a hat, and fabric swatches pinned to a corkboard.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "What the sheet holds",
+      "sub": "Six parts. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Identity",
+          "sub": "face and body",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "Age, face, hair, body, posture. A concrete, repeatable detail (\"gray hair in a low bun\"), not a loose adjective (\"pretty\"). Fictional character: nothing that looks like a real person."
+        },
+        {
+          "titulo": "Wardrobe",
+          "sub": "fixed clothing",
+          "icone": "camadas",
+          "detalhe": "The clothes in the scene, with color and material: \"navy canvas apron over a white shirt\". It doesn't change from one shot to the next."
+        },
+        {
+          "titulo": "Prop",
+          "sub": "scene prop",
+          "icone": "alvo",
+          "detalhe": "The object that carries the story: the worn wooden peel, the key to the iron door. Described once, the same in every shot."
+        },
+        {
+          "titulo": "Setting",
+          "sub": "the place",
+          "icone": "pasta",
+          "detalhe": "The place as dramatic structure: what's in it, what it's made of, what time it is. Setting and character are described separately and come together in the shot."
+        },
+        {
+          "titulo": "Lock",
+          "sub": "never changes",
+          "icone": "cadeado",
+          "detalhe": "The short list of what can't change between shots: face, hair, clothes, prop, time of day. It goes into every prompt for the scene."
+        },
+        {
+          "titulo": "References",
+          "sub": "images",
+          "icone": "copiar",
+          "detalhe": "Images generated once, in a neutral studio: the character from the front, from the side and full-body; the wardrobe and the prop on their own; the empty setting. These are what the generators use as a reference."
+        }
+      ],
+      "legenda": "The character sheet is your own text and works for any generator. How each tool receives the references is covered in course 1, lesson 5."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build the character sheet",
+      "sub": "The character in the first batch is fictional: Dona Lia, 58 years old.",
+      "passos": [
+        {
+          "titulo": "A detail that repeats",
+          "sub": "concrete, not an adjective",
+          "texto": [
+            "The generator doesn't remember the previous shot. What holds the character together is you repeating the same words in every prompt.",
+            "That's why the character sheet uses concrete detail: color, material, shape, a mark on the face. \"Friendly\" changes from shot to shot; \"freckles on the nose and thin-rimmed glasses\" doesn't."
+          ],
+          "exemplo": {
+            "rot": "Dona Lia's wardrobe",
+            "texto": "Navy canvas apron over a white shirt with rolled-up sleeves, gray scarf over the hair."
+          }
+        },
+        {
+          "titulo": "Reference through several images",
+          "sub": "what changed in 2026",
+          "texto": [
+            "The 2026 generators accept several reference images to keep character, prop and style consistent. Dated examples (Oct/2026): Veo 3.1 accepts up to 3 images; Seedance 2.5, up to 30 images, 10 videos and 10 audios.",
+            "Kling 3.0's \"elements\" are reported by third-party sources, still without official confirmation. The names change; the character sheet and the image pack work for all of them."
+          ]
+        },
+        {
+          "titulo": "Appearance on one side, composition on the other",
+          "sub": "don't mix roles",
+          "texto": [
+            "The character's reference image says what they look like. The framing, angle, and pose come from your shot. Mixing the two can lead the generator to copy the reference's pose instead of following your direction.",
+            "That's why the references are made in a neutral studio, neutral pose, natural light and plain background: appearance only, no scene."
+          ]
+        },
+        {
+          "titulo": "Don't imitate a real person",
+          "sub": "fictional character",
+          "texto": [
+            "A fictional character can't look like a recognizable real person, nor use a real brand. An avatar with your own face only with your consent.",
+            "Labeling, image and voice rights, and model licensing are covered in course 2, lesson 7."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The character sheet and the request for the reference images in a neutral studio.",
+      "blocos": [
+        {
+          "rot": "ficha.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Name: <name of the fictional character>\nAge: <apparent age>\nFace: <shape, marks, eyes, resting expression>\nHair: <color, length, how it's tied up>\nBody: <height, build, posture>\nWardrobe: <pieces, colors and materials>\nProp: <the scene prop that carries the story>\nSetting: <the place, the materials, the time>\nLight: <the light from the look card, in one line>\nNever changes: <the list of what stays the same in every shot>"
+        },
+        {
+          "rot": "Character reference request (image generator)",
+          "icone": "chat",
+          "conteudo": "Character reference photograph, neutral studio, plain gray background, soft natural light, neutral pose, full body from the front, looking at the camera. <paste here the Age, Face, Hair, Body and Wardrobe from the character sheet>. Fictional character, no resemblance to a real person, no text, no logo."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your character sheet",
+      "sub": "Ten fields, each with at least two letters or numbers of description.",
+      "arquivo": "ficha.txt",
+      "rot": "Paste your character sheet here (one field per line):",
+      "modelo": "Name: ...\nAge: ...\nFace: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 2,
+          "campos": [
+            "Name",
+            "Age",
+            "Face",
+            "Hair",
+            "Body",
+            "Wardrobe",
+            "Prop",
+            "Setting",
+            "Light",
+            "Never changes"
+          ]
+        }
+      ],
+      "ok": "OK: sheet with {n} fields filled in",
+      "exemplo": "Name: Dona Lia (fictional character)\nAge: 58 years old\nFace: round, freckles on the nose, laugh lines, thin-rimmed glasses\nHair: gray, tied in a low bun under a gray scarf\nBody: short, broad shoulders, walks fast and a little hunched over\nWardrobe: navy canvas apron over a white shirt with rolled-up sleeves\nProp: worn wooden peel, the handle darkened from use\nSetting: small neighborhood bakery, white tile, deck oven, roll-up steel door\nLight: oven on the right, counter lamps, dark street outside\nNever changes: bun with scarf, glasses, navy apron, wooden peel, early morning",
+      "exemplo_errado": "Name: Lia\nAge: 58\nFace: pretty\nWardrobe: baker's clothes\nSetting: bakery"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "The character (or product) in your scene.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Character sheet · character and setting",
+          "min": "20 min",
+          "texto": "Fill in the ten fields of the character sheet with concrete, repeatable detail. If your anchor is a product, the sheet is for the person who appears with it, and the product goes in detail under Prop. Check it and download the ficha.txt to the project folder.",
+          "pronto": "the page answers <code>OK: sheet with 10 fields filled in</code> for your text and the ficha.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "References · the package list",
+          "min": "5 min",
+          "texto": "At the end of the ficha.txt, write the list of reference images you will generate in course 1: one line per image, starting with Ref:.",
+          "pronto": "the ficha.txt ends with at least 4 lines that start with <code>Ref:</code> (character from the front, in profile or full body, wardrobe or prop, empty setting)."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Which description best keeps the same face from one shot to another?",
+          "opcoes": [
+            "A friendly, very expressive woman.",
+            "The face of an experienced, happy baker.",
+            "Freckles on the nose and thin-rimmed glasses.",
+            "Pretty, with a very natural look."
+          ],
+          "certa": 2,
+          "explica": "Concrete, repeatable detail is something the generator can reproduce; an adjective it reinterprets with every generation. The other three options describe impressions, not features.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why are the character's reference images made in a neutral studio with a neutral pose?",
+          "opcoes": [
+            "Because a neutral studio spends fewer credits.",
+            "Because the generator refuses references with a setting.",
+            "Because a plain background makes the image sharper.",
+            "To pass along only the look, with no pose or scene."
+          ],
+          "certa": 3,
+          "explica": "The reference says what the character is like; the shot says where they are and how they're framed. A reference with a scene and pose can lead the generator to copy the pose instead of following the direction.",
+          "ref": "passos"
+        },
+        {
+          "p": "About Kling 3.0's \"elements,\" what does the course state?",
+          "opcoes": [
+            "That they are reported by third parties, with no confirmation.",
+            "That they are the only way to keep the same character consistent.",
+            "That they accept up to 30 reference images per generation.",
+            "That they were discontinued along with the Sora app."
+          ],
+          "certa": 0,
+          "explica": "The training's research (10/19/2026) only found the feature in third-party sources. The 30 images are from Seedance 2.5; Sora is a different case. That's why the course teaches the principle, not the button.",
+          "ref": "passos"
+        },
+        {
+          "p": "What goes on the \"Never changes\" line of the sheet?",
+          "opcoes": [
+            "The camera movements in the scene.",
+            "What stays the same in every shot.",
+            "The lines the character repeats.",
+            "The duration of each shot in the scene."
+          ],
+          "certa": 1,
+          "explica": "The lock lists face, hair, clothing, prop, and time of day: what can't vary. Camera and duration change from shot to shot, by direction.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Concrete and repeated",
+          "texto": "Color, material, and a mark on the face, with the same words in every prompt."
+        },
+        {
+          "t": "Lock",
+          "texto": "The list of what never changes goes into every shot of the scene."
+        },
+        {
+          "t": "Neutral references",
+          "texto": "Look in a neutral studio; composition comes from the shot. Fictional character."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google: Veo 3.1 and reference images (\"Ingredients to video\")",
+          "href": "https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/"
+        },
+        {
+          "t": "Course 1 · Generation: consistency through references (lesson 5)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/"
+        },
+        {
+          "t": "Course 2 · Production: ethics, labeling and image rights (lesson 7)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

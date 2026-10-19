@@ -1,0 +1,296 @@
+{
+  "slug": "camera",
+  "num": 3,
+  "menu": "Camera",
+  "titulo": "The camera as a verb: each movement tells something",
+  "titulo_curto": "The camera as a verb",
+  "minutos": 16,
+  "lead": "Camera movement weighs heavily on the result of a generated video, and a common mistake is stacking movements in the same shot. In this lesson each movement gets a function: move closer, pull back, follow, reveal, orbit, or shake. One per shot, chosen for its effect on the audience.",
+  "objetivo": "choose one movement per shot by intent and write, for each shot, the effect it causes in whoever is watching.",
+  "competencias": [
+    "choose-movement-by-intent",
+    "avoid-stacked-movement",
+    "vary-rhythm-between-shots"
+  ],
+  "aprende": [
+    {
+      "t": "Match six intentions to the movements that deliver them"
+    },
+    {
+      "t": "Tell camera movement apart from lens movement"
+    },
+    {
+      "t": "Use one movement and one style per shot"
+    },
+    {
+      "t": "Vary the movement between neighboring shots"
+    }
+  ],
+  "hero_alt": "A film camera on a dolly track in a dark studio, with a crane arm in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Six intentions, six movements",
+      "sub": "Start with what the audience should feel. Click to see the movement and the prompt term.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Move in",
+          "sub": "tension",
+          "icone": "alvo",
+          "detalhe": "A slow push in, the camera moving toward the subject: tension, intimacy, importance. In English, dolly in or push-in. Barely noticeable, the pressure builds."
+        },
+        {
+          "titulo": "Move out",
+          "sub": "isolation",
+          "icone": "voltar",
+          "detalhe": "Pulling back: the camera moves away and the place swallows the character. Isolation, scale, end of scene. In English, dolly out or pull-out."
+        },
+        {
+          "titulo": "Follow",
+          "sub": "flow",
+          "icone": "seta",
+          "forte": true,
+          "detalhe": "Tracking: the camera moves along with the subject, from the side or behind. Flow, following without cutting. In English, tracking shot or truck left/right."
+        },
+        {
+          "titulo": "Reveal",
+          "sub": "discovery",
+          "icone": "lupa",
+          "detalhe": "A pan (turns horizontally), a tilt (turns vertically) and a crane (rises or lowers through space) reveal what was outside the frame. In English, pan, tilt, crane shot, pedestal."
+        },
+        {
+          "titulo": "Rotate",
+          "sub": "volume",
+          "icone": "relogio",
+          "detalhe": "Orbit: the camera circles the subject and separates foreground, midground and background. Volume and the feel of an expensive film. In English, orbit or arc shot."
+        },
+        {
+          "titulo": "Shake",
+          "sub": "urgency",
+          "icone": "megafone",
+          "detalhe": "Handheld camera: unsteady, raw, documentary. Urgency and physical presence. In English, handheld shot."
+        }
+      ],
+      "legenda": "A still camera (static shot) is also a choice: watching without interfering. It counts as \"one movement\" in the shot."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The rules of movement",
+      "sub": "The example continues in the bakery.",
+      "passos": [
+        {
+          "titulo": "One movement per shot",
+          "sub": "don't stack",
+          "texto": [
+            "Orbit plus push in plus pan plus zoom: the camera fights itself and the shot comes out unstable. One movement gives the generator a single direction to carry out.",
+            "If the scene calls for two movements, it calls for two shots."
+          ],
+          "exemplo": {
+            "rot": "Weak × directed",
+            "texto": "Weak: an orbit with a zoom and a dolly on the oven. Directed: a slow push in on the oven while the door opens."
+          }
+        },
+        {
+          "titulo": "Camera or lens?",
+          "sub": "dolly, zoom and dolly zoom",
+          "texto": [
+            "In a dolly the camera moves: foreground and background shift at different rates and the space feels real. In a zoom only the lens changes: the image gets closer without the camera leaving its spot, flatter and more observational.",
+            "The dolly zoom does both at the same time, in opposite directions: the background seems to stretch. It's disorienting; use it once, at the right moment."
+          ]
+        },
+        {
+          "titulo": "One style per shot",
+          "sub": "steadicam, handheld or slow motion",
+          "texto": [
+            "Style is the texture of the movement. Steadicam is smooth and controlled; handheld is raw and urgent; slow motion stretches time and gives weight.",
+            "Two styles in the same shot dilute both intentions. Pick the dominant feeling and stick with it."
+          ]
+        },
+        {
+          "titulo": "Vary between neighbors",
+          "sub": "rhythm of the sequence",
+          "texto": [
+            "Two neighboring shots with the same movement kill the rhythm. Match the movement to the job of the moment: opening calls for a side tracking shot or a still camera; tension calls for a slow move in; a reveal calls for an orbit or a tilt.",
+            "To close, use a final move in, or a pull back that gives the place back. End on a strong image."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The intention → movement → prompt term table, and the template file for the exercise.",
+      "blocos": [
+        {
+          "rot": "Intention → movement → prompt term",
+          "icone": "lista",
+          "conteudo": "# what the audience should feel → movement → prompt term\ntension, intimacy → slow approach → slow dolly in, push-in\nisolation, scale → pulling away → dolly out, pull-out\nfluidity, following without cutting → travelling → tracking shot, truck left/right\nrevealing horizontally → pan → pan left, pan right\nrevealing vertically → tilt → tilt up/down\ngrandeur, revealing from above → crane or pedestal → crane shot, pedestal up\nvolume, expensive-looking cinema → orbit → orbit shot, arc shot\nurgency, realism → handheld camera → handheld shot\nobserving without interfering → locked-off camera → static shot\ndisorientation → dolly zoom → dolly zoom (vertigo effect)"
+        },
+        {
+          "rot": "movimentos.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <scene name>\n1 | <one movement> | <what happens in the shot> | effect: <what the audience feels>\n2 | <one movement> | <what happens in the shot> | effect: <what the audience feels>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your movements",
+      "sub": "The page rejects a shot with two movements, a shot with no movement, and a shot with no written effect. It also asks for at least 4 different movements in the scene.",
+      "arquivo": "movimentos.txt",
+      "rot": "Paste your list of movements here (one numbered line per shot):",
+      "modelo": "1 | static camera | ... | effect: ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "movement",
+              "um_so": true,
+              "variar": 4,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / zoom / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "the effect on the audience",
+              "min": 3,
+              "termos": [
+                "efeito: / effect: / efecto:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} shots, one movement each, with the effect written",
+      "exemplo": "Scene: The first batch\n1 | static camera | the dark street, only the bakery lit | effect: silence and waiting\n2 | side tracking shot | follows Dona Lia from the door to the counter | effect: joining her routine\n3 | dolly in | moves close to the oven as the door opens | effect: growing anticipation\n4 | tilt | travels down from the steam to the peel with the bread | effect: revealing the reward\n5 | handheld camera | she runs to the door when someone knocks | effect: small, human hurry\n6 | dolly out | pulls back as the customer walks in | effect: closing the scene; the neighborhood wakes up",
+      "exemplo_errado": "Scene: The first batch\n1 | static camera | the dark street | effect: waiting\n2 | orbit with zoom in and dolly in | the oven opens | effect: impact\n3 | side tracking shot | Dona Lia at the counter\n4 | Dona Lia smiles at the customer | effect: warmth\n5 | static camera | the door opens | effect: end"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the shots from your step (lesson 2) and give each one its movement.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Movements · one per shot, with the effect",
+          "min": "15 min",
+          "texto": "For each shot in your scene, choose a movement (or a still camera) and write the effect on the audience. At least 4 different movements, with no repeats in neighboring shots. Check it and download movimentos.txt into the project folder.",
+          "pronto": "the page answers <code>OK: [n] shots, one movement each, with the effect written</code> for your text, and movimentos.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Neighbors · no movement repeated in a row",
+          "min": "5 min",
+          "texto": "Read the list from top to bottom and mark where two neighboring shots use the same movement. Swap one of them for the movement that delivers the same intention in a different way.",
+          "pronto": "in movimentos.txt, no pair of neighboring shots repeats the same movement, and the page keeps answering <code>OK: …</code>."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "What is the difference between a dolly in and a zoom in?",
+          "opcoes": [
+            "None: both bring the subject closer in the same way.",
+            "The zoom moves the camera; the dolly changes the lens.",
+            "The dolly only works on a wide shot.",
+            "The dolly moves the camera; the zoom changes the lens."
+          ],
+          "certa": 3,
+          "explica": "In a dolly, the camera moves through space, and foreground and background shift at different rates, which creates depth. In a zoom, the camera stays still and only the focal length changes; the image looks flatter.",
+          "ref": "passos"
+        },
+        {
+          "p": "A prompt asks for \"orbit, dolly in and zoom\" in the same shot. What is likely to come out?",
+          "opcoes": [
+            "A premium shot, with more energy.",
+            "An unstable camera, fighting itself.",
+            "The generator picks the best of the three.",
+            "A longer shot, in three parts."
+          ],
+          "certa": 1,
+          "explica": "Stacked movements give conflicting directions, and the result comes out unstable. One movement per shot; if the scene calls for three movements, it calls for three shots.",
+          "ref": "passos"
+        },
+        {
+          "p": "You want the tension to build while the oven door opens. Which movement?",
+          "opcoes": [
+            "Slow push-in (dolly in).",
+            "Handheld camera, shaking.",
+            "Fast pan (whip pan).",
+            "Pull-back (dolly out)."
+          ],
+          "certa": 0,
+          "explica": "The slow push-in builds pressure almost without the audience noticing. The whip pan is a fast transition; the pull-back isolates and closes; the handheld camera brings urgency, not anticipation.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Two neighboring shots have the same movement. What do you do?",
+          "opcoes": [
+            "Always repeat it, for unity.",
+            "Swap both for handheld camera.",
+            "Vary one of them, based on the scene's rhythm.",
+            "Merge the two into a single, bigger shot."
+          ],
+          "certa": 2,
+          "explica": "Repeating the same movement back to back kills the rhythm. Swap one of the two for a movement that delivers the same intention in a different way, or for a still camera.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Movement is a verb",
+          "texto": "Push in, pull back, follow, reveal, orbit, shake: each one makes the audience feel something different."
+        },
+        {
+          "t": "One per shot",
+          "texto": "One movement and one style. Two movements call for two shots."
+        },
+        {
+          "t": "Camera ≠ lens",
+          "texto": "A dolly moves and gives depth; a zoom only brings the image closer."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide: camera movements",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 3 · Motion by code: camera movement in video made with code",
+          "href": "https://inematds.github.io/formacao-cinema-ia-motion-v72/en/"
+        }
+      ]
+    }
+  ]
+}

@@ -5,14 +5,26 @@
   "titulo": "A câmera como verbo: cada movimento conta uma coisa",
   "titulo_curto": "A câmera como verbo",
   "minutos": 16,
-  "lead": "Movimento de câmera é o que mais pesa no resultado de um vídeo gerado, e o erro mais comum é empilhar movimentos no mesmo plano. Nesta aula cada movimento ganha uma função: aproximar, afastar, acompanhar, revelar, girar ou tremer. Um por plano, escolhido pelo efeito no público.",
+  "lead": "Movimento de câmera pesa muito no resultado de um vídeo gerado, e um erro comum é empilhar movimentos no mesmo plano. Nesta aula cada movimento ganha uma função: aproximar, afastar, acompanhar, revelar, girar ou tremer. Um por plano, escolhido pelo efeito no público.",
   "objetivo": "escolher um movimento por plano pela intenção e escrever, para cada plano, o efeito que ele causa em quem assiste.",
-  "competencias": ["escolher-movimento-pela-intencao", "evitar-movimento-empilhado", "variar-ritmo-entre-planos"],
+  "competencias": [
+    "escolher-movimento-pela-intencao",
+    "evitar-movimento-empilhado",
+    "variar-ritmo-entre-planos"
+  ],
   "aprende": [
-    {"t": "Ligar seis intenções aos movimentos que as entregam"},
-    {"t": "Separar movimento de câmera de movimento de lente"},
-    {"t": "Usar um movimento e um estilo por plano"},
-    {"t": "Variar o movimento entre planos vizinhos"}
+    {
+      "t": "Ligar seis intenções aos movimentos que as entregam"
+    },
+    {
+      "t": "Separar movimento de câmera de movimento de lente"
+    },
+    {
+      "t": "Usar um movimento e um estilo por plano"
+    },
+    {
+      "t": "Variar o movimento entre planos vizinhos"
+    }
   ],
   "hero_alt": "Câmera de cinema num carrinho sobre trilhos de travelling, num estúdio escuro, com um braço de grua ao fundo.",
   "secoes": [
@@ -22,12 +34,43 @@
       "sub": "Comece pelo que o público deve sentir. Clique para ver o movimento e o termo do prompt.",
       "estilo": "fluxo",
       "nos": [
-        {"titulo": "Aproximar", "sub": "tensão", "icone": "alvo", "detalhe": "Aproximação lenta, a câmera andando até o sujeito: tensão, intimidade, importância. Em inglês, dolly in ou push-in. Quase imperceptível, a pressão cresce."},
-        {"titulo": "Afastar", "sub": "isolamento", "icone": "voltar", "detalhe": "Afastamento: a câmera recua e o lugar engole o personagem. Isolamento, escala, fim de cena. Em inglês, dolly out ou pull-out."},
-        {"titulo": "Acompanhar", "sub": "fluidez", "icone": "seta", "forte": true, "detalhe": "Travelling: a câmera anda junto com o sujeito, de lado ou atrás. Fluidez, seguir sem cortar. Em inglês, tracking shot ou truck left/right."},
-        {"titulo": "Revelar", "sub": "descoberta", "icone": "lupa", "detalhe": "Panorâmica (gira na horizontal), tilt (gira na vertical) e grua (sobe ou desce no espaço) revelam o que estava fora do quadro. Em inglês, pan, tilt, crane shot, pedestal."},
-        {"titulo": "Girar", "sub": "volume", "icone": "relogio", "detalhe": "Órbita: a câmera dá a volta no sujeito e separa frente, meio e fundo. Volume e sensação de cinema caro. Em inglês, orbit ou arc shot."},
-        {"titulo": "Tremer", "sub": "urgência", "icone": "megafone", "detalhe": "Câmera na mão: instável, crua, documental. Urgência e presença física. Em inglês, handheld shot."}
+        {
+          "titulo": "Aproximar",
+          "sub": "tensão",
+          "icone": "alvo",
+          "detalhe": "Aproximação lenta, a câmera andando até o sujeito: tensão, intimidade, importância. Em inglês, dolly in ou push-in. Quase imperceptível, a pressão cresce."
+        },
+        {
+          "titulo": "Afastar",
+          "sub": "isolamento",
+          "icone": "voltar",
+          "detalhe": "Afastamento: a câmera recua e o lugar engole o personagem. Isolamento, escala, fim de cena. Em inglês, dolly out ou pull-out."
+        },
+        {
+          "titulo": "Acompanhar",
+          "sub": "fluidez",
+          "icone": "seta",
+          "forte": true,
+          "detalhe": "Travelling: a câmera anda junto com o sujeito, de lado ou atrás. Fluidez, seguir sem cortar. Em inglês, tracking shot ou truck left/right."
+        },
+        {
+          "titulo": "Revelar",
+          "sub": "descoberta",
+          "icone": "lupa",
+          "detalhe": "Panorâmica (gira na horizontal), tilt (gira na vertical) e grua (sobe ou desce no espaço) revelam o que estava fora do quadro. Em inglês, pan, tilt, crane shot, pedestal."
+        },
+        {
+          "titulo": "Girar",
+          "sub": "volume",
+          "icone": "relogio",
+          "detalhe": "Órbita: a câmera dá a volta no sujeito e separa frente, meio e fundo. Volume e sensação de cinema caro. Em inglês, orbit ou arc shot."
+        },
+        {
+          "titulo": "Tremer",
+          "sub": "urgência",
+          "icone": "megafone",
+          "detalhe": "Câmera na mão: instável, crua, documental. Urgência e presença física. Em inglês, handheld shot."
+        }
       ],
       "legenda": "Câmera parada (static shot) também é escolha: observar sem interferir. Vale como \"um movimento\" no plano."
     },
@@ -43,7 +86,10 @@
             "Órbita mais aproximação mais panorâmica mais zoom: a câmera briga consigo mesma e o plano sai instável. Um movimento dá ao gerador uma direção só para executar.",
             "Se a cena pede dois movimentos, ela pede dois planos."
           ],
-          "exemplo": {"rot": "Fraco × dirigido", "texto": "Fraco: órbita com zoom e dolly no forno. Dirigido: aproximação lenta do forno enquanto a porta abre."}
+          "exemplo": {
+            "rot": "Fraco × dirigido",
+            "texto": "Fraco: órbita com zoom e dolly no forno. Dirigido: aproximação lenta do forno enquanto a porta abre."
+          }
         },
         {
           "titulo": "Câmera ou lente?",
@@ -79,7 +125,7 @@
         {
           "rot": "Intenção → movimento → termo do prompt",
           "icone": "lista",
-          "conteudo": "# o que o público deve sentir → movimento → termo do prompt\ntensão, intimidade → aproximação lenta → slow dolly in, push-in\nisolamento, escala → afastamento → dolly out, pull-out\nfluidez, seguir sem cortar → travelling → tracking shot, truck left/right\nrevelar na horizontal → panorâmica → pan left/right\nrevelar na vertical → tilt → tilt up/down\ngrandeza, revelar de cima → grua ou pedestal → crane shot, pedestal up\nvolume, cinema caro → órbita → orbit shot, arc shot\nurgência, realismo → câmera na mão → handheld shot\nobservar sem interferir → câmera parada → static shot\ndesorientação → dolly zoom → dolly zoom (vertigo effect)\nligar dois pontos da cena → troca de foco → rack focus"
+          "conteudo": "# o que o público deve sentir → movimento → termo do prompt\ntensão, intimidade → aproximação lenta → slow dolly in, push-in\nisolamento, escala → afastamento → dolly out, pull-out\nfluidez, seguir sem cortar → travelling → tracking shot, truck left/right\nrevelar na horizontal → panorâmica → pan left, pan right\nrevelar na vertical → tilt → tilt up/down\ngrandeza, revelar de cima → grua ou pedestal → crane shot, pedestal up\nvolume, cinema caro → órbita → orbit shot, arc shot\nurgência, realismo → câmera na mão → handheld shot\nobservar sem interferir → câmera parada → static shot\ndesorientação → dolly zoom → dolly zoom (vertigo effect)"
         },
         {
           "rot": "movimentos.txt (modelo)",
@@ -96,11 +142,43 @@
       "rot": "Cole aqui a sua lista de movimentos (uma linha numerada por plano):",
       "modelo": "1 | câmera parada | ... | efeito: ...",
       "regras": [
-        {"tipo": "planos", "min": 5, "max": 8},
-        {"tipo": "cada_plano", "grupos": [
-          {"rot": "movimento", "um_so": true, "variar": 4, "termos": ["câmera parada / câmera fixa / plano fixo / static shot", "dolly in / push-in / aproximação lenta", "dolly out / pull-out / afastamento lento", "travelling lateral / travelling / tracking shot / truck / dolly lateral", "panorâmica / pan", "tilt / tilt up / tilt down", "grua / crane / pedestal", "órbita / orbit / arc shot", "câmera na mão / handheld", "zoom in / zoom out / zoom / crash zoom", "dolly zoom / efeito vertigo", "whip pan / chicote", "drone / plano aéreo / aerial shot", "rack focus / troca de foco"]},
-          {"rot": "o efeito no público", "termos": ["efeito: / effect:"]}
-        ]}
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "movimento",
+              "um_so": true,
+              "variar": 4,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / zoom / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "o efeito no público",
+              "min": 3,
+              "termos": [
+                "efeito: / effect: / efecto:"
+              ]
+            }
+          ]
+        }
       ],
       "ok": "OK: {n} planos, um movimento cada, com o efeito escrito",
       "exemplo": "Cena: A primeira fornada\n1 | câmera parada | a rua escura, só a padaria acesa | efeito: silêncio e espera\n2 | travelling lateral | segue Dona Lia da porta até a bancada | efeito: entrar na rotina com ela\n3 | dolly in | chega perto do forno enquanto a porta abre | efeito: expectativa que cresce\n4 | tilt | desce do vapor até a pá com o pão | efeito: revelar a recompensa\n5 | câmera na mão | ela corre até a porta quando batem | efeito: pressa pequena, humana\n6 | dolly out | recua enquanto o cliente entra | efeito: fechar a cena; o bairro acorda",
@@ -186,17 +264,32 @@
       "tipo": "resumo",
       "titulo": "Para guardar",
       "itens": [
-        {"t": "Movimento é verbo", "texto": "Aproximar, afastar, acompanhar, revelar, girar, tremer: cada um faz o público sentir uma coisa."},
-        {"t": "Um por plano", "texto": "Um movimento e um estilo. Dois movimentos pedem dois planos."},
-        {"t": "Câmera ≠ lente", "texto": "Dolly anda e dá profundidade; zoom só aproxima a imagem."}
+        {
+          "t": "Movimento é verbo",
+          "texto": "Aproximar, afastar, acompanhar, revelar, girar, tremer: cada um faz o público sentir uma coisa."
+        },
+        {
+          "t": "Um por plano",
+          "texto": "Um movimento e um estilo. Dois movimentos pedem dois planos."
+        },
+        {
+          "t": "Câmera ≠ lente",
+          "texto": "Dolly anda e dá profundidade; zoom só aproxima a imagem."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Guia oficial de prompt de vídeo do Google: movimentos de câmera", "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"},
-        {"t": "Curso 3 · Motion por código: movimento de câmera em vídeo feito com código", "href": "https://inematds.github.io/formacao-cinema-ia-motion-v72/"}
+        {
+          "t": "Guia oficial de prompt de vídeo do Google: movimentos de câmera",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 3 · Motion por código: movimento de câmera em vídeo feito com código",
+          "href": "https://inematds.github.io/formacao-cinema-ia-motion-v72/"
+        }
       ]
     }
   ]

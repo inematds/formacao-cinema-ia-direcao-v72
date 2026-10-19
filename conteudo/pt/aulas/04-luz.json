@@ -7,12 +7,24 @@
   "minutos": 16,
   "lead": "\"Luz cinematográfica\" no prompt não diz nada: o gerador precisa saber de onde a luz vem, de que lado bate, se é dura ou suave e que cor tem. Nesta aula você decide a luz da sua cena e escreve o cartão de look, o trecho fixo que vai em todo prompt dela.",
   "objetivo": "decidir fonte, direção, qualidade, temperatura e atmosfera da luz da sua cena e escrever o cartão de look que entra em todo prompt.",
-  "competencias": ["motivar-a-luz", "controlar-sombra-e-contraste", "manter-paleta-da-cena"],
+  "competencias": [
+    "motivar-a-luz",
+    "controlar-sombra-e-contraste",
+    "manter-paleta-da-cena"
+  ],
   "aprende": [
-    {"t": "Dar a cada luz uma fonte que o público acredita"},
-    {"t": "Usar direção e qualidade da luz para modelar o personagem"},
-    {"t": "Tirar luz para ganhar profundidade"},
-    {"t": "Fixar paleta e atmosfera num cartão de look"}
+    {
+      "t": "Dar a cada luz uma fonte que o público acredita"
+    },
+    {
+      "t": "Usar direção e qualidade da luz para modelar o personagem"
+    },
+    {
+      "t": "Tirar luz para ganhar profundidade"
+    },
+    {
+      "t": "Fixar paleta e atmosfera num cartão de look"
+    }
   ],
   "hero_alt": "Estúdio escuro com fumaça leve; um refletor lateral forma um feixe de luz e uma bandeira preta corta a luz do outro lado de uma cadeira vazia.",
   "secoes": [
@@ -22,11 +34,37 @@
       "sub": "Nesta ordem. Clique em cada uma.",
       "estilo": "fluxo",
       "nos": [
-        {"titulo": "Fonte", "sub": "de onde vem", "icone": "sol", "forte": true, "detalhe": "Toda luz vem de algum lugar crível: sol, janela, lâmpada, tela, fogo. É a luz motivada: se o público acredita na fonte, acredita na cena. No prompt, nomeie a fonte."},
-        {"titulo": "Direção", "sub": "frente, lado, trás", "icone": "seta", "detalhe": "De frente, a luz achata o rosto. De lado, modela volume e drama. Por trás (contraluz), recorta a silhueta. Uma borda fina de luz, a luz de recorte, separa o sujeito do fundo sem mostrar tudo."},
-        {"titulo": "Qualidade", "sub": "dura ou suave", "icone": "camadas", "detalhe": "Dura: sombra de borda marcada, tensão. Suave: sombra que se espalha, acolhimento. Fonte grande e perto do sujeito fica mais suave; pequena e longe, mais dura."},
-        {"titulo": "Temperatura", "sub": "quente ou fria", "icone": "grafico", "detalhe": "Tons quentes aproximam e acolhem; tons frios afastam e dão distância ou perigo. O contraste entre os dois cria tensão. Imagem clara e alegre é high-key; escura e misteriosa, low-key."},
-        {"titulo": "Atmosfera", "sub": "névoa e movimento", "icone": "nuvem", "detalhe": "Névoa, vapor ou poeira tornam o feixe visível (luz volumétrica) e empurram o fundo para longe. Luz que se mexe, como chama ou tela piscando, tira a cena da imobilidade."}
+        {
+          "titulo": "Fonte",
+          "sub": "de onde vem",
+          "icone": "sol",
+          "forte": true,
+          "detalhe": "Toda luz vem de algum lugar crível: sol, janela, lâmpada, tela, fogo. É a luz motivada: se o público acredita na fonte, acredita na cena. No prompt, nomeie a fonte."
+        },
+        {
+          "titulo": "Direção",
+          "sub": "frente, lado, trás",
+          "icone": "seta",
+          "detalhe": "De frente, a luz achata o rosto. De lado, modela volume e drama. Por trás (contraluz), recorta a silhueta. Uma borda fina de luz, a luz de recorte, separa o sujeito do fundo sem mostrar tudo."
+        },
+        {
+          "titulo": "Qualidade",
+          "sub": "dura ou suave",
+          "icone": "camadas",
+          "detalhe": "Dura: sombra de borda marcada, tensão. Suave: sombra que se espalha, acolhimento. Fonte grande e perto do sujeito fica mais suave; pequena e longe, mais dura."
+        },
+        {
+          "titulo": "Temperatura",
+          "sub": "quente ou fria",
+          "icone": "grafico",
+          "detalhe": "Tons quentes aproximam e acolhem; tons frios afastam e dão distância ou perigo. O contraste entre os dois cria tensão. Imagem clara e alegre é high-key; escura e misteriosa, low-key."
+        },
+        {
+          "titulo": "Atmosfera",
+          "sub": "névoa e movimento",
+          "icone": "nuvem",
+          "detalhe": "Névoa, vapor ou poeira tornam o feixe visível (luz volumétrica) e empurram o fundo para longe. Luz que se mexe, como chama ou tela piscando, tira a cena da imobilidade."
+        }
       ],
       "legenda": "Termos como high-key, low-key, backlighting e volumetric lighting aparecem no guia oficial de prompt de vídeo do Google."
     },
@@ -50,7 +88,10 @@
             "Troque \"iluminação cinematográfica\" por uma fonte e um lado: \"luz do forno vinda da direita\", \"brilho frio de uma tela\".",
             "A fonte nomeada dá credibilidade e também amarra direção e temperatura de uma vez."
           ],
-          "exemplo": {"rot": "Na fornada", "texto": "Luz lateral do forno à direita, suave na bancada; lá fora, só um poste frio na rua escura."}
+          "exemplo": {
+            "rot": "Na fornada",
+            "texto": "Luz lateral do forno à direita, suave na bancada; lá fora, só um poste frio na rua escura."
+          }
         },
         {
           "titulo": "Uma paleta por cena",
@@ -95,11 +136,39 @@
       "rot": "Cole aqui o seu cartão de look (um campo por linha):",
       "modelo": "Fonte: ...\nDireção: ...\nQualidade: ...",
       "regras": [
-        {"tipo": "campos", "min": 4, "campos": ["Fonte", "Direção", "Qualidade", "Temperatura", "Contraste", "Paleta", "Atmosfera"]},
-        {"tipo": "termos", "grupos": [
-          {"rot": "a qualidade da luz (dura ou suave)", "termos": ["dura / duro / hard", "suave / difusa / soft"]},
-          {"rot": "a temperatura (quente, fria ou neutra)", "termos": ["quente / warm", "fria / frio / cool / cold", "neutra / neutro / neutral"]}
-        ]}
+        {
+          "tipo": "campos",
+          "min": 4,
+          "campos": [
+            "Fonte",
+            "Direção",
+            "Qualidade",
+            "Temperatura",
+            "Contraste",
+            "Paleta",
+            "Atmosfera"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "a qualidade da luz (dura ou suave)",
+              "termos": [
+                "dura / duro / hard",
+                "suave / difusa / soft"
+              ]
+            },
+            {
+              "rot": "a temperatura (quente, fria ou neutra)",
+              "termos": [
+                "quente / warm",
+                "fria / frio / cool / cold",
+                "neutra / neutro / neutral"
+              ]
+            }
+          ]
+        }
       ],
       "ok": "OK: cartão de look com {n} campos",
       "exemplo": "Fonte: a luz do forno e duas lâmpadas da bancada; lá fora, só um poste\nDireção: lateral, vinda do forno à direita; contraluz da vitrine nos planos da rua\nQualidade: suave na bancada, dura no rosto quando o forno abre\nTemperatura: quente dentro da padaria, fria na rua escura\nContraste: alto, low-key; a rua quase preta\nPaleta: azul-escuro da rua, cobre do forno, branco da farinha\nAtmosfera: vapor do forno e farinha no ar, visíveis no feixe de luz",
@@ -185,17 +254,32 @@
       "tipo": "resumo",
       "titulo": "Para guardar",
       "itens": [
-        {"t": "Fonte e lado", "texto": "Toda luz tem uma fonte crível e vem de um lado. Diga os dois."},
-        {"t": "Sombra conta", "texto": "Tirar luz cria profundidade. Dura é tensão; suave é acolhimento."},
-        {"t": "Look fixo", "texto": "Paleta e atmosfera no cartão de look, igual em todos os prompts da cena."}
+        {
+          "t": "Fonte e lado",
+          "texto": "Toda luz tem uma fonte crível e vem de um lado. Diga os dois."
+        },
+        {
+          "t": "Sombra conta",
+          "texto": "Tirar luz cria profundidade. Dura é tensão; suave é acolhimento."
+        },
+        {
+          "t": "Look fixo",
+          "texto": "Paleta e atmosfera no cartão de look, igual em todos os prompts da cena."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Guia oficial de prompt de vídeo do Google: luz, clima e estilo", "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"},
-        {"t": "Curso 2 · Produção: cor, grading e film look (aula 4)", "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"}
+        {
+          "t": "Guia oficial de prompt de vídeo do Google: luz, clima e estilo",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 2 · Produção: cor, grading e film look (aula 4)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"
+        }
       ]
     }
   ]

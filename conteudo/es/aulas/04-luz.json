@@ -1,0 +1,286 @@
+{
+  "slug": "luz",
+  "num": 4,
+  "menu": "Luz",
+  "titulo": "Luz, color y atmósfera: el look decidido antes del prompt",
+  "titulo_curto": "Luz, color y atmósfera",
+  "minutos": 16,
+  "lead": "\"Luz cinematográfica\" en el prompt no dice nada: el generador necesita saber de dónde viene la luz, de qué lado pega, si es dura o suave y qué color tiene. En esta clase decides la luz de tu escena y escribes la tarjeta de look, el fragmento fijo que va en todo prompt de ella.",
+  "objetivo": "decidir fuente, dirección, calidad, temperatura y atmósfera de la luz de tu escena y escribir la tarjeta de look que entra en todo prompt.",
+  "competencias": [
+    "motivar-a-luz",
+    "controlar-sombra-e-contraste",
+    "manter-paleta-da-cena"
+  ],
+  "aprende": [
+    {
+      "t": "Darle a cada luz una fuente en la que el público crea"
+    },
+    {
+      "t": "Usar la dirección y la calidad de la luz para modelar al personaje"
+    },
+    {
+      "t": "Quitar luz para ganar profundidad"
+    },
+    {
+      "t": "Fijar paleta y atmósfera en una tarjeta de look"
+    }
+  ],
+  "hero_alt": "Estudio oscuro con humo leve; un reflector lateral forma un haz de luz y una bandera negra corta la luz del otro lado de una silla vacía.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Las cinco decisiones de luz",
+      "sub": "En este orden. Haz clic en cada una.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Fuente",
+          "sub": "de dónde viene",
+          "icone": "sol",
+          "forte": true,
+          "detalhe": "Toda luz viene de algún lugar creíble: sol, ventana, lámpara, pantalla, fuego. Es la luz motivada: si el público cree en la fuente, cree en la escena. En el prompt, nombra la fuente."
+        },
+        {
+          "titulo": "Dirección",
+          "sub": "frente, lado, atrás",
+          "icone": "seta",
+          "detalhe": "De frente, la luz aplana el rostro. De lado, modela el volumen y el drama. Por detrás (contraluz), recorta la silueta. Un borde fino de luz, la luz de recorte, separa al sujeto del fondo sin mostrarlo todo."
+        },
+        {
+          "titulo": "Calidad",
+          "sub": "dura o suave",
+          "icone": "camadas",
+          "detalhe": "Dura: sombra de borde marcado, tensión. Suave: sombra que se difumina, calidez. Una fuente grande y cerca del sujeto da una luz más suave; una fuente pequeña y lejos, más dura."
+        },
+        {
+          "titulo": "Temperatura",
+          "sub": "cálida o fría",
+          "icone": "grafico",
+          "detalhe": "Los tonos cálidos acercan y acogen; los tonos fríos alejan y dan distancia o peligro. El contraste entre ambos crea tensión. Una imagen clara y alegre es high-key; una oscura y misteriosa, low-key."
+        },
+        {
+          "titulo": "Atmósfera",
+          "sub": "niebla y movimiento",
+          "icone": "nuvem",
+          "detalhe": "La niebla, el vapor o el polvo hacen visible el haz de luz (luz volumétrica) y empujan el fondo hacia atrás. Una luz que se mueve, como una llama o una pantalla que parpadea, saca la escena de la quietud."
+        }
+      ],
+      "legenda": "Términos como high-key, low-key, backlighting y volumetric lighting aparecen en la guía oficial de prompts de video de Google."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo decidir el look",
+      "sub": "En la hornada, la panadería encendida es la única luz de la calle.",
+      "passos": [
+        {
+          "titulo": "Quita luz antes de poner",
+          "sub": "la sombra es profundidad",
+          "texto": [
+            "Iluminarlo todo deja la imagen plana: todo visible, nada sentido. El buen cine también es decidir adónde no llega la luz.",
+            "En el set, la bandera negra que bloquea la luz se llama negative fill. En el prompt, pide sombra con palabras: low-key, sombras profundas, un lado del rostro en la oscuridad."
+          ]
+        },
+        {
+          "titulo": "Nombra la fuente",
+          "sub": "luz motivada",
+          "texto": [
+            "Cambia \"iluminación cinematográfica\" por una fuente y un lado: \"luz del horno que viene de la derecha\", \"brillo frío de una pantalla\".",
+            "La fuente nombrada da credibilidad y, además, fija la dirección y la temperatura de una sola vez."
+          ],
+          "exemplo": {
+            "rot": "En la hornada",
+            "texto": "Luz lateral del horno a la derecha, suave sobre el mesón; afuera, solo un poste frío en la calle oscura."
+          }
+        },
+        {
+          "titulo": "Una paleta por escena",
+          "sub": "los planos del mismo mundo",
+          "texto": [
+            "Los mismos tonos dominantes en todos los planos unen la escena. Si cada plano tiene una temperatura distinta, la escena se deshace en pedazos.",
+            "Elige tres o cuatro colores y repítelos. Si la historia pide un cambio, cámbialo a propósito, en un giro."
+          ]
+        },
+        {
+          "titulo": "La tarjeta de look",
+          "sub": "el trecho fijo del prompt",
+          "texto": [
+            "La tarjeta de look reúne las cinco decisiones y la paleta. Entra igual en todos los prompts de la escena, y eso sostiene la continuidad.",
+            "En el curso 1 se convierte en el bloque de luz y estilo del prompt. Aquí solo decides."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "La tarjeta de look y la frase de luz en el formato de los prompts en inglés.",
+      "blocos": [
+        {
+          "rot": "look.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Fuente: <de dónde viene la luz principal y la secundaria>\nDirección: <frontal, lateral o contraluz, y de qué lado>\nCalidad: <dura o suave, y dónde>\nTemperatura: <cálida, fría o neutra, y dónde aparece cada una>\nContraste: <alto o bajo; high-key o low-key>\nPaleta: <3 o 4 colores dominantes>\nAtmósfera: <niebla, vapor, polvo, lluvia o aire limpio>"
+        },
+        {
+          "rot": "Frase de luz para el prompt (inglés)",
+          "icone": "chat",
+          "conteudo": "Lighting: <fuente> from the <lado>, <soft ou hard> light, <warm ou cool> tones, <low-key ou high-key>, <atmosfera, ex.: steam visible in the light beam>. Color palette: <cores>."
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tu tarjeta de look",
+      "sub": "La página pide los siete campos y comprueba si indicaste la calidad (dura o suave) y la temperatura (cálida, fría o neutra).",
+      "arquivo": "look.txt",
+      "rot": "Pega aquí tu tarjeta de look (un campo por línea):",
+      "modelo": "Fuente: ...\nDirección: ...\nCalidad: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 4,
+          "campos": [
+            "Fuente",
+            "Dirección",
+            "Calidad",
+            "Temperatura",
+            "Contraste",
+            "Paleta",
+            "Atmósfera"
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "la calidad de la luz (dura o suave)",
+              "termos": [
+                "dura / duro / hard",
+                "suave / difusa / soft"
+              ]
+            },
+            {
+              "rot": "la temperatura (cálida, fría o neutra)",
+              "termos": [
+                "quente / warm",
+                "fria / frio / cool / cold",
+                "neutra / neutro / neutral"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: tarjeta de look con {n} campos",
+      "exemplo": "Fuente: la luz del horno y dos lámparas del mesón; afuera, solo un poste\nDirección: lateral, desde el horno a la derecha; contraluz de la vitrina en los planos de la calle\nCalidad: suave en el mesón, dura en el rostro cuando se abre el horno\nTemperatura: cálida dentro de la panadería, fría en la calle oscura\nContraste: alto, low-key; la calle casi negra\nPaleta: azul oscuro de la calle, cobre del horno, blanco de la harina\nAtmósfera: vapor del horno y harina en el aire, visibles en el haz de luz",
+      "exemplo_errado": "Luz: bonita y cinematográfica\nPaleta: colores vivos\nAtmósfera: mágica"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "La luz de tu escena, decidida antes de cualquier prompt.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Look · la tarjeta de tu escena",
+          "min": "15 min",
+          "texto": "Completa la tarjeta de look de tu escena: fuente con nombre, dirección, calidad, temperatura, contraste, paleta de 3 o 4 colores y atmósfera. Revisa y descarga el look.txt a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: tarjeta de look con 7 campos</code> para tu texto y el look.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Frase · el look en una línea de prompt",
+          "min": "5 min",
+          "texto": "Con el modelo \"Frase de luz para el prompt\", escribe la línea de luz de tu escena en inglés y pégala al final del look.txt.",
+          "pronto": "el look.txt termina con una línea que empieza por <code>Lighting:</code> y menciona la fuente, el lado y soft o hard."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué \"iluminación bonita y cinematográfica\" en el prompt suele salir plana?",
+          "opcoes": [
+            "Porque el generador ignora las palabras sobre luz en el prompt.",
+            "Porque no dice la fuente, el lado ni dónde queda la sombra.",
+            "Porque la luz solo se ajusta después, en el montaje.",
+            "Porque falta pedir una resolución mayor en la generación."
+          ],
+          "certa": 1,
+          "explica": "Un adjetivo no es una dirección. Sin fuente, lado y sombra, el generador ilumina todo por igual. Nombrar la fuente y pedir sombra (low-key) cambia el resultado.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué hace que una fuente de luz sea más suave?",
+          "opcoes": [
+            "Estar lejos y ser pequeña en relación con el sujeto.",
+            "Tener un color más cálido que el resto de la escena.",
+            "Estar cerca y ser grande en relación con el sujeto.",
+            "Venir de frente, a la altura de los ojos del sujeto."
+          ],
+          "certa": 2,
+          "explica": "Una fuente grande y cercana envuelve al sujeto y reparte la sombra. Una pequeña y distante hace una sombra de borde marcado. El color y la dirección cambian el clima, no la dureza.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Para qué sirve el vapor del horno en el haz de luz?",
+          "opcoes": [
+            "Para esconder defectos que deja la generación.",
+            "Para aclarar toda la imagen.",
+            "Para reemplazar la luz de recorte en el rostro.",
+            "Para hacer visible la luz y separar el fondo."
+          ],
+          "certa": 3,
+          "explica": "La niebla, el vapor y el polvo muestran el haz (luz volumétrica) y crean capas que dan profundidad. No aclaran la escena ni reemplazan otra luz.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Por qué mantener la misma paleta en todos los planos de la escena?",
+          "opcoes": [
+            "Para que los planos parezcan del mismo mundo.",
+            "Para que el generador renderice más rápido.",
+            "Porque un color distinto atrasa el sonido del plano.",
+            "Para que el montaje no necesite corrección de color."
+          ],
+          "certa": 0,
+          "explica": "Repetir la paleta une los planos en una sola escena. Cambiar de color sin motivo hace que la escena parezca hecha de pedazos; cambiarlo con motivo marca un giro.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Fuente y lado",
+          "texto": "Toda luz tiene una fuente creíble y viene de un lado. Nombra las dos cosas."
+        },
+        {
+          "t": "La sombra cuenta",
+          "texto": "Quitar luz crea profundidad. Dura es tensión; suave es acogida."
+        },
+        {
+          "t": "Look fijo",
+          "texto": "Paleta y atmósfera en la tarjeta de look, iguales en todos los prompts de la escena."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Guía oficial de prompt de video de Google: luz, clima y estilo",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 2 · Producción: color, grading y film look (clase 4)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "slug": "decupagem",
+  "num": 7,
+  "menu": "Shot list",
+  "titulo": "From script to shot list: a list of shots with sound and dialogue",
+  "titulo_curto": "Shot list with sound",
+  "minutos": 18,
+  "lead": "Making a shot list means cutting the written scene into numbered shots, each with a camera, timing and sound. In 2026 sound joined the list: video generators return audio along with the image, so what you hear in each shot is also a directing decision.",
+  "objetivo": "turn a written scene into a numbered shot list with the size, angle, movement, sound and duration of each shot.",
+  "competencias": [
+    "decupar-cena",
+    "planejar-som-por-plano",
+    "controlar-tempo-da-cena"
+  ],
+  "aprende": [
+    {
+      "t": "Write the scene in three or four sentences, with a beginning, a turn and an end"
+    },
+    {
+      "t": "Cut the scene into numbered shots with camera and duration"
+    },
+    {
+      "t": "Put each shot's sound on the list: ambience, effect and dialogue"
+    },
+    {
+      "t": "Check the shot list on the page itself before generating"
+    }
+  ],
+  "hero_alt": "Dark desk seen from above with handwritten shot-list sheets, a pencil, a closed clapperboard and a stopwatch.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From the written scene to the shot list",
+      "sub": "Six decisions, in this order. Click each one.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Script",
+          "sub": "3–4 sentences",
+          "icone": "caneta",
+          "detalhe": "The scene in three or four sentences: who, where, what happens and how it ends. If you can't write the scene in four sentences, it isn't ready to become shots yet."
+        },
+        {
+          "titulo": "Arc",
+          "sub": "opens and closes",
+          "icone": "camadas",
+          "detalhe": "Setup, turn and close. In a short scene, the arc fits in seconds: the first shot says where we are, the middle one brings the change, the last one leaves an image that works as a still."
+        },
+        {
+          "titulo": "Shots",
+          "sub": "numbered",
+          "icone": "lista",
+          "forte": true,
+          "detalhe": "Each shot is a numbered line. One idea per shot: if a shot does two things, it becomes two."
+        },
+        {
+          "titulo": "Camera",
+          "sub": "size, angle, movement",
+          "icone": "video",
+          "detalhe": "Size and angle (lesson 2) and a single movement (lesson 3). The change in size between neighboring shots is what gives rhythm."
+        },
+        {
+          "titulo": "Sound",
+          "sub": "ambience, effect, dialogue",
+          "icone": "megafone",
+          "detalhe": "What you hear in the shot: the ambience of the place, the effect of the action and the dialogue, if there is any. Written per shot, it goes into the prompt as a separate sentence."
+        },
+        {
+          "titulo": "Timing",
+          "sub": "seconds",
+          "icone": "relogio",
+          "detalhe": "The duration of each shot. The total has to match the scene's duration; a contemplative shot lasts longer, an action shot lasts less."
+        }
+      ],
+      "legenda": "Order matters: deciding the sound before the timing avoids a shot too short for the dialogue to fit."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to make a shot list, step by step",
+      "sub": "The example is the scene that runs through the course: \"The first batch\".",
+      "passos": [
+        {
+          "titulo": "The scene in four sentences",
+          "sub": "who, where, turn, end",
+          "texto": [
+            "Write the scene before thinking about the camera. Four sentences are enough: where and when, who and what they do, what changes, how it ends.",
+            "Also decide what the audience should feel. In the batch scene, it's the quiet pride of someone who wakes up before the city."
+          ],
+          "exemplo": {
+            "rot": "Scene (20 s)",
+            "texto": "4:50 a.m., a neighborhood bakery still closed. Dona Lia prepares the dough alone. The first batch comes out of the oven. Someone knocks on the iron door and she opens it for the first customer."
+          }
+        },
+        {
+          "titulo": "The arc in three beats",
+          "sub": "setup, turn, close",
+          "texto": [
+            "The three-act convention gives a guide proportion: a quarter of the scene to set up, half for tension and the turn, a quarter to close.",
+            "Opening wide and closing on a strong image gives you a beginning and an end. Paused on the last second, the final frame has to work on its own."
+          ]
+        },
+        {
+          "titulo": "Sound in every shot",
+          "sub": "audio now comes along with the picture",
+          "texto": [
+            "As of Oct 2026, the main video generators return audio in the same pass, with ambience, effects and speech. That's why the shot list gained a sound column.",
+            "Google's official video prompt guide recommends describing the audio in sentences separate from the image. The shot list's sound column becomes those sentences in course 1."
+          ],
+          "exemplo": {
+            "rot": "Sound column",
+            "texto": "sound: creaking oven, hissing steam. For dialogue, one short line: \"Coming!\""
+          }
+        },
+        {
+          "titulo": "Short line, with subtext",
+          "sub": "what goes unsaid weighs more",
+          "texto": [
+            "Dialogue in a short video is one sentence. The character doesn't explain what they feel: \"Coming!\" says routine and pride without naming either one.",
+            "Silence is sound too. A shot with only the ambience before the line gives it weight. Score, voice and mixing are the subject of course 2."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The format the page checks, and a request for the AI assistant to make the draft.",
+      "blocos": [
+        {
+          "rot": "decupagem.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <scene name> (<duration> s)\nScript: <the scene in 3 or 4 sentences>\n# n | size | angle | movement | duration | what happens | sound: ambience, effect, speech\n1 | <size> | <angle> | <one movement> | <n> s | <shot action> | sound: <what you hear>\n2 | <size> | <angle> | <one movement> | <n> s | <shot action> | sound: <what you hear>"
+        },
+        {
+          "rot": "Request for the AI assistant (shot list draft)",
+          "icone": "chat",
+          "conteudo": "You are a film directing assistant. Read the scene below and propose a shot list of 5 to 8 shots, one line per shot, in this format:\nn | size | angle | movement | duration | what happens | sound: ambience, effect, speech\nRules:\n- one camera movement per shot (or a locked-off camera);\n- the shot size changes between neighboring shots;\n- the durations add up to <scene duration> seconds;\n- the sound column carries the ambience, the effect of the action and, if there is one, a short line of speech;\n- do not invent a character, place or object that is not in the scene.\nScene: <paste the scene here in 3 or 4 sentences>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your shot list",
+      "sub": "Paste the file (or upload the .txt). First try the example that passes and the example with errors: it's a rehearsal, and it costs nothing.",
+      "arquivo": "decupagem.txt",
+      "rot": "Paste your shot list here (one numbered line per shot):",
+      "modelo": "1 | wide shot | high angle | locked-off camera | 3 s | ... | sound: ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "shot size",
+              "variar": 3,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / aberto / wide shot / plano abierto / abierto / wide",
+                "plano americano / americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / médio / medium shot / plano medio / medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / detalhe / extreme close-up / macro / plano detalle / detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "angle",
+              "termos": [
+                "altura do olho / altura dos olhos / nível dos olhos / ângulo normal / eye-level / eye level / normal angle / altura de los ojos / altura de ojos / ángulo normal",
+                "câmera alta / plongée / high angle / high-angle / cámara alta / picado / high camera",
+                "câmera baixa / contra-plongée / contraplongée / low angle / low-angle / low camera / cámara baja / contrapicado / contra-picado",
+                "zenital / plano zenital / top shot / top-down / bird's-eye / overhead / overhead shot / cenital / plano cenital",
+                "rente ao chão / worm's-eye / ground level / a ras del suelo",
+                "holandês / ângulo holandês / dutch angle / holandés / ángulo holandés",
+                "por cima do ombro / over-the-shoulder / over the shoulder / sobre el hombro / por encima del hombro",
+                "ponto de vista / câmera subjetiva / pov / point of view / punto de vista / cámara subjetiva"
+              ]
+            },
+            {
+              "rot": "movement",
+              "um_so": true,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / zoom / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "the sound column",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 16,
+          "max": 24
+        }
+      ],
+      "ok": "OK: {n} planos com tamanho, ângulo, movimento e som · {s} s",
+      "exemplo": "Scene: The first batch (20 s)\nScript: 4:50 a.m., a neighborhood bakery still closed. Dona Lia prepares the dough alone. The first batch comes out of the oven. Someone knocks on the iron door and she opens it for the first customer.\n# n | size | angle | movement | duration | what happens | sound\n1 | wide shot | high angle | locked-off camera | 3 s | Dark street; only the bakery window is lit. | sound: wind, a dog in the distance\n2 | medium shot | eye level | lateral tracking shot | 4 s | Dona Lia kneads the dough on the counter. | sound: low radio, dough slapping the table\n3 | close-up | low angle | dolly in | 3 s | The oven door opens and the steam rises. | sound: creaking oven, hissing\n4 | detail shot | overhead | locked-off camera | 3 s | The peel takes out the first batch. | sound: crust crackling\n5 | close-up | eye level | handheld camera | 3 s | Knocks on the iron door; she checks the clock and smiles. | sound: three knocks; speech: \"Coming!\"\n6 | wide shot | eye level | dolly out | 4 s | She lifts the shutter and the first customer walks in. | sound: iron shutter rising, door bell",
+      "exemplo_errado": "Scene: The first batch (20 s)\n1 | wide shot | high angle | locked-off camera | 3 s | Dark street; only the bakery window is lit. | sound: wind\n2 | medium shot | eye level | lateral tracking shot | 4 s | Dona Lia kneads the dough. | sound: low radio\n3 | close-up | low angle | dolly in with zoom in | 3 s | The oven door opens. | sound: creaking oven\n4 | detail shot | overhead | locked-off camera | 3 s | The peel takes out the batch.\n5 | close-up | eye level | handheld camera | Knocks on the iron door. | sound: three knocks"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Optional: check in the terminal",
+      "sub": "Only for those who already use a terminal. Download the course from GitHub and run it in its folder: the rules are the same as the page's. For your own file, replace <code>--exemplo</code> with its name (<code>decupagem.txt</code>); it exits 0 when it passes.",
+      "blocos": [
+        {
+          "rot": "Terminal (in the course folder)",
+          "icone": "terminal",
+          "conteudo": "python3 conferir.py decupagem --exemplo; echo \"saída: $?\"\npython3 conferir.py decupagem --errado; echo \"saída: $?\""
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Captured output (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py decupagem --exemplo; echo \"saída: $?\"\nOK: 6 planos com tamanho, ângulo, movimento e som · 20 s\nsaída: 0</pre>"
+          },
+          {
+            "rot": "Example with errors (10/19/2026)",
+            "html": "<pre>$ python3 conferir.py decupagem --errado; echo \"saída: $?\"\nAinda não. O que falta:\n - Plano 3: 2 escolhas de movimento; fique com uma só.\n - Plano 4: falta a coluna som.\n - Plano 5: falta a duração em segundos (ex.: 4 s).\n - Os planos somam 13 s; o pedido é de 16 a 24 s.\nsaída: 1</pre>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "A scene of your own, about 20 seconds long. You can start from the assistant's draft, but the final decision is yours.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Shot list · your 20 s scene",
+          "min": "25 min",
+          "texto": "Write the scene in four sentences and break it down into 5 to 8 shots in the template's format: size, angle, one movement, duration and the sound column. Paste it into the \"Check your shot list\" section and use \"Download the file\" to save decupagem.txt in your project folder.",
+          "pronto": "the page answers <code>OK: [n] planos com tamanho, ângulo, movimento e som · [s] s</code> for your text, with the total between 16 and 24 s, and decupagem.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Sound · an ambience-only shot",
+          "min": "10 min",
+          "texto": "In your shot list, leave one shot with no dialogue, only ambient sound, right before the shot that has the line. Check again.",
+          "pronto": "the page still answers <code>OK: …</code> and, in your list, the shot before the line shows only ambient sound or effect in the sound column, without the word dialogue."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "Why does the 2026 shot list have a sound column on every shot?",
+          "opcoes": [
+            "Because the soundtrack has to be chosen before the scene is written.",
+            "Because video generators now return the audio together with the image.",
+            "Because the generator only accepts a prompt that starts with the sound description.",
+            "Because without the sound column the shot durations don't add up."
+          ],
+          "certa": 1,
+          "explica": "Native audio became the standard in 2026: ambient sound, effects and dialogue come out in the same pass. If the sound comes out together, it has to be decided together, shot by shot. The music track is an editing choice (course 2), not a prerequisite for the scene.",
+          "ref": "passos"
+        },
+        {
+          "p": "One shot in your list says \"dolly in with zoom in.\" What does the page answer, and why?",
+          "opcoes": [
+            "It accepts it, because two movements together make the shot more dynamic.",
+            "It accepts it, as long as the shot lasts more than five seconds.",
+            "It rejects it: each shot calls for a single movement, in one clear direction.",
+            "It rejects it, because zoom is not a camera movement and can't appear."
+          ],
+          "certa": 2,
+          "explica": "One movement per shot: stacking movements makes the camera fight itself and the result comes out unstable. Zoom is a lens movement and is valid on its own; the problem is combining the two.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "Which of these lines has subtext?",
+          "opcoes": [
+            "\"Coming!\", said with a smile while she looks at the clock.",
+            "\"I'm proud to open the bakery before everyone else.\"",
+            "\"I feel this work gives meaning to my life.\"",
+            "\"I love it when the first customer arrives early.\""
+          ],
+          "certa": 0,
+          "explica": "Subtext is the feeling underneath an ordinary line. The other three name what the character feels, and the scene loses its tension. The short line also still fits in the shot's time.",
+          "ref": "passos"
+        },
+        {
+          "p": "Your scene is 20 s long and the shots add up to 31 s. What do you do first?",
+          "opcoes": [
+            "Change the scene duration to 31 s, without touching the shots.",
+            "Delete the sound column to save time on generation.",
+            "Swap every shot size for wide shots.",
+            "Shorten the action shots and cut whatever repeats another one."
+          ],
+          "certa": 3,
+          "explica": "The scene duration is a directing decision; the list is what adjusts to it. An action shot holds for less time, and a shot that repeats its neighbor's idea is the first to go.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Scene before camera",
+          "texto": "Four sentences and the audience's emotion. Without that, the shot list has nowhere to go."
+        },
+        {
+          "t": "One line per shot",
+          "texto": "Size, angle, a single movement, duration, action and sound. The total gives the scene duration."
+        },
+        {
+          "t": "Sound is a decision",
+          "texto": "Ambient sound, effects and dialogue per shot, because the audio comes out together with the image."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide (Veo and Gemini Omni Flash): audio section",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 2 · Production: sound, voice, music and editing",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

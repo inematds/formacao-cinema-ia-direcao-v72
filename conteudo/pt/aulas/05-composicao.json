@@ -7,12 +7,24 @@
   "minutos": 15,
   "lead": "Um quadro bonito em que o olho não sabe para onde ir não comunica nada. Composição é decidir o que se vê primeiro, onde o vazio trabalha a favor e como frente, meio e fundo se separam. É o que faz uma imagem gerada parecer espaço de verdade, e não um cenário chapado.",
   "objetivo": "compor cada quadro com um assunto que se entende em um segundo e três camadas de profundidade separadas por foco, luz ou cor.",
-  "competencias": ["hierarquia-visual", "escolher-composicao", "construir-profundidade"],
+  "competencias": [
+    "hierarquia-visual",
+    "escolher-composicao",
+    "construir-profundidade"
+  ],
   "aprende": [
-    {"t": "Aplicar o teste de um segundo a qualquer quadro"},
-    {"t": "Escolher entre terços, centro e diagonal pela emoção"},
-    {"t": "Usar o espaço vazio para isolar ou apertar"},
-    {"t": "Montar frente, meio e fundo e separar as camadas"}
+    {
+      "t": "Aplicar o teste de um segundo a qualquer quadro"
+    },
+    {
+      "t": "Escolher entre terços, centro e diagonal pela emoção"
+    },
+    {
+      "t": "Usar o espaço vazio para isolar ou apertar"
+    },
+    {
+      "t": "Montar frente, meio e fundo e separar as camadas"
+    }
   ],
   "hero_alt": "Vista por trás de um monitor de câmera que mostra um quadro com planta em primeiro plano, mesa no meio e janela ao fundo.",
   "secoes": [
@@ -22,11 +34,37 @@
       "sub": "Cinco decisões para cada quadro. Clique em cada uma.",
       "estilo": "fluxo",
       "nos": [
-        {"titulo": "Assunto", "sub": "um segundo", "icone": "alvo", "forte": true, "detalhe": "O que o público vê primeiro? Ele não deve procurar: deve entender a cena em um segundo. Se dois elementos disputam a atenção, um deles sai ou perde luz."},
-        {"titulo": "Equilíbrio", "sub": "terços ou centro", "icone": "camadas", "detalhe": "Regra dos terços: o sujeito fora do centro cria um fluxo natural do assunto para o ambiente. Centro e simetria: equilíbrio, controle, poder, ritual."},
-        {"titulo": "Linhas", "sub": "diagonal, condução", "icone": "seta", "detalhe": "A diagonal quebra a estabilidade e sugere movimento, mesmo parada. Linhas de condução (estrada, corredor, bancada, sombra) levam o olho até o assunto."},
-        {"titulo": "Espaço", "sub": "o vazio fala", "icone": "lupa", "detalhe": "Mais espaço vazio: liberdade, escala, isolamento. Menos espaço: tensão, aperto. O vazio não é falta de conteúdo; é o conteúdo emocional."},
-        {"titulo": "Camadas", "sub": "frente, meio, fundo", "icone": "camadas", "detalhe": "Frente: onde o público está. Meio: onde o sujeito está. Fundo: onde o contexto vive. Separe as três por foco, luz, cor ou névoa."}
+        {
+          "titulo": "Assunto",
+          "sub": "um segundo",
+          "icone": "alvo",
+          "forte": true,
+          "detalhe": "O que o público vê primeiro? Ele não deve procurar: deve entender a cena em um segundo. Se dois elementos disputam a atenção, um deles sai ou perde luz."
+        },
+        {
+          "titulo": "Equilíbrio",
+          "sub": "terços ou centro",
+          "icone": "camadas",
+          "detalhe": "Regra dos terços: o sujeito fora do centro cria um fluxo natural do assunto para o ambiente. Centro e simetria: equilíbrio, controle, poder, ritual."
+        },
+        {
+          "titulo": "Linhas",
+          "sub": "diagonal, condução",
+          "icone": "seta",
+          "detalhe": "A diagonal quebra a estabilidade e sugere movimento, mesmo parada. Linhas de condução (estrada, corredor, bancada, sombra) levam o olho até o assunto."
+        },
+        {
+          "titulo": "Espaço",
+          "sub": "o vazio fala",
+          "icone": "lupa",
+          "detalhe": "Mais espaço vazio: liberdade, escala, isolamento. Menos espaço: tensão, aperto. O vazio não é falta de conteúdo; é o conteúdo emocional."
+        },
+        {
+          "titulo": "Camadas",
+          "sub": "frente, meio, fundo",
+          "icone": "camadas",
+          "detalhe": "Frente: onde o público está. Meio: onde o sujeito está. Fundo: onde o contexto vive. Separe as três por foco, luz, cor ou névoa."
+        }
       ],
       "legenda": "A composição muda ao longo da sequência: a cena evolui de plano em plano em vez de se repetir."
     },
@@ -50,7 +88,10 @@
             "Terços para fluxo natural; centro e simetria para controle e monumento; diagonal para energia e ação. A escolha segue a emoção do plano, não o gosto.",
             "Varie ao longo da cena: três quadros seguidos com a mesma composição ficam repetitivos."
           ],
-          "exemplo": {"rot": "Na fornada", "texto": "Porta do forno no centro, simétrica: o ritual. A fileira de pães em diagonal: a energia da primeira fornada."}
+          "exemplo": {
+            "rot": "Na fornada",
+            "texto": "Porta do forno no centro, simétrica: o ritual. A fileira de pães em diagonal: a energia da primeira fornada."
+          }
         },
         {
           "titulo": "Espaço negativo",
@@ -90,13 +131,49 @@
       "rot": "Cole aqui os seus quadros (uma linha numerada por quadro):",
       "modelo": "1 | regra dos terços | frente: ... | meio: ... | fundo: ...",
       "regras": [
-        {"tipo": "planos", "min": 3, "max": 6},
-        {"tipo": "cada_plano", "grupos": [
-          {"rot": "a composição", "variar": 3, "termos": ["regra dos terços / terços / rule of thirds", "centro / centralizado / simetria / simétrico / symmetry / centered", "diagonal", "linhas de condução / linhas guia / leading lines", "espaço negativo / negative space", "moldura / quadro dentro do quadro / frame within a frame", "holandês / dutch angle"]},
-          {"rot": "a camada da frente (frente:)", "termos": ["frente: / foreground:"]},
-          {"rot": "a camada do meio (meio:)", "termos": ["meio: / midground:"]},
-          {"rot": "a camada do fundo (fundo:)", "termos": ["fundo: / background:"]}
-        ]}
+        {
+          "tipo": "planos",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "a composição",
+              "variar": 3,
+              "termos": [
+                "regra dos terços / terços / rule of thirds / thirds / regla de los tercios / tercios",
+                "centro / centralizado / simetria / simétrico / symmetry / centered / center / centre / symmetrical / centrado / simetría",
+                "diagonal",
+                "linhas de condução / linhas guia / leading lines / líneas guía / líneas de fuga",
+                "espaço negativo / negative space / espacio negativo",
+                "moldura / quadro dentro do quadro / frame within a frame / marco dentro del marco"
+              ]
+            },
+            {
+              "rot": "a camada da frente (frente:)",
+              "min": 2,
+              "termos": [
+                "frente: / foreground:"
+              ]
+            },
+            {
+              "rot": "a camada do meio (meio:)",
+              "min": 2,
+              "termos": [
+                "meio: / midground: / middle ground: / medio:"
+              ]
+            },
+            {
+              "rot": "a camada do fundo (fundo:)",
+              "min": 2,
+              "termos": [
+                "fundo: / background: / fondo:"
+              ]
+            }
+          ]
+        }
       ],
       "ok": "OK: {n} quadros com composição e três camadas",
       "exemplo": "Cena: A primeira fornada\n1 | regra dos terços | frente: a vitrine com os pães de ontem | meio: Dona Lia na bancada, no terço da direita | fundo: a porta de ferro fechada | o olho vai para: Dona Lia\n2 | centro | frente: a borda da bancada, desfocada | meio: a porta do forno | fundo: azulejos no escuro | o olho vai para: o forno\n3 | diagonal | frente: a pá de madeira entrando no quadro | meio: a fileira de pães | fundo: vapor contra a luz | o olho vai para: o pão da frente\n4 | espaço negativo | frente: o vidro da vitrine com gotas | meio: a padaria pequena e acesa | fundo: a rua vazia e escura | o olho vai para: a luz da padaria",
@@ -182,17 +259,32 @@
       "tipo": "resumo",
       "titulo": "Para guardar",
       "itens": [
-        {"t": "Um assunto", "texto": "O público entende o quadro em um segundo, sem procurar."},
-        {"t": "Composição pela emoção", "texto": "Terços para fluxo, centro para controle, diagonal para energia, vazio para isolar."},
-        {"t": "Três camadas", "texto": "Frente, meio e fundo, separados por foco, luz, cor ou névoa."}
+        {
+          "t": "Um assunto",
+          "texto": "O público entende o quadro em um segundo, sem procurar."
+        },
+        {
+          "t": "Composição pela emoção",
+          "texto": "Terços para fluxo, centro para controle, diagonal para energia, vazio para isolar."
+        },
+        {
+          "t": "Três camadas",
+          "texto": "Frente, meio e fundo, separados por foco, luz, cor ou névoa."
+        }
       ]
     },
     {
       "tipo": "links",
       "titulo": "Para ir além",
       "links": [
-        {"t": "Guia oficial de prompt de vídeo do Google: lentes e profundidade de campo", "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"},
-        {"t": "Curso 1 · Geração: imagem-chave e lookbook (aula 3)", "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"}
+        {
+          "t": "Guia oficial de prompt de vídeo do Google: lentes e profundidade de campo",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 1 · Geração: imagem-chave e lookbook (aula 3)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"
+        }
       ]
     }
   ]

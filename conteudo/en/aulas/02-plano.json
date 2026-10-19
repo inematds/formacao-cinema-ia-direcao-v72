@@ -1,0 +1,296 @@
+{
+  "slug": "plano",
+  "num": 2,
+  "menu": "Shot",
+  "titulo": "Shot size, angle and distance: the grammar every generator understands",
+  "titulo_curto": "Shot size, angle and distance",
+  "minutos": 16,
+  "lead": "Shot size and angle aren't aesthetics: they decide what the audience sees and how they feel about the character. And it's a vocabulary that Google's official video prompt guide lists with names and examples. You leave with your scene's shot ladder written in the terms the prompt uses.",
+  "objetivo": "choose the shot size and angle based on the audience's emotion, and write the scene's shot ladder in the generator's terms.",
+  "competencias": [
+    "escolher-tamanho-de-plano",
+    "escolher-angulo",
+    "traduzir-para-termo-de-prompt"
+  ],
+  "aprende": [
+    {
+      "t": "Read the shot ladder, from the wide shot to the detail"
+    },
+    {
+      "t": "Use angle to convey power, fragility or unease"
+    },
+    {
+      "t": "Know what the lens does to space"
+    },
+    {
+      "t": "Write each choice with the term the generator understands"
+    }
+  ],
+  "hero_alt": "A cinema camera and four lenses of different sizes lined up on a black cloth, with a blurred set in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The shot ladder",
+      "sub": "From the widest to the tightest. Each step answers a question.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "titulo": "Establishing",
+          "sub": "where we are",
+          "icone": "camadas",
+          "detalhe": "Establishing or extreme wide shot: place, mood and scale. In English, establishing shot or extreme wide shot. It opens the scene and sets the rules of the world."
+        },
+        {
+          "titulo": "Wide",
+          "sub": "body and space",
+          "icone": "camadas",
+          "detalhe": "Wide shot: the whole body inside the place. It shows isolation, danger or power through the relationship between the person and the space. In English, wide shot."
+        },
+        {
+          "titulo": "Medium wide",
+          "sub": "action",
+          "icone": "usuario",
+          "detalhe": "Medium wide shot, from the knee up: action and body language. In English, medium wide shot or cowboy shot."
+        },
+        {
+          "titulo": "Medium",
+          "sub": "conversation",
+          "icone": "usuario",
+          "detalhe": "Medium shot, from the waist up: conversation and neutral, realistic movement. In English, medium shot."
+        },
+        {
+          "titulo": "Close",
+          "sub": "emotion",
+          "icone": "usuario",
+          "forte": true,
+          "detalhe": "Close-up, the face: strong emotion, decision, fear, joy. The closer you get, the more the audience feels. In English, close-up; the middle ground is the medium close-up."
+        },
+        {
+          "titulo": "Detail",
+          "sub": "the clue",
+          "icone": "lupa",
+          "detalhe": "Detail shot: a hand, an object, a texture. It reveals the clue that changes the story. In English, extreme close-up or macro."
+        }
+      ],
+      "legenda": "Decision rule: if the place or the action matters more, go wide; if the emotion matters more, go tight; if a detail changes the story, go to the detail."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Size, angle and lens",
+      "sub": "Three decisions per shot, always based on what the audience should feel.",
+      "passos": [
+        {
+          "titulo": "Size is emotion",
+          "sub": "wide asks where; close asks how",
+          "texto": [
+            "A wide shot answers \"where are we?\". A close shot answers \"how does this feel?\". The detail shows what changes the story.",
+            "A path that works: open wide to show the world, move in to reveal the emotion, and end on a close-up or detail for impact."
+          ],
+          "exemplo": {
+            "rot": "In the batch",
+            "texto": "Wide shot of the dark street with the bakery lit up; medium shot of Dona Lia at the counter; close-up of her face lit by the oven."
+          }
+        },
+        {
+          "titulo": "Angle is a power relationship",
+          "sub": "where the camera looks from",
+          "texto": [
+            "Eye level is neutral. A high angle, looking down, makes the character small or vulnerable. A low angle, looking up, makes them powerful or imposing.",
+            "A top-down shot gives a map-like view; a worm's-eye view exaggerates height; a dutch angle (tilted camera) brings discomfort. Use the dutch angle rarely, or it loses its force."
+          ]
+        },
+        {
+          "titulo": "The warning from the official guide",
+          "sub": "not every angle comes out the same",
+          "texto": [
+            "Google's video prompt guide (Veo and Gemini Omni Flash, page updated on 10/15/2026) lists these angles and warns: some advanced angles and lenses are not officially supported, and results vary.",
+            "In practice, a simple, well-justified angle comes out more stable than a rare one. If the rare one doesn't work, swap it for a simple one with the same intent."
+          ]
+        },
+        {
+          "titulo": "The lens changes the space",
+          "sub": "wide-angle expands, telephoto compresses",
+          "texto": [
+            "A wide-angle lens opens the field and exaggerates perspective: the place looks bigger. A telephoto lens narrows the field and compresses space: the background looks glued on and the subject is isolated.",
+            "Shallow depth of field keeps only the subject sharp and blurs the rest. It is a quiet way to say where to look (lesson 5)."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates to copy",
+      "sub": "The vocabulary in Portuguese with the term used in prompts, and the ladder template. Angles, movements and lenses checked against Google's official guide on 10/19/2026.",
+      "blocos": [
+        {
+          "rot": "Vocabulary: Portuguese → prompt term",
+          "icone": "lista",
+          "conteudo": "# tamanho do plano\nplano geral / de estabelecimento → establishing shot, extreme wide shot\nplano aberto → wide shot\nplano americano → medium wide shot (cowboy shot)\nplano médio → medium shot\nmeio primeiro plano → medium close-up\nclose (primeiro plano) → close-up\nplano detalhe → extreme close-up, macro shot\n# ângulo\naltura do olho → eye-level shot\ncâmera alta (plongée) → high-angle shot\ncâmera baixa (contra-plongée) → low-angle shot\nzenital → bird's-eye view, top-down shot\nrente ao chão → worm's-eye view\nholandês → dutch angle, canted angle\n# lente\ngrande-angular → wide-angle lens\nteleobjetiva → telephoto lens\nprofundidade de campo rasa → shallow depth of field"
+        },
+        {
+          "rot": "escada.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <scene name>\n1 | <size> | <angle> | <what the shot shows and what the audience feels>\n2 | <size> | <angle> | <what the shot shows and what the audience feels>\n3 | <size> | <angle> | <what the shot shows and what the audience feels>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your ladder",
+      "sub": "The page checks that each shot has a size and an angle and that the ladder varies: at least 4 different sizes and 3 different angles.",
+      "arquivo": "escada.txt",
+      "rot": "Paste your shot ladder here (one numbered line per shot):",
+      "modelo": "1 | plano geral | câmera alta | ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 8
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "shot size",
+              "variar": 4,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / aberto / wide shot / plano abierto / abierto / wide",
+                "plano americano / americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / médio / medium shot / plano medio / medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / detalhe / extreme close-up / macro / plano detalle / detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "angle",
+              "variar": 3,
+              "termos": [
+                "altura do olho / altura dos olhos / nível dos olhos / ângulo normal / eye-level / eye level / normal angle / altura de los ojos / altura de ojos / ángulo normal",
+                "câmera alta / plongée / high angle / high-angle / cámara alta / picado / high camera",
+                "câmera baixa / contra-plongée / contraplongée / low angle / low-angle / low camera / cámara baja / contrapicado / contra-picado",
+                "zenital / plano zenital / top shot / top-down / bird's-eye / overhead / overhead shot / cenital / plano cenital",
+                "rente ao chão / worm's-eye / ground level / a ras del suelo",
+                "holandês / ângulo holandês / dutch angle / holandés / ángulo holandés",
+                "por cima do ombro / over-the-shoulder / over the shoulder / sobre el hombro / por encima del hombro",
+                "ponto de vista / câmera subjetiva / pov / point of view / punto de vista / cámara subjetiva"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} shots with varied size and angle",
+      "exemplo": "Scene: The first batch\n1 | wide shot | high camera | the dark street and the lit bakery: where we are\n2 | wide shot | eye level | Dona Lia alone at the counter: the size of the work\n3 | medium shot | eye level | she kneads the dough: the action\n4 | close-up | low camera | her face lit by the oven: pride\n5 | detail shot | overhead | the bread crust crackling on the peel: the clue\n6 | medium-long shot | over the shoulder | she opens the iron door for the customer",
+      "exemplo_errado": "Scene: The first batch\n1 | medium shot | eye level | the bakery\n2 | medium shot | eye level | Dona Lia at the counter\n3 | medium shot | eye level | she kneads the dough\n4 | medium shot | the oven opens\n5 | medium shot | eye level | she opens the door"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice",
+      "sub": "Use the scene from the card in lesson 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Ladder · your scene in 5 to 8 shots",
+          "min": "15 min",
+          "texto": "Write the ladder for your scene: on each line, the size, the angle, and what the audience sees and feels. Vary it: at least 4 sizes and 3 angles. Check it in the section above and download the escada.txt into the project folder.",
+          "pronto": "the page answers <code>OK: [n] shots with varied size and angle</code> for your text, and the escada.txt is in the project folder."
+        },
+        {
+          "id": "e2",
+          "titulo": "Swap · the most important shot with another angle",
+          "min": "5 min",
+          "texto": "Pick the shot that carries the emotion of the scene and imagine it from another angle. At the end of the escada.txt, write a line starting with Swap: with the new angle and what changes in the audience's feeling.",
+          "pronto": "the escada.txt has, after the shots, a line that starts with <code>Troca:</code> with an angle different from the original and the effect in one sentence."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Quick quiz",
+      "sub": "Four questions. The explanation shows up after each answer.",
+      "perguntas": [
+        {
+          "p": "The scene needs to show that Dona Lia is alone in a neighborhood that is still asleep. Which shot size?",
+          "opcoes": [
+            "Wide or establishing shot, with the place and the scale.",
+            "Close-up on the face, so the audience sees the emotion.",
+            "Detail shot of the hands covered in flour.",
+            "Medium close-up, facing her."
+          ],
+          "certa": 0,
+          "explica": "Loneliness in space is shown through the relationship between the person and the place: a wide or establishing shot. The close-up shows emotion, but it hides the empty neighborhood that gives the scene its meaning.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "According to Google's official guide, what does the low-angle shot do to the character?",
+          "opcoes": [
+            "Makes the character small and vulnerable.",
+            "Gives a neutral view, as if from a person's height.",
+            "Creates a map-like view, seen from above.",
+            "Makes the character look powerful or imposing."
+          ],
+          "certa": 3,
+          "explica": "A camera below the subject, looking up, gives power. Small and vulnerable is the high camera; neutral is eye level; map view is the overhead.",
+          "ref": "passos"
+        },
+        {
+          "p": "What does the official guide warn about advanced angles and lenses?",
+          "opcoes": [
+            "That they only work in vertical video, 9:16.",
+            "That they are not officially supported and the result varies.",
+            "That they always require a reference image.",
+            "That they only apply to scenes without dialogue."
+          ],
+          "certa": 1,
+          "explica": "The guide says that some advanced angles and lenses are not officially supported and that the result varies. That is why a simple, justified angle is the most stable bet.",
+          "ref": "passos"
+        },
+        {
+          "p": "When is the detail shot (extreme close-up) the right choice?",
+          "opcoes": [
+            "Always in the first shot of the scene, to grab attention.",
+            "When the scene needs to show where we are.",
+            "When a detail changes the course of the story.",
+            "When the character talks to another."
+          ],
+          "certa": 2,
+          "explica": "The detail reveals the clue: the hand on the doorknob, the bread crust crackling. To show the place, go wide; for conversation, the medium shot or the over-the-shoulder shot work better.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "To keep",
+      "itens": [
+        {
+          "t": "Size",
+          "texto": "Wide shows where; tight shows how it feels; detail shows the clue."
+        },
+        {
+          "t": "Angle",
+          "texto": "High makes small, low makes grand, eye level is neutral. Dutch, rarely."
+        },
+        {
+          "t": "Prompt term",
+          "texto": "Write the choice with the term the generator understands: wide shot, close-up, low-angle shot."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Google's official video prompt guide: angles, movements, and lenses",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Course 1 · Generation: anatomy of the video prompt (lesson 2)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/"
+        }
+      ]
+    }
+  ]
+}

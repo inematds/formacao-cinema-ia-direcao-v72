@@ -1,0 +1,291 @@
+{
+  "slug": "composicao",
+  "num": 5,
+  "menu": "Encuadre",
+  "titulo": "Composición y profundidad en el encuadre",
+  "titulo_curto": "Composición y profundidad",
+  "minutos": 15,
+  "lead": "Un encuadre bonito en el que el ojo no sabe adónde ir no comunica nada. Componer es decidir qué se ve primero, dónde el vacío trabaja a tu favor y cómo se separan el frente, el medio y el fondo. Eso hace que una imagen generada parezca un espacio de verdad y no un decorado plano.",
+  "objetivo": "componer cada encuadre con un asunto que se entienda en un segundo y tres capas de profundidad separadas por foco, luz o color.",
+  "competencias": [
+    "hierarquia-visual",
+    "escolher-composicao",
+    "construir-profundidade"
+  ],
+  "aprende": [
+    {
+      "t": "Aplicar la prueba de un segundo a cualquier encuadre"
+    },
+    {
+      "t": "Elegir entre tercios, centro y diagonal según la emoción"
+    },
+    {
+      "t": "Usar el espacio vacío para aislar o apretar"
+    },
+    {
+      "t": "Armar frente, medio y fondo y separar las capas"
+    }
+  ],
+  "hero_alt": "Vista desde atrás de un monitor de cámara que muestra un encuadre con una planta en primer plano, una mesa en el medio y una ventana al fondo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del asunto a las capas",
+      "sub": "Cinco decisiones para cada encuadre. Haz clic en cada una.",
+      "estilo": "fluxo",
+      "nos": [
+        {
+          "titulo": "Asunto",
+          "sub": "un segundo",
+          "icone": "alvo",
+          "forte": true,
+          "detalhe": "¿Qué ve el público primero? No debe buscar: debe entender la escena en un segundo. Si dos elementos se disputan la atención, uno sale o pierde luz."
+        },
+        {
+          "titulo": "Equilibrio",
+          "sub": "tercios o centro",
+          "icone": "camadas",
+          "detalhe": "Regla de los tercios: el sujeto fuera del centro crea un flujo natural del asunto hacia el ambiente. Centro y simetría: equilibrio, control, poder, ritual."
+        },
+        {
+          "titulo": "Líneas",
+          "sub": "diagonal, guía",
+          "icone": "seta",
+          "detalhe": "La diagonal rompe la estabilidad y sugiere movimiento, incluso quieta. Las líneas de guía (carretera, pasillo, mesón, sombra) llevan el ojo hasta el asunto."
+        },
+        {
+          "titulo": "Espacio",
+          "sub": "el vacío habla",
+          "icone": "lupa",
+          "detalhe": "Más espacio vacío: libertad, escala, aislamiento. Menos espacio: tensión, agobio. El vacío no es falta de contenido; es el contenido emocional."
+        },
+        {
+          "titulo": "Capas",
+          "sub": "frente, medio, fondo",
+          "icone": "camadas",
+          "detalhe": "Frente: donde está el público. Medio: donde está el sujeto. Fondo: donde vive el contexto. Separa las tres por foco, luz, color o neblina."
+        }
+      ],
+      "legenda": "La composición cambia a lo largo de la secuencia: la escena evoluciona de plano en plano en lugar de repetirse."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Composición en la práctica",
+      "sub": "Los ejemplos vienen de la panadería.",
+      "passos": [
+        {
+          "titulo": "La prueba de un segundo",
+          "sub": "el ojo no busca",
+          "texto": [
+            "Mira el encuadre por un segundo y di en voz alta cuál es el asunto. Si dudas, el público también va a dudar.",
+            "Un asunto dominante por encuadre. Producto, persona y un detalle de fondo peleando por la atención dan una imagen bonita que no dice nada."
+          ]
+        },
+        {
+          "titulo": "Tercios, centro o diagonal",
+          "sub": "según la emoción del plano",
+          "texto": [
+            "Tercios para un flujo natural; centro y simetría para control y monumento; diagonal para energía y acción. La elección sigue la emoción del plano, no el gusto.",
+            "Varía a lo largo de la escena: tres cuadros seguidos con la misma composición resultan repetitivos."
+          ],
+          "exemplo": {
+            "rot": "En la hornada",
+            "texto": "Puerta del horno en el centro, simétrica: el ritual. La fila de panes en diagonal: la energía de la primera hornada."
+          }
+        },
+        {
+          "titulo": "Espacio negativo",
+          "sub": "respiro o presión",
+          "texto": [
+            "Antes de generar, decide: ¿el público debe sentir respiro o presión? La cantidad de vacío responde eso antes que cualquier otra elección.",
+            "Doña Lia pequeña en una esquina del cuadro, con la calle oscura ocupando el resto, cuenta la soledad de quien despierta antes que la ciudad."
+          ]
+        },
+        {
+          "titulo": "Tres capas, separadas",
+          "sub": "foco, luz, color, neblina",
+          "texto": [
+            "Tener frente, medio y fondo no basta: tienen que ser distintas. La profundidad de campo corta desenfoca el frente o el fondo; el contraluz recorta al sujeto; el color y la neblina empujan el fondo hacia atrás.",
+            "Con las capas separadas, el movimiento lateral de la cámara (lección 3) hace que cada una se mueva a su propio ritmo, y el espacio parece real."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar",
+      "sub": "Una línea por cuadro: la composición, las tres capas y hacia dónde va el ojo.",
+      "blocos": [
+        {
+          "rot": "quadros.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Escena: <nombre de la escena>\n1 | <composición> | frente: <lo que está cerca de la cámara> | medio: <el sujeto> | fondo: <el contexto> | el ojo va hacia: <el asunto>\n2 | <composición> | frente: <...> | medio: <...> | fondo: <...> | el ojo va hacia: <...>\n# composiciones: regla de los tercios, centro (simetría), diagonal, líneas de conducción, espacio negativo, marco (cuadro dentro del cuadro)"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tus cuadros",
+      "sub": "La página pide de 3 a 6 cuadros, cada uno con la composición y las tres capas, y al menos 3 composiciones diferentes.",
+      "arquivo": "quadros.txt",
+      "rot": "Pega aquí tus cuadros (una línea numerada por cuadro):",
+      "modelo": "1 | regla de los tercios | frente: ... | medio: ... | fondo: ...",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 3,
+          "max": 6
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "la composición",
+              "variar": 3,
+              "termos": [
+                "regra dos terços / terços / rule of thirds / thirds / regla de los tercios / tercios",
+                "centro / centralizado / simetria / simétrico / symmetry / centered / center / centre / symmetrical / centrado / simetría",
+                "diagonal",
+                "linhas de condução / linhas guia / leading lines / líneas guía / líneas de fuga",
+                "espaço negativo / negative space / espacio negativo",
+                "moldura / quadro dentro do quadro / frame within a frame / marco dentro del marco"
+              ]
+            },
+            {
+              "rot": "la capa del frente (frente:)",
+              "min": 2,
+              "termos": [
+                "frente: / foreground:"
+              ]
+            },
+            {
+              "rot": "la capa del medio (medio:)",
+              "min": 2,
+              "termos": [
+                "meio: / midground: / middle ground: / medio:"
+              ]
+            },
+            {
+              "rot": "la capa del fondo (fondo:)",
+              "min": 2,
+              "termos": [
+                "fundo: / background: / fondo:"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} cuadros con composición y tres capas",
+      "exemplo": "Escena: La primera hornada\n1 | regla de los tercios | frente: la vitrina con los panes de ayer | medio: Doña Lia en el mesón, en el tercio derecho | fondo: la puerta de hierro cerrada | el ojo va hacia: Doña Lia\n2 | centro | frente: el borde del mesón, desenfocado | medio: la puerta del horno | fondo: azulejos en la oscuridad | el ojo va hacia: el horno\n3 | diagonal | frente: la pala de madera entrando al cuadro | medio: la fila de panes | fondo: vapor a contraluz | el ojo va hacia: el pan del frente\n4 | espacio negativo | frente: el vidrio de la vitrina con gotas | medio: la panadería pequeña y encendida | fondo: la calle vacía y oscura | el ojo va hacia: la luz de la panadería",
+      "exemplo_errado": "Escena: La primera hornada\n1 | centro | frente: la vitrina | medio: Doña Lia\n2 | centro | medio: el horno | fondo: azulejos"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica",
+      "sub": "Toma los planos más importantes de tu escena.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Cuadros · composición y capas",
+          "min": "15 min",
+          "texto": "Escribe de 3 a 6 cuadros de tu escena con la composición, el frente, el medio, el fondo y hacia dónde va el ojo. Usa al menos 3 composiciones diferentes. Revisa y descarga el quadros.txt a la carpeta del proyecto.",
+          "pronto": "la página responde <code>OK: [n] cuadros con composición y tres capas</code> para tu texto y el quadros.txt está en la carpeta del proyecto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Un segundo · la prueba en voz alta",
+          "min": "5 min",
+          "texto": "Para cada cuadro, lee solo la línea \"el ojo va hacia\" y revisa que haya un solo asunto. Si la línea cita dos cosas, quita luz o foco de una de ellas y reescríbela.",
+          "pronto": "en todas las líneas del quadros.txt, después de <code>el ojo va hacia:</code>, hay un único asunto."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba rápida",
+      "sub": "Cuatro preguntas. La explicación aparece después de cada respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué es la prueba de un segundo?",
+          "opcoes": [
+            "Generar un clip de un segundo antes del clip largo.",
+            "Cortar cada plano para que dure como máximo un segundo.",
+            "Captar el tema de un vistazo y poder decirlo en un segundo.",
+            "Esperar un segundo de silencio antes de cada corte."
+          ],
+          "certa": 2,
+          "explica": "El público no debe buscar el tema. Si dudas al decir qué muestra el cuadro, la composición falló, por más bonita que se vea.",
+          "ref": "passos"
+        },
+        {
+          "p": "Doña Lia pequeña en la esquina, la calle vacía ocupando el resto del cuadro. ¿Qué comunica el espacio vacío?",
+          "opcoes": [
+            "Prisa y urgencia en la escena.",
+            "Un error de encuadre.",
+            "Que falta un objeto en escena.",
+            "Aislamiento y escala."
+          ],
+          "certa": 3,
+          "explica": "Mucho espacio negativo aísla al sujeto y muestra el tamaño del mundo a su alrededor. Poco espacio hace lo contrario: aprieta y crea tensión.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿Cómo separar al sujeto del fondo sin cambiar la composición?",
+          "opcoes": [
+            "Desenfocar el fondo, poner contraluz o cambiar el color.",
+            "Poner al sujeto en el centro exacto del cuadro, siempre.",
+            "Llenar el fondo de objetos para dar contexto.",
+            "Cambiar el lente por un gran angular abierto."
+          ],
+          "certa": 0,
+          "explica": "Foco, luz, color y niebla separan las capas. Más objetos en el fondo compiten por la atención; centrar cambia la composición; el gran angular aumenta el espacio, pero no separa por sí solo.",
+          "ref": "passos"
+        },
+        {
+          "p": "Simetría y sujeto al centro, ¿qué transmiten?",
+          "opcoes": [
+            "Energía y velocidad.",
+            "Control, orden y poder.",
+            "Incomodidad e inestabilidad.",
+            "Intimidad y calidez."
+          ],
+          "certa": 1,
+          "explica": "Centro y simetría afirman orden, monumento y control. La energía es de la diagonal; la incomodidad, del ángulo holandés; la intimidad, del primer plano cerrado.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {
+          "t": "Un tema",
+          "texto": "El público entiende el cuadro en un segundo, sin buscar."
+        },
+        {
+          "t": "Composición según la emoción",
+          "texto": "Tercios para el flujo, centro para el control, diagonal para la energía, vacío para aislar."
+        },
+        {
+          "t": "Tres capas",
+          "texto": "Frente, medio y fondo, separados por foco, luz, color o niebla."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Guía oficial de prompt de video de Google: lentes y profundidad de campo",
+          "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"
+        },
+        {
+          "t": "Curso 1 · Generación: imagen clave y lookbook (clase 3)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/es/"
+        }
+      ]
+    }
+  ]
+}

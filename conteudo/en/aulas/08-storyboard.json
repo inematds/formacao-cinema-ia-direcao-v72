@@ -1,0 +1,402 @@
+{
+  "slug": "storyboard",
+  "num": 8,
+  "menu": "Storyboard",
+  "titulo": "Your storyboard: a 30 s scene broken into shots and checked",
+  "titulo_curto": "Your 30 s storyboard",
+  "minutos": 20,
+  "lead": "Time to put it all together: the director's card, the character sheet, the look and the shot list become a 30-second storyboard, checked by the page. It's the package you take to any generator, and it's where course 1 starts.",
+  "objetivo": "combine the card, character sheet, look, and shot list into a 30 s storyboard checked against the page, ready to become a prompt.",
+  "competencias": [
+    "montar-storyboard",
+    "conferir-pacote-de-direcao",
+    "planejar-a-formacao"
+  ],
+  "aprende": [
+    {
+      "t": "See the course map and what each step delivers"
+    },
+    {
+      "t": "Build the 30 s storyboard with a header and shots"
+    },
+    {
+      "t": "Check the whole package before generating"
+    },
+    {
+      "t": "Generate your study plan with dates"
+    }
+  ],
+  "hero_alt": "Pre-production wall with eight pencil storyboard frames pinned in two rows, on a table with pencils and yellow gaffer tape.",
+  "secoes": [
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "Four steps that become your storyboard. Click an exercise to see its \"done when\".",
+      "degraus": [
+        {
+          "aula": "diretor",
+          "icone": "usuario",
+          "quando": "Lesson 1",
+          "titulo": "Card",
+          "sub": "intent and anchor",
+          "saida": "cartao.txt with the 4 questions answered.",
+          "passo": "What the audience should feel, the anchor, and why you chose the angle, movement, duration and light. It is the header of the storyboard."
+        },
+        {
+          "aula": "camera",
+          "icone": "video",
+          "quando": "Lessons 2 and 3",
+          "titulo": "Camera",
+          "sub": "shot and movement",
+          "saida": "escada.txt and movimentos.txt.",
+          "passo": "Size, angle and one movement per shot, each choice made for its effect on the audience."
+        },
+        {
+          "aula": "ficha",
+          "icone": "cadeado",
+          "quando": "Lessons 4 to 6",
+          "titulo": "Sheet",
+          "sub": "look and character",
+          "saida": "look.txt, quadros.txt and ficha.txt.",
+          "passo": "Fixed light and palette, layered composition and a locked character. This is what holds continuity together."
+        },
+        {
+          "aula": "decupagem",
+          "icone": "lista",
+          "quando": "Lesson 7",
+          "titulo": "Shot list",
+          "sub": "shots with sound",
+          "saida": "decupagem.txt checked.",
+          "passo": "The scene cut into numbered shots, with camera, sound and timing. This lesson's storyboard comes from here."
+        }
+      ],
+      "resultado": {
+        "titulo": "At the end of the course",
+        "texto": "A folder with the card, character sheet, look and a 30 s storyboard, ready for any generator.",
+        "total": "8 files"
+      },
+      "rolagem_fim": {
+        "titulo": "The whole course",
+        "texto": "Four steps, each with its file checked by the page. This lesson's storyboard brings them all together."
+      },
+      "legenda": "Suggested order: each step uses what the previous one decided."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build the storyboard",
+      "sub": "A header with the fixed decisions and one line per shot.",
+      "passos": [
+        {
+          "titulo": "Header",
+          "sub": "what applies to all shots",
+          "texto": [
+            "Scene, anchor and emotion come from the card. The character sheet and the look go in one line each, summarized: this is the snippet that repeats in every prompt.",
+            "If a line in the header changes midway, every shot changes with it."
+          ]
+        },
+        {
+          "titulo": "The shots",
+          "sub": "6 to 10, adding up to 30 s",
+          "texto": [
+            "The shot list from lesson 7 grows to 30 seconds: 6 to 10 shots, each with size, angle, one movement, duration, action and sound.",
+            "Vary it: at least 3 sizes, 2 angles and 3 movements. Open by setting the scene, move in closer at the turn, and close on an image that works as a still."
+          ]
+        },
+        {
+          "titulo": "Check before you generate",
+          "sub": "the rehearsal that costs nothing",
+          "texto": [
+            "The page checks the whole package in seconds. Fixing a line of text costs nothing; redoing a generation costs time and credits.",
+            "Only take to the generator the storyboard that has already answered OK."
+          ]
+        },
+        {
+          "titulo": "The bridge to course 1",
+          "sub": "from storyboard to prompt",
+          "texto": [
+            "In course 1, each line of this storyboard becomes a prompt, with the character sheet as a reference and the look as a fixed block.",
+            "Keep the project folder: it is the one you open in the first lesson there."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Template to copy",
+      "sub": "The complete storyboard: header and shots.",
+      "blocos": [
+        {
+          "rot": "storyboard.txt (template)",
+          "icone": "arquivo",
+          "conteudo": "Scene: <scene name> (30 s)\nAnchor: <character, product or rhythm>\nEmotion: <what the audience should feel>\nSheet: <name and the Never changes line from the sheet>\nLook: <the light sentence and the palette>\n# n | size | angle | movement | duration | what happens | sound: ambience, effect, dialogue\n1 | <size> | <angle> | <one movement> | <n> s | <action> | sound: <what you hear>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your storyboard",
+      "sub": "A header with five lines, 6 to 10 complete shots, camera variety, and a total between 27 and 33 s.",
+      "arquivo": "storyboard.txt",
+      "rot": "Paste your storyboard here:",
+      "modelo": "Scene: ...\nAnchor: ...\n1 | wide shot | high angle | static camera | 4 s | ... | sound: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "min": 6,
+          "campos": [
+            "Scene",
+            "Anchor",
+            "Emotion",
+            "Sheet",
+            "Look"
+          ]
+        },
+        {
+          "tipo": "planos",
+          "min": 6,
+          "max": 10
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "shot size",
+              "variar": 3,
+              "termos": [
+                "plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot / plano general / plano de establecimiento / gran plano general",
+                "plano aberto / aberto / wide shot / plano abierto / abierto / wide",
+                "plano americano / americano / medium wide shot / cowboy shot / medium-long shot / medium long shot",
+                "plano médio / médio / medium shot / plano medio / medio / mid shot",
+                "meio primeiro plano / close médio / medium close-up / plano medio corto",
+                "close / close-up / primeiro plano / plano fechado / closeup / primer plano / plano cerrado",
+                "plano detalhe / detalhe / extreme close-up / macro / plano detalle / detalle / detail shot / macro shot"
+              ]
+            },
+            {
+              "rot": "angle",
+              "variar": 2,
+              "termos": [
+                "altura do olho / altura dos olhos / nível dos olhos / ângulo normal / eye-level / eye level / normal angle / altura de los ojos / altura de ojos / ángulo normal",
+                "câmera alta / plongée / high angle / high-angle / cámara alta / picado / high camera",
+                "câmera baixa / contra-plongée / contraplongée / low angle / low-angle / low camera / cámara baja / contrapicado / contra-picado",
+                "zenital / plano zenital / top shot / top-down / bird's-eye / overhead / overhead shot / cenital / plano cenital",
+                "rente ao chão / worm's-eye / ground level / a ras del suelo",
+                "holandês / ângulo holandês / dutch angle / holandés / ángulo holandés",
+                "por cima do ombro / over-the-shoulder / over the shoulder / sobre el hombro / por encima del hombro",
+                "ponto de vista / câmera subjetiva / pov / point of view / punto de vista / cámara subjetiva"
+              ]
+            },
+            {
+              "rot": "movement",
+              "um_so": true,
+              "variar": 3,
+              "termos": [
+                "câmera parada / câmera fixa / plano fixo / static shot / static camera / still camera / fixed camera / locked-off shot / cámara fija / cámara quieta / plano fijo / locked-off camera / locked camera",
+                "dolly in / push-in / aproximação lenta / slow push-in / acercamiento lento",
+                "dolly out / pull-out / afastamento lento / alejamiento lento",
+                "travelling lateral / travelling / tracking shot / truck / dolly lateral / tracking / side tracking shot / lateral tracking shot",
+                "panorâmica / panning shot / panorámica / pan left / pan right / pan shot",
+                "tilt / tilt up / tilt down",
+                "grua / crane / pedestal up / pedestal down / crane shot / grúa",
+                "órbita / orbit / arc shot / orbit shot",
+                "câmera na mão / handheld / handheld camera / cámara en mano",
+                "zoom in / zoom out / zoom / crash zoom",
+                "dolly zoom / efeito vertigo / vertigo effect / efecto vértigo",
+                "whip pan / chicote / swish pan / latigazo",
+                "drone / plano aéreo / aerial shot"
+              ]
+            },
+            {
+              "rot": "the sound column",
+              "min": 3,
+              "termos": [
+                "som: / áudio: / sound: / audio: / sonido:"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "duracao",
+          "min": 27,
+          "max": 33
+        }
+      ],
+      "ok": "OK: storyboard with {n} shots checked · {s} s",
+      "exemplo": "Scene: The first batch (30 s)\nAnchor: Dona Lia; everything serves her quiet pride\nEmotion: the pride and warmth of being the first one there\nSheet: Dona Lia, 58 years old; hair in a bun with a headscarf, glasses, navy-blue apron, wooden peel\nLook: side light from the oven, soft and warm inside; cold, dark street; low-key; steam in the beam\n# n | size | angle | movement | duration | what happens | sound\n1 | wide shot | high angle | static camera | 4 s | Dark street; only the bakery window is lit. | sound: wind, a dog far away\n2 | wide shot | eye level | lateral tracking shot | 4 s | Dona Lia turns on the lights and ties her apron. | sound: light switch, low radio\n3 | medium shot | eye level | static camera | 4 s | She kneads the dough on the counter. | sound: dough slapping on the table\n4 | close-up | low angle | dolly in | 4 s | The oven door opens and the steam rises. | sound: oven creaking, hiss\n5 | detail shot | overhead | tilt | 3 s | The peel pulls out the first batch. | sound: crust crackling\n6 | close-up | eye level | static camera | 3 s | She tastes a piece and closes her eyes. | sound: just the radio, very low\n7 | medium shot | over the shoulder | handheld camera | 4 s | Knocks on the iron door; she checks the clock and smiles. | sound: three knocks; dialogue: \"Coming!\"\n8 | wide shot | eye level | dolly out | 4 s | She raises the door and the first customer walks in. | sound: iron door rolling up, door bell",
+      "exemplo_errado": "Scene: The first batch\nAnchor: the bakery\n1 | medium shot | eye level | static camera | 5 s | The bakery. | sound: radio\n2 | medium shot | eye level | static camera | 5 s | Dona Lia works. | sound: radio\n3 | medium shot | eye level | orbit and zoom | 5 s | The oven opens.\n4 | medium shot | eye level | static camera | The customer walks in. | sound: bell"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Final practice",
+      "sub": "Your scene, from start to finish.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Storyboard · your 30 s scene",
+          "min": "40 min",
+          "texto": "Build the storyboard for your scene: a header with Scene, Anchor, Emotion, Sheet and Look, and 6 to 10 shots adding up to 30 s. Check it until the page answers OK, then download storyboard.txt.",
+          "pronto": "the page answers <code>OK: storyboard with [n] shots checked · [s] s</code> to your text, with the total between 27 and 33 s."
+        },
+        {
+          "id": "e2",
+          "titulo": "Folder · the complete direction package",
+          "min": "5 min",
+          "texto": "Check the project folder: it needs to have the files that go into course 1.",
+          "pronto": "the folder has cartao.txt, look.txt, ficha.txt and storyboard.txt, and each one, pasted again into your lesson's page, answers <code>OK: …</code>."
+        }
+      ]
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Choose when you start and how much time you have each week. The plan lists the exercises from the eight lessons.",
+      "curso": "Direction: think like a director",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · Director's card",
+          "aula": "diretor"
+        },
+        {
+          "titulo": "Lesson 2 · Shot ladder",
+          "aula": "plano"
+        },
+        {
+          "titulo": "Lesson 3 · Movements",
+          "aula": "camera"
+        },
+        {
+          "titulo": "Lesson 4 · Look",
+          "aula": "luz"
+        },
+        {
+          "titulo": "Lesson 5 · Frames",
+          "aula": "composicao"
+        },
+        {
+          "titulo": "Lesson 6 · Character sheet",
+          "aula": "ficha"
+        },
+        {
+          "titulo": "Lesson 7 · Shot list",
+          "aula": "decupagem"
+        },
+        {
+          "titulo": "Lesson 8 · Storyboard",
+          "aula": "storyboard"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Direction: thinking like a director",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I created",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Final quiz",
+      "sub": "Five questions about the whole course.",
+      "perguntas": [
+        {
+          "p": "What goes in the storyboard header?",
+          "opcoes": [
+            "Scene, anchor, emotion, sheet and look.",
+            "The list of generators and the price of each one.",
+            "The final prompts in English for each shot.",
+            "The durations of all the shots, added up."
+          ],
+          "certa": 0,
+          "explica": "The header holds what applies to every shot and repeats in every prompt. The generator and the final prompt are from course 1; the duration stays on each line.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why check the storyboard before generating any video?",
+          "opcoes": [
+            "Because the generator refuses text that hasn't been checked.",
+            "Because the law requires an approved storyboard.",
+            "Because fixing text costs nothing; generating costs money.",
+            "Because the check improves the final resolution."
+          ],
+          "certa": 2,
+          "explica": "The paper rehearsal is free. A direction mistake found after generation costs time and credits to redo.",
+          "ref": "passos"
+        },
+        {
+          "p": "A shot in your storyboard says \"orbit and zoom.\" What does the page answer?",
+          "opcoes": [
+            "OK, because orbit and zoom go well together.",
+            "It asks you to pick just one movement for the shot.",
+            "OK, as long as the shot lasts more than 4 s.",
+            "It asks you to swap the zoom for a handheld camera."
+          ],
+          "certa": 1,
+          "explica": "One movement per shot (lesson 3). The page points out the shot and asks you to keep just one; if the scene needs both, it needs two shots.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "Which of these keeps the same character in every shot?",
+          "opcoes": [
+            "Always using the same camera movement.",
+            "Generating all the shots on the same day.",
+            "Asking for high resolution in every prompt.",
+            "Repeating the lock from the character sheet in every prompt."
+          ],
+          "certa": 3,
+          "explica": "The character sheet with the \"Never changes\" line, repeated in every prompt and backed by the reference images, is what holds the face, clothes and prop steady (lesson 6).",
+          "ref": "passos"
+        },
+        {
+          "p": "Which shot usually closes a short scene well?",
+          "opcoes": [
+            "A whip pan to the next scene.",
+            "An image that works on its own as a still.",
+            "Any shot, because the ending matters little.",
+            "A quick zoom and a hard cut in the middle."
+          ],
+          "certa": 1,
+          "explica": "The last frame is what the audience takes away. Paused on the last second, it has to work as an image: the pull-back that gives the place back, the transformed face.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The course in three sentences",
+      "itens": [
+        {
+          "t": "Direction is decision",
+          "texto": "The generator executes; shot, movement, light, composition and sound are your choices, with a reason behind each."
+        },
+        {
+          "t": "Everything in text",
+          "texto": "Card, character sheet, look and storyboard in a folder of your own, checked by the page."
+        },
+        {
+          "t": "Next step",
+          "texto": "In course 1, each storyboard line becomes a prompt in the generator you choose."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Going further",
+      "links": [
+        {
+          "t": "Course 1 · Generation: image and video with AI in Oct/2026 (the next in the program)",
+          "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/en/"
+        },
+        {
+          "t": "Course 2 · Production: from script to finished film",
+          "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/en/"
+        }
+      ]
+    }
+  ]
+}
