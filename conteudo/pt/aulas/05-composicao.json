@@ -1,0 +1,199 @@
+{
+  "slug": "composicao",
+  "num": 5,
+  "menu": "Quadro",
+  "titulo": "Composição e profundidade no quadro",
+  "titulo_curto": "Composição e profundidade",
+  "minutos": 15,
+  "lead": "Um quadro bonito em que o olho não sabe para onde ir não comunica nada. Composição é decidir o que se vê primeiro, onde o vazio trabalha a favor e como frente, meio e fundo se separam. É o que faz uma imagem gerada parecer espaço de verdade, e não um cenário chapado.",
+  "objetivo": "compor cada quadro com um assunto que se entende em um segundo e três camadas de profundidade separadas por foco, luz ou cor.",
+  "competencias": ["hierarquia-visual", "escolher-composicao", "construir-profundidade"],
+  "aprende": [
+    {"t": "Aplicar o teste de um segundo a qualquer quadro"},
+    {"t": "Escolher entre terços, centro e diagonal pela emoção"},
+    {"t": "Usar o espaço vazio para isolar ou apertar"},
+    {"t": "Montar frente, meio e fundo e separar as camadas"}
+  ],
+  "hero_alt": "Vista por trás de um monitor de câmera que mostra um quadro com planta em primeiro plano, mesa no meio e janela ao fundo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do assunto às camadas",
+      "sub": "Cinco decisões para cada quadro. Clique em cada uma.",
+      "estilo": "fluxo",
+      "nos": [
+        {"titulo": "Assunto", "sub": "um segundo", "icone": "alvo", "forte": true, "detalhe": "O que o público vê primeiro? Ele não deve procurar: deve entender a cena em um segundo. Se dois elementos disputam a atenção, um deles sai ou perde luz."},
+        {"titulo": "Equilíbrio", "sub": "terços ou centro", "icone": "camadas", "detalhe": "Regra dos terços: o sujeito fora do centro cria um fluxo natural do assunto para o ambiente. Centro e simetria: equilíbrio, controle, poder, ritual."},
+        {"titulo": "Linhas", "sub": "diagonal, condução", "icone": "seta", "detalhe": "A diagonal quebra a estabilidade e sugere movimento, mesmo parada. Linhas de condução (estrada, corredor, bancada, sombra) levam o olho até o assunto."},
+        {"titulo": "Espaço", "sub": "o vazio fala", "icone": "lupa", "detalhe": "Mais espaço vazio: liberdade, escala, isolamento. Menos espaço: tensão, aperto. O vazio não é falta de conteúdo; é o conteúdo emocional."},
+        {"titulo": "Camadas", "sub": "frente, meio, fundo", "icone": "camadas", "detalhe": "Frente: onde o público está. Meio: onde o sujeito está. Fundo: onde o contexto vive. Separe as três por foco, luz, cor ou névoa."}
+      ],
+      "legenda": "A composição muda ao longo da sequência: a cena evolui de plano em plano em vez de se repetir."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Composição na prática",
+      "sub": "Os exemplos vêm da padaria.",
+      "passos": [
+        {
+          "titulo": "O teste de um segundo",
+          "sub": "o olho não procura",
+          "texto": [
+            "Olhe o quadro por um segundo e diga em voz alta qual é o assunto. Se você hesitar, o público também vai hesitar.",
+            "Um assunto dominante por quadro. Produto, pessoa e detalhe de fundo brigando pela atenção dão uma imagem bonita que não diz nada."
+          ]
+        },
+        {
+          "titulo": "Terços, centro ou diagonal",
+          "sub": "pela emoção do plano",
+          "texto": [
+            "Terços para fluxo natural; centro e simetria para controle e monumento; diagonal para energia e ação. A escolha segue a emoção do plano, não o gosto.",
+            "Varie ao longo da cena: três quadros seguidos com a mesma composição ficam repetitivos."
+          ],
+          "exemplo": {"rot": "Na fornada", "texto": "Porta do forno no centro, simétrica: o ritual. A fileira de pães em diagonal: a energia da primeira fornada."}
+        },
+        {
+          "titulo": "Espaço negativo",
+          "sub": "respiro ou aperto",
+          "texto": [
+            "Antes de gerar, decida: o público deve sentir respiro ou aperto? A quantidade de vazio responde isso antes de qualquer outra escolha.",
+            "Dona Lia pequena num canto do quadro, com a rua escura ocupando o resto, conta a solidão de quem acorda antes da cidade."
+          ]
+        },
+        {
+          "titulo": "Três camadas, separadas",
+          "sub": "foco, luz, cor, névoa",
+          "texto": [
+            "Ter frente, meio e fundo não basta: elas precisam ser distintas. Profundidade de campo rasa desfoca a frente ou o fundo; contraluz recorta o sujeito; cor e névoa empurram o fundo.",
+            "Com as camadas separadas, o movimento lateral da câmera (aula 3) faz cada uma andar num ritmo, e o espaço parece real."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar",
+      "sub": "Uma linha por quadro: a composição, as três camadas e para onde o olho vai.",
+      "blocos": [
+        {
+          "rot": "quadros.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Cena: <nome da cena>\n1 | <composição> | frente: <o que está perto da câmera> | meio: <o sujeito> | fundo: <o contexto> | o olho vai para: <o assunto>\n2 | <composição> | frente: <...> | meio: <...> | fundo: <...> | o olho vai para: <...>\n# composições: regra dos terços, centro (simetria), diagonal, linhas de condução, espaço negativo, moldura (quadro dentro do quadro)"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira os seus quadros",
+      "sub": "A página pede 3 a 6 quadros, cada um com a composição e as três camadas, e pelo menos 3 composições diferentes.",
+      "arquivo": "quadros.txt",
+      "rot": "Cole aqui os seus quadros (uma linha numerada por quadro):",
+      "modelo": "1 | regra dos terços | frente: ... | meio: ... | fundo: ...",
+      "regras": [
+        {"tipo": "planos", "min": 3, "max": 6},
+        {"tipo": "cada_plano", "grupos": [
+          {"rot": "a composição", "variar": 3, "termos": ["regra dos terços / terços / rule of thirds", "centro / centralizado / simetria / simétrico / symmetry / centered", "diagonal", "linhas de condução / linhas guia / leading lines", "espaço negativo / negative space", "moldura / quadro dentro do quadro / frame within a frame", "holandês / dutch angle"]},
+          {"rot": "a camada da frente (frente:)", "termos": ["frente: / foreground:"]},
+          {"rot": "a camada do meio (meio:)", "termos": ["meio: / midground:"]},
+          {"rot": "a camada do fundo (fundo:)", "termos": ["fundo: / background:"]}
+        ]}
+      ],
+      "ok": "OK: {n} quadros com composição e três camadas",
+      "exemplo": "Cena: A primeira fornada\n1 | regra dos terços | frente: a vitrine com os pães de ontem | meio: Dona Lia na bancada, no terço da direita | fundo: a porta de ferro fechada | o olho vai para: Dona Lia\n2 | centro | frente: a borda da bancada, desfocada | meio: a porta do forno | fundo: azulejos no escuro | o olho vai para: o forno\n3 | diagonal | frente: a pá de madeira entrando no quadro | meio: a fileira de pães | fundo: vapor contra a luz | o olho vai para: o pão da frente\n4 | espaço negativo | frente: o vidro da vitrine com gotas | meio: a padaria pequena e acesa | fundo: a rua vazia e escura | o olho vai para: a luz da padaria",
+      "exemplo_errado": "Cena: A primeira fornada\n1 | centro | frente: a vitrine | meio: Dona Lia\n2 | centro | meio: o forno | fundo: azulejos"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Pegue os planos mais importantes da sua cena.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Quadros · composição e camadas",
+          "min": "15 min",
+          "texto": "Escreva de 3 a 6 quadros da sua cena com a composição, a frente, o meio, o fundo e para onde o olho vai. Use pelo menos 3 composições diferentes. Confira e baixe o quadros.txt para a pasta do projeto.",
+          "pronto": "a página responde <code>OK: [n] quadros com composição e três camadas</code> para o seu texto e o quadros.txt está na pasta do projeto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Um segundo · o teste em voz alta",
+          "min": "5 min",
+          "texto": "Para cada quadro, leia só a linha \"o olho vai para\" e confira se existe um assunto só. Se a linha cita duas coisas, tire luz ou foco de uma delas e reescreva.",
+          "pronto": "em todas as linhas do quadros.txt, depois de <code>o olho vai para:</code>, há um único assunto."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "perguntas": [
+        {
+          "p": "O que é o teste de um segundo?",
+          "opcoes": [
+            "Gerar um clipe de um segundo antes do clipe longo.",
+            "Cortar cada plano para durar no máximo um segundo.",
+            "Bater o olho e dizer o assunto em um segundo.",
+            "Esperar um segundo de silêncio antes de cada corte."
+          ],
+          "certa": 2,
+          "explica": "O público não deve procurar o assunto. Se você hesita para dizer o que o quadro mostra, a composição falhou, por mais bonita que esteja.",
+          "ref": "passos"
+        },
+        {
+          "p": "Dona Lia pequena no canto, a rua vazia ocupando o resto do quadro. O que o espaço vazio comunica?",
+          "opcoes": [
+            "Pressa e urgência na cena.",
+            "Um erro de enquadramento.",
+            "Que falta um objeto em cena.",
+            "Isolamento e escala."
+          ],
+          "certa": 3,
+          "explica": "Muito espaço negativo isola o sujeito e mostra o tamanho do mundo em volta. Pouco espaço faz o contrário: aperta e cria tensão.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Como separar o sujeito do fundo sem mudar a composição?",
+          "opcoes": [
+            "Desfocar o fundo, pôr contraluz ou mudar a cor.",
+            "Pôr o sujeito no centro exato do quadro, sempre.",
+            "Encher o fundo de objetos para dar contexto.",
+            "Trocar a lente por uma grande-angular aberta."
+          ],
+          "certa": 0,
+          "explica": "Foco, luz, cor e névoa separam as camadas. Mais objetos no fundo disputam a atenção; centralizar muda a composição; grande-angular aumenta o espaço, mas não separa por si.",
+          "ref": "passos"
+        },
+        {
+          "p": "Simetria e sujeito no centro transmitem o quê?",
+          "opcoes": [
+            "Energia e velocidade.",
+            "Controle, ordem e poder.",
+            "Desconforto e instabilidade.",
+            "Intimidade e calor."
+          ],
+          "certa": 1,
+          "explica": "Centro e simetria afirmam ordem, monumento e controle. Energia é da diagonal; desconforto, do ângulo holandês; intimidade, do close.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {"t": "Um assunto", "texto": "O público entende o quadro em um segundo, sem procurar."},
+        {"t": "Composição pela emoção", "texto": "Terços para fluxo, centro para controle, diagonal para energia, vazio para isolar."},
+        {"t": "Três camadas", "texto": "Frente, meio e fundo, separados por foco, luz, cor ou névoa."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Guia oficial de prompt de vídeo do Google: lentes e profundidade de campo", "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"},
+        {"t": "Curso 1 · Geração: imagem-chave e lookbook (aula 3)", "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"}
+      ]
+    }
+  ]
+}

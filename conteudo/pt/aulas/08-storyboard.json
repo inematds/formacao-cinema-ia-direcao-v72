@@ -1,0 +1,241 @@
+{
+  "slug": "storyboard",
+  "num": 8,
+  "menu": "Storyboard",
+  "titulo": "Seu storyboard: uma cena de 30 s decupada e conferida",
+  "titulo_curto": "Seu storyboard de 30 s",
+  "minutos": 20,
+  "lead": "Hora de juntar tudo: o cartão do diretor, a ficha, o look e a decupagem viram um storyboard de 30 segundos, conferido pela página. É o pacote que você leva para qualquer gerador, e é por ele que o curso 1 começa.",
+  "objetivo": "juntar cartão, ficha, look e decupagem num storyboard de 30 segundos conferido pela página e pronto para virar prompt no curso 1.",
+  "competencias": ["montar-storyboard", "conferir-pacote-de-direcao", "planejar-a-formacao"],
+  "aprende": [
+    {"t": "Ver o mapa do curso e o que cada degrau entrega"},
+    {"t": "Montar o storyboard de 30 s com cabeçalho e planos"},
+    {"t": "Conferir o pacote inteiro antes de gerar"},
+    {"t": "Gerar o seu plano de estudo com datas"}
+  ],
+  "hero_alt": "Parede de pré-produção com oito quadros de storyboard a lápis presos em duas fileiras, sobre uma mesa com lápis e uma fita gaffer amarela.",
+  "secoes": [
+    {
+      "tipo": "mapa",
+      "titulo": "O mapa do curso",
+      "sub": "Quatro degraus que viram o seu storyboard. Clique num exercício para ver o \"pronto quando\".",
+      "degraus": [
+        {"aula": "diretor", "icone": "usuario", "quando": "Aula 1", "titulo": "Cartão", "sub": "intenção e âncora", "saida": "cartao.txt com as 4 perguntas respondidas.", "passo": "O que o público deve sentir, a âncora e o porquê de ângulo, movimento, duração e luz. É o cabeçalho do storyboard."},
+        {"aula": "camera", "icone": "video", "quando": "Aulas 2 e 3", "titulo": "Câmera", "sub": "plano e movimento", "saida": "escada.txt e movimentos.txt.", "passo": "Tamanho, ângulo e um movimento por plano, cada escolha pelo efeito no público."},
+        {"aula": "ficha", "icone": "cadeado", "quando": "Aulas 4 a 6", "titulo": "Ficha", "sub": "look e personagem", "saida": "look.txt, quadros.txt e ficha.txt.", "passo": "Luz e paleta fixas, composição em camadas e o personagem travado. É o que segura a continuidade."},
+        {"aula": "decupagem", "icone": "lista", "quando": "Aula 7", "titulo": "Decupagem", "sub": "planos com som", "saida": "decupagem.txt conferido.", "passo": "A cena cortada em planos numerados, com câmera, som e tempo. Daqui sai o storyboard desta aula."}
+      ],
+      "resultado": {"titulo": "Ao final do curso", "texto": "Uma pasta com cartão, ficha, look e storyboard de 30 s, pronta para qualquer gerador.", "total": "8 arquivos"},
+      "rolagem_fim": {"titulo": "O curso inteiro", "texto": "Quatro degraus, cada um com o seu arquivo conferido pela página. O storyboard desta aula junta todos."},
+      "legenda": "Ordem sugerida: cada degrau usa o que o anterior decidiu."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar o storyboard",
+      "sub": "Cabeçalho com as decisões fixas e uma linha por plano.",
+      "passos": [
+        {
+          "titulo": "Cabeçalho",
+          "sub": "o que vale para todos os planos",
+          "texto": [
+            "Cena, âncora e emoção vêm do cartão. Ficha e look entram em uma linha cada, resumidos: é o trecho que se repete em todo prompt.",
+            "Se uma linha do cabeçalho muda no meio do caminho, todos os planos mudam junto."
+          ]
+        },
+        {
+          "titulo": "Os planos",
+          "sub": "6 a 10, somando 30 s",
+          "texto": [
+            "A decupagem da aula 7 cresce para 30 segundos: de 6 a 10 planos, cada um com tamanho, ângulo, um movimento, duração, ação e som.",
+            "Varie: pelo menos 3 tamanhos, 2 ângulos e 3 movimentos. Abra situando, aproxime na virada e feche com uma imagem que funcione parada."
+          ]
+        },
+        {
+          "titulo": "Conferir antes de gerar",
+          "sub": "o ensaio sem custo",
+          "texto": [
+            "A página confere o pacote inteiro em segundos. Corrigir uma linha de texto custa nada; refazer uma geração custa tempo e crédito.",
+            "Só leve para o gerador o storyboard que já respondeu OK."
+          ]
+        },
+        {
+          "titulo": "A ponte para o curso 1",
+          "sub": "do storyboard ao prompt",
+          "texto": [
+            "No curso 1, cada linha deste storyboard vira um prompt, com a ficha como referência e o look como bloco fixo.",
+            "Guarde a pasta do projeto: é ela que você abre na primeira aula de lá."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo para copiar",
+      "sub": "O storyboard completo: cabeçalho e planos.",
+      "blocos": [
+        {
+          "rot": "storyboard.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Cena: <nome da cena> (30 s)\nÂncora: <personagem, produto ou ritmo>\nEmoção: <o que o público deve sentir>\nFicha: <nome e a linha Nunca muda da ficha>\nLook: <a frase de luz e a paleta>\n# n | tamanho | ângulo | movimento | duração | o que acontece | som: ambiente, efeito, fala\n1 | <tamanho> | <ângulo> | <um movimento> | <n> s | <ação> | som: <o que se ouve>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira o seu storyboard",
+      "sub": "Cabeçalho com cinco linhas, de 6 a 10 planos completos, variação de câmera e soma entre 27 e 33 s.",
+      "arquivo": "storyboard.txt",
+      "rot": "Cole aqui o seu storyboard:",
+      "modelo": "Cena: ...\nÂncora: ...\n1 | plano geral | câmera alta | câmera parada | 4 s | ... | som: ...",
+      "regras": [
+        {"tipo": "campos", "min": 6, "campos": ["Cena", "Âncora", "Emoção", "Ficha", "Look"]},
+        {"tipo": "planos", "min": 6, "max": 10},
+        {"tipo": "cada_plano", "grupos": [
+          {"rot": "tamanho do plano", "variar": 3, "termos": ["plano geral / plano de estabelecimento / grande plano geral / establishing shot / extreme wide shot", "plano aberto / aberto / wide shot", "plano americano / americano / medium wide shot / cowboy shot", "plano médio / médio / medium shot", "meio primeiro plano / close médio / medium close-up", "close / close-up / primeiro plano / plano fechado", "plano detalhe / detalhe / extreme close-up / macro"]},
+          {"rot": "ângulo", "variar": 2, "termos": ["altura do olho / altura dos olhos / nível dos olhos / eye-level / eye level", "câmera alta / plongée / high angle / high-angle", "câmera baixa / contra-plongée / low angle / low-angle", "zenital / plano zenital / top shot / top-down / bird's-eye", "rente ao chão / worm's-eye", "holandês / ângulo holandês / dutch angle", "por cima do ombro / over-the-shoulder", "ponto de vista / câmera subjetiva / pov"]},
+          {"rot": "movimento", "um_so": true, "variar": 3, "termos": ["câmera parada / câmera fixa / plano fixo / static shot", "dolly in / push-in / aproximação lenta", "dolly out / pull-out / afastamento lento", "travelling lateral / travelling / tracking shot / truck / dolly lateral", "panorâmica / pan", "tilt / tilt up / tilt down", "grua / crane / pedestal", "órbita / orbit / arc shot", "câmera na mão / handheld", "zoom in / zoom out / zoom / crash zoom", "dolly zoom / efeito vertigo", "whip pan / chicote", "drone / plano aéreo / aerial shot", "rack focus / troca de foco"]},
+          {"rot": "a coluna som", "termos": ["som: / áudio: / sound: / audio:"]}
+        ]},
+        {"tipo": "duracao", "min": 27, "max": 33}
+      ],
+      "ok": "OK: storyboard com {n} planos conferidos · {s} s",
+      "exemplo": "Cena: A primeira fornada (30 s)\nÂncora: Dona Lia; tudo serve ao orgulho silencioso dela\nEmoção: orgulho e aconchego de quem chega primeiro\nFicha: Dona Lia, 58 anos; coque com lenço, óculos, avental azul-marinho, pá de madeira\nLook: luz lateral do forno, suave e quente dentro; rua fria e escura; low-key; vapor no feixe\n# n | tamanho | ângulo | movimento | duração | o que acontece | som\n1 | plano geral | câmera alta | câmera parada | 4 s | Rua escura; só a vitrine da padaria acesa. | som: vento, um cachorro ao longe\n2 | plano aberto | altura do olho | travelling lateral | 4 s | Dona Lia acende as luzes e amarra o avental. | som: interruptor, rádio baixo\n3 | plano médio | altura do olho | câmera parada | 4 s | Ela sova a massa na bancada. | som: massa batendo na mesa\n4 | close | câmera baixa | dolly in | 4 s | A porta do forno abre e o vapor sobe. | som: rangido do forno, chiado\n5 | plano detalhe | zenital | tilt | 3 s | A pá tira a primeira fornada. | som: casca estalando\n6 | close | altura do olho | câmera parada | 3 s | Ela prova um pedaço e fecha os olhos. | som: só o rádio, baixinho\n7 | plano médio | por cima do ombro | câmera na mão | 4 s | Batidas na porta de ferro; ela olha o relógio e sorri. | som: três batidas; fala: \"Já vai!\"\n8 | plano aberto | altura do olho | dolly out | 4 s | Ela sobe a porta e o primeiro cliente entra. | som: porta de ferro subindo, sino da porta",
+      "exemplo_errado": "Cena: A primeira fornada\nÂncora: a padaria\n1 | plano médio | altura do olho | câmera parada | 5 s | A padaria. | som: rádio\n2 | plano médio | altura do olho | câmera parada | 5 s | Dona Lia trabalha. | som: rádio\n3 | plano médio | altura do olho | órbita e zoom | 5 s | O forno abre.\n4 | plano médio | altura do olho | câmera parada | O cliente entra. | som: sino"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática final",
+      "sub": "A sua cena, do começo ao fim.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Storyboard · a sua cena de 30 s",
+          "min": "40 min",
+          "texto": "Monte o storyboard da sua cena: cabeçalho com Cena, Âncora, Emoção, Ficha e Look, e de 6 a 10 planos somando 30 s. Confira até a página responder OK e baixe o storyboard.txt.",
+          "pronto": "a página responde <code>OK: storyboard com [n] planos conferidos · [s] s</code> para o seu texto, com a soma entre 27 e 33 s."
+        },
+        {
+          "id": "e2",
+          "titulo": "Pasta · o pacote de direção completo",
+          "min": "5 min",
+          "texto": "Confira a pasta do projeto: ela precisa ter os arquivos que vão para o curso 1.",
+          "pronto": "a pasta tem cartao.txt, look.txt, ficha.txt e storyboard.txt, e cada um, colado de novo na página da sua aula, responde <code>OK: …</code>."
+        }
+      ]
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha quando começa e quanto tempo tem por semana. O plano lista os exercícios das oito aulas.",
+      "curso": "Direção: pensar como diretor",
+      "horas_padrao": 3,
+      "degraus": [
+        {"titulo": "Aula 1 · Cartão do diretor", "aula": "diretor"},
+        {"titulo": "Aula 2 · Escada de planos", "aula": "plano"},
+        {"titulo": "Aula 3 · Movimentos", "aula": "camera"},
+        {"titulo": "Aula 4 · Look", "aula": "luz"},
+        {"titulo": "Aula 5 · Quadros", "aula": "composicao"},
+        {"titulo": "Aula 6 · Ficha", "aula": "ficha"},
+        {"titulo": "Aula 7 · Decupagem", "aula": "decupagem"},
+        {"titulo": "Aula 8 · Storyboard", "aula": "storyboard"}
+      ],
+      "txt": {
+        "titulo": "Plano — Direção: pensar como diretor",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que travou e a regra que criei",
+        "h": "h por semana",
+        "exs": "exercícios"
+      }
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste final",
+      "sub": "Cinco perguntas sobre o curso inteiro.",
+      "perguntas": [
+        {
+          "p": "O que vai no cabeçalho do storyboard?",
+          "opcoes": [
+            "Cena, âncora, emoção, ficha e look.",
+            "A lista de geradores e os preços de cada um.",
+            "Os prompts finais em inglês de cada plano.",
+            "As durações de todos os planos, somadas."
+          ],
+          "certa": 0,
+          "explica": "O cabeçalho guarda o que vale para todos os planos e se repete em todo prompt. Gerador e prompt final são do curso 1; a duração fica em cada linha.",
+          "ref": "passos"
+        },
+        {
+          "p": "Por que conferir o storyboard antes de gerar qualquer vídeo?",
+          "opcoes": [
+            "Porque o gerador recusa texto sem conferência.",
+            "Porque a lei exige um storyboard aprovado.",
+            "Porque corrigir texto não custa nada; gerar custa.",
+            "Porque a conferência melhora a resolução final."
+          ],
+          "certa": 2,
+          "explica": "O ensaio no papel é de graça. Erro de direção descoberto depois da geração custa tempo e crédito para refazer.",
+          "ref": "passos"
+        },
+        {
+          "p": "Um plano do seu storyboard diz \"órbita e zoom\". O que a página responde?",
+          "opcoes": [
+            "OK, porque órbita e zoom combinam bem juntos.",
+            "Pede para escolher só um movimento no plano.",
+            "OK, desde que o plano dure mais de 4 s.",
+            "Pede para trocar o zoom por câmera na mão."
+          ],
+          "certa": 1,
+          "explica": "Um movimento por plano (aula 3). A página aponta o plano e pede para ficar com um só; se a cena precisa dos dois, ela precisa de dois planos.",
+          "ref": "conferidor"
+        },
+        {
+          "p": "Qual destes itens segura o mesmo personagem em todos os planos?",
+          "opcoes": [
+            "Usar sempre o mesmo movimento de câmera.",
+            "Gerar todos os planos no mesmo dia.",
+            "Pedir alta resolução em todos os prompts.",
+            "Repetir a trava da ficha em todo prompt."
+          ],
+          "certa": 3,
+          "explica": "A ficha com a linha \"Nunca muda\", repetida em todo prompt e apoiada nas imagens de referência, é o que segura rosto, roupa e objeto (aula 6).",
+          "ref": "passos"
+        },
+        {
+          "p": "Que plano costuma fechar bem uma cena curta?",
+          "opcoes": [
+            "Um whip pan para a próxima cena.",
+            "Uma imagem que funciona parada sozinha.",
+            "Um plano qualquer, porque o fim pesa pouco.",
+            "Um zoom rápido e um corte seco no meio."
+          ],
+          "certa": 1,
+          "explica": "O último quadro é o que o público leva. Pausado no último segundo, ele precisa funcionar como imagem: o afastamento que devolve o lugar, o rosto transformado.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "O curso em três frases",
+      "itens": [
+        {"t": "Direção é decisão", "texto": "O gerador executa; plano, movimento, luz, composição e som são escolhas suas, com porquê."},
+        {"t": "Tudo em texto", "texto": "Cartão, ficha, look e storyboard numa pasta sua, conferidos pela página."},
+        {"t": "Próximo passo", "texto": "No curso 1, cada linha do storyboard vira um prompt no gerador que você escolher."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Curso 1 · Geração: imagem e vídeo com IA em out/2026 (o próximo da formação)", "href": "https://inematds.github.io/formacao-cinema-ia-geracao-v72/"},
+        {"t": "Curso 2 · Produção: do roteiro ao filme pronto", "href": "https://inematds.github.io/formacao-cinema-ia-producao-v72/"}
+      ]
+    }
+  ]
+}

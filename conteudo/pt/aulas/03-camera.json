@@ -1,0 +1,203 @@
+{
+  "slug": "camera",
+  "num": 3,
+  "menu": "Câmera",
+  "titulo": "A câmera como verbo: cada movimento conta uma coisa",
+  "titulo_curto": "A câmera como verbo",
+  "minutos": 16,
+  "lead": "Movimento de câmera é o que mais pesa no resultado de um vídeo gerado, e o erro mais comum é empilhar movimentos no mesmo plano. Nesta aula cada movimento ganha uma função: aproximar, afastar, acompanhar, revelar, girar ou tremer. Um por plano, escolhido pelo efeito no público.",
+  "objetivo": "escolher um movimento por plano pela intenção e escrever, para cada plano, o efeito que ele causa em quem assiste.",
+  "competencias": ["escolher-movimento-pela-intencao", "evitar-movimento-empilhado", "variar-ritmo-entre-planos"],
+  "aprende": [
+    {"t": "Ligar seis intenções aos movimentos que as entregam"},
+    {"t": "Separar movimento de câmera de movimento de lente"},
+    {"t": "Usar um movimento e um estilo por plano"},
+    {"t": "Variar o movimento entre planos vizinhos"}
+  ],
+  "hero_alt": "Câmera de cinema num carrinho sobre trilhos de travelling, num estúdio escuro, com um braço de grua ao fundo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Seis intenções, seis movimentos",
+      "sub": "Comece pelo que o público deve sentir. Clique para ver o movimento e o termo do prompt.",
+      "estilo": "fluxo",
+      "nos": [
+        {"titulo": "Aproximar", "sub": "tensão", "icone": "alvo", "detalhe": "Aproximação lenta, a câmera andando até o sujeito: tensão, intimidade, importância. Em inglês, dolly in ou push-in. Quase imperceptível, a pressão cresce."},
+        {"titulo": "Afastar", "sub": "isolamento", "icone": "voltar", "detalhe": "Afastamento: a câmera recua e o lugar engole o personagem. Isolamento, escala, fim de cena. Em inglês, dolly out ou pull-out."},
+        {"titulo": "Acompanhar", "sub": "fluidez", "icone": "seta", "forte": true, "detalhe": "Travelling: a câmera anda junto com o sujeito, de lado ou atrás. Fluidez, seguir sem cortar. Em inglês, tracking shot ou truck left/right."},
+        {"titulo": "Revelar", "sub": "descoberta", "icone": "lupa", "detalhe": "Panorâmica (gira na horizontal), tilt (gira na vertical) e grua (sobe ou desce no espaço) revelam o que estava fora do quadro. Em inglês, pan, tilt, crane shot, pedestal."},
+        {"titulo": "Girar", "sub": "volume", "icone": "relogio", "detalhe": "Órbita: a câmera dá a volta no sujeito e separa frente, meio e fundo. Volume e sensação de cinema caro. Em inglês, orbit ou arc shot."},
+        {"titulo": "Tremer", "sub": "urgência", "icone": "megafone", "detalhe": "Câmera na mão: instável, crua, documental. Urgência e presença física. Em inglês, handheld shot."}
+      ],
+      "legenda": "Câmera parada (static shot) também é escolha: observar sem interferir. Vale como \"um movimento\" no plano."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "As regras do movimento",
+      "sub": "O exemplo continua na padaria.",
+      "passos": [
+        {
+          "titulo": "Um movimento por plano",
+          "sub": "não empilhe",
+          "texto": [
+            "Órbita mais aproximação mais panorâmica mais zoom: a câmera briga consigo mesma e o plano sai instável. Um movimento dá ao gerador uma direção só para executar.",
+            "Se a cena pede dois movimentos, ela pede dois planos."
+          ],
+          "exemplo": {"rot": "Fraco × dirigido", "texto": "Fraco: órbita com zoom e dolly no forno. Dirigido: aproximação lenta do forno enquanto a porta abre."}
+        },
+        {
+          "titulo": "Câmera ou lente?",
+          "sub": "dolly, zoom e dolly zoom",
+          "texto": [
+            "No dolly a câmera anda: frente e fundo se movem em ritmos diferentes e o espaço parece real. No zoom só a lente muda: a imagem aproxima sem a câmera sair do lugar, mais achatada e observadora.",
+            "O dolly zoom faz os dois ao mesmo tempo, em sentidos opostos: o fundo parece esticar. É desorientação; use uma vez, no momento certo."
+          ]
+        },
+        {
+          "titulo": "Um estilo por plano",
+          "sub": "steadicam, na mão ou câmera lenta",
+          "texto": [
+            "Estilo é a textura do movimento. Steadicam é suave e controlado; câmera na mão é crua e urgente; câmera lenta dilata o tempo e dá peso.",
+            "Dois estilos no mesmo plano diluem as duas intenções. Escolha a sensação dominante e fique com ela."
+          ]
+        },
+        {
+          "titulo": "Varie entre vizinhos",
+          "sub": "ritmo da sequência",
+          "texto": [
+            "Dois planos vizinhos com o mesmo movimento matam o ritmo. Case o movimento com a função do momento: abrir pede travelling lateral ou câmera parada; tensão pede aproximação lenta; revelação, órbita ou tilt.",
+            "Para fechar, aproximação final ou afastamento que devolve o lugar. Termine com uma imagem forte."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para copiar",
+      "sub": "A tabela intenção → movimento → termo do prompt e o modelo do arquivo da prática.",
+      "blocos": [
+        {
+          "rot": "Intenção → movimento → termo do prompt",
+          "icone": "lista",
+          "conteudo": "# o que o público deve sentir → movimento → termo do prompt\ntensão, intimidade → aproximação lenta → slow dolly in, push-in\nisolamento, escala → afastamento → dolly out, pull-out\nfluidez, seguir sem cortar → travelling → tracking shot, truck left/right\nrevelar na horizontal → panorâmica → pan left/right\nrevelar na vertical → tilt → tilt up/down\ngrandeza, revelar de cima → grua ou pedestal → crane shot, pedestal up\nvolume, cinema caro → órbita → orbit shot, arc shot\nurgência, realismo → câmera na mão → handheld shot\nobservar sem interferir → câmera parada → static shot\ndesorientação → dolly zoom → dolly zoom (vertigo effect)\nligar dois pontos da cena → troca de foco → rack focus"
+        },
+        {
+          "rot": "movimentos.txt (modelo)",
+          "icone": "arquivo",
+          "conteudo": "Cena: <nome da cena>\n1 | <um movimento> | <o que acontece no plano> | efeito: <o que o público sente>\n2 | <um movimento> | <o que acontece no plano> | efeito: <o que o público sente>"
+        }
+      ]
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira os seus movimentos",
+      "sub": "A página recusa plano com dois movimentos, plano sem movimento e plano sem efeito escrito. E pede pelo menos 4 movimentos diferentes na cena.",
+      "arquivo": "movimentos.txt",
+      "rot": "Cole aqui a sua lista de movimentos (uma linha numerada por plano):",
+      "modelo": "1 | câmera parada | ... | efeito: ...",
+      "regras": [
+        {"tipo": "planos", "min": 5, "max": 8},
+        {"tipo": "cada_plano", "grupos": [
+          {"rot": "movimento", "um_so": true, "variar": 4, "termos": ["câmera parada / câmera fixa / plano fixo / static shot", "dolly in / push-in / aproximação lenta", "dolly out / pull-out / afastamento lento", "travelling lateral / travelling / tracking shot / truck / dolly lateral", "panorâmica / pan", "tilt / tilt up / tilt down", "grua / crane / pedestal", "órbita / orbit / arc shot", "câmera na mão / handheld", "zoom in / zoom out / zoom / crash zoom", "dolly zoom / efeito vertigo", "whip pan / chicote", "drone / plano aéreo / aerial shot", "rack focus / troca de foco"]},
+          {"rot": "o efeito no público", "termos": ["efeito: / effect:"]}
+        ]}
+      ],
+      "ok": "OK: {n} planos, um movimento cada, com o efeito escrito",
+      "exemplo": "Cena: A primeira fornada\n1 | câmera parada | a rua escura, só a padaria acesa | efeito: silêncio e espera\n2 | travelling lateral | segue Dona Lia da porta até a bancada | efeito: entrar na rotina com ela\n3 | dolly in | chega perto do forno enquanto a porta abre | efeito: expectativa que cresce\n4 | tilt | desce do vapor até a pá com o pão | efeito: revelar a recompensa\n5 | câmera na mão | ela corre até a porta quando batem | efeito: pressa pequena, humana\n6 | dolly out | recua enquanto o cliente entra | efeito: fechar a cena; o bairro acorda",
+      "exemplo_errado": "Cena: A primeira fornada\n1 | câmera parada | a rua escura | efeito: espera\n2 | órbita com zoom in e dolly in | o forno abre | efeito: impacto\n3 | travelling lateral | Dona Lia na bancada\n4 | Dona Lia sorri para o cliente | efeito: carinho\n5 | câmera parada | a porta abre | efeito: fim"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática",
+      "sub": "Use os planos da sua escada (aula 2) e dê a cada um o seu movimento.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "Movimentos · um por plano, com o efeito",
+          "min": "15 min",
+          "texto": "Para cada plano da sua cena, escolha um movimento (ou câmera parada) e escreva o efeito no público. Pelo menos 4 movimentos diferentes, sem repetir em planos vizinhos. Confira e baixe o movimentos.txt para a pasta do projeto.",
+          "pronto": "a página responde <code>OK: [n] planos, um movimento cada, com o efeito escrito</code> para o seu texto e o movimentos.txt está na pasta do projeto."
+        },
+        {
+          "id": "e2",
+          "titulo": "Vizinhos · nenhum movimento repetido em sequência",
+          "min": "5 min",
+          "texto": "Leia a lista de cima para baixo e marque onde dois planos vizinhos usam o mesmo movimento. Troque um deles pelo movimento que entrega a mesma intenção de outro jeito.",
+          "pronto": "no movimentos.txt, nenhum par de planos vizinhos repete o mesmo movimento, e a página continua respondendo <code>OK: …</code>."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste rápido",
+      "sub": "Quatro perguntas. A explicação aparece depois de cada resposta.",
+      "perguntas": [
+        {
+          "p": "Qual a diferença entre dolly in e zoom in?",
+          "opcoes": [
+            "Nenhuma: os dois aproximam o sujeito igual.",
+            "O zoom move a câmera; o dolly muda a lente.",
+            "O dolly só funciona em plano aberto.",
+            "O dolly anda com a câmera; o zoom muda a lente."
+          ],
+          "certa": 3,
+          "explica": "No dolly a câmera se desloca e frente e fundo se movem em ritmos diferentes, o que dá profundidade. No zoom a câmera fica parada e só a distância focal muda; a imagem fica mais achatada.",
+          "ref": "passos"
+        },
+        {
+          "p": "Um prompt pede \"órbita, dolly in e zoom\" no mesmo plano. O que tende a sair?",
+          "opcoes": [
+            "Um plano premium, com mais energia.",
+            "Câmera instável, brigando consigo mesma.",
+            "O gerador escolhe o melhor dos três.",
+            "Um plano mais longo, em três partes."
+          ],
+          "certa": 1,
+          "explica": "Movimentos empilhados dão direções conflitantes, e o resultado sai instável. Um movimento por plano; se a cena pede três movimentos, ela pede três planos.",
+          "ref": "passos"
+        },
+        {
+          "p": "Você quer que a tensão cresça enquanto a porta do forno abre. Qual movimento?",
+          "opcoes": [
+            "Aproximação lenta (dolly in).",
+            "Câmera na mão, chacoalhando.",
+            "Panorâmica rápida (whip pan).",
+            "Afastamento (dolly out)."
+          ],
+          "certa": 0,
+          "explica": "A aproximação lenta constrói pressão quase sem o público perceber. O whip pan é transição rápida; o afastamento isola e encerra; a câmera na mão traz urgência, não expectativa.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Dois planos vizinhos têm o mesmo movimento. O que fazer?",
+          "opcoes": [
+            "Repetir sempre, para dar unidade.",
+            "Trocar os dois por câmera na mão.",
+            "Variar um deles, pelo ritmo da cena.",
+            "Juntar os dois num plano só, maior."
+          ],
+          "certa": 2,
+          "explica": "Repetição em sequência mata o ritmo. Troque um dos dois pelo movimento que entrega a mesma intenção de outro jeito, ou por câmera parada.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para guardar",
+      "itens": [
+        {"t": "Movimento é verbo", "texto": "Aproximar, afastar, acompanhar, revelar, girar, tremer: cada um faz o público sentir uma coisa."},
+        {"t": "Um por plano", "texto": "Um movimento e um estilo. Dois movimentos pedem dois planos."},
+        {"t": "Câmera ≠ lente", "texto": "Dolly anda e dá profundidade; zoom só aproxima a imagem."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Guia oficial de prompt de vídeo do Google: movimentos de câmera", "href": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide"},
+        {"t": "Curso 3 · Motion por código: movimento de câmera em vídeo feito com código", "href": "https://inematds.github.io/formacao-cinema-ia-motion-v72/"}
+      ]
+    }
+  ]
+}
